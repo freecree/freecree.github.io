@@ -283,10 +283,12 @@ h1 {
     height: 320px;
     background: #EFF4F4;
 }
-.work__video-sub {
+.sub-pic {
     position: relative;
     z-index: 1;
     border-left: 4px solid #54577C;
+}
+.work__video-sub {
     padding-left: 35px;
     margin-top: 26px;
 }
@@ -575,6 +577,8 @@ h1 {
            /*Footer*/
 
 .footer {
+    position: relative;
+    z-index: 1;
     color: #fff !important;
     background: #121E30;
     padding-top: 50px;
@@ -617,9 +621,221 @@ h1 {
 .footer__socials img {
     height: 24px;
     width: auto;
-} 
+}
 
 
+             /*Puppies*/
+
+
+.header-subpages {
+    align-items: center;
+    background:#EFF4F4;
+}
+.page {
+    padding-top: 50px;
+}
+.breadcrump {
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 55px;
+}
+.pedigree-picture {
+    margin-top: 75px;
+    margin-bottom: 90px;
+    background: url('../img/pedigree.jpg') no-repeat center center;
+//height: 80vh;
+//width: 100%;
+//background-size: 100%;
+    width: 100%;
+    height: 0;
+    padding-top: 45%;
+    background-size: 100%;
+}
+.puppies__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.puppies__puppy {
+    width: 31%;
+    /*margin-right: 15px;*/
+    /*margin-left: 15px;*/
+    /*margin-bottom: 50px;*/
+    /*margin: 15px;*/
+}
+.puppy__photo img {
+    width: 100%;
+}
+.puppy__caption {
+    margin: 10px 0 30px 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.puppy__name {
+    font-weight: bold;
+}
+
+            /*Puppy-info page*/
+
+.container1 {
+    width: 1170px;
+    margin: 0 auto;
+}
+.puppy-main {
+    //position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.puppy-main__photoes {
+    position: relative;
+}
+.puppy-main__img {
+    position: relative;
+    z-index: 1;
+    background: url("../img/rest-main.jpg") no-repeat center center;
+    width: 505px;
+    height: 673px;
+}
+.puppy__bg {
+    left: calc((1170px - 100vw)/2);
+    bottom: -140px;
+    position: absolute;
+    z-index: 0;
+    width: calc((100vw - 1170px)/2 + 300px);
+    height: 320px;
+    background: #EFF4F4;
+}
+.puppy__sub {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    margin-top: 26px;
+}
+.puppy__sub img {
+    margin-left: 14px;
+}
+.puppy__sub img:first-child {
+    margin-left: 0;
+}
+.puppy-pic-active {
+    //border: solid #121E30 3px;
+}
+.puppy-main__text {
+    margin-top: 70px;
+    width: calc(1170px - 505px - 55px);
+}
+.puppy-main__title-fromtablet {
+    display: none;
+}
+.puppy-main__title,.puppy-main__title-fromtablet  {
+    font-size: 34px;
+    text-transform: uppercase;
+    margin-bottom: 37px;
+}
+.puppy-main__info p {
+    margin-bottom: 35px;
+}
+.puppy__phone {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+            /*Events*/
+
+.event {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.event__photo {
+    position: relative;
+}
+.event__photo-left {
+    padding-left: 117px;
+}
+.event__photo img {
+    position: relative;
+    z-index: 1;
+}
+.event-bg {
+    position: absolute;
+    bottom: -30px;
+    background: #EFF4F4;
+    width: 480px;
+    height: 510px;
+}
+.event-bg-left {
+    left: 0;
+}
+.event__text {
+    padding-top: 25px;
+}
+.event__text-left {
+    margin-left: 50px;
+}
+.event__heading {
+    margin-top: 70px;
+}
+.event__title {
+    font-size: 35px;
+}
+.smile-title {
+    padding-right: 50px;
+}
+.event__heading img {
+    position: absolute;
+    padding-left: 20px;
+}
+.event__content {
+    margin-top: 60px;
+    /*font-size: 18px;*/
+}
+.event__pedigree {
+    position: relative;
+    z-index: 1;
+    background: url("../img/pedigree.jpg") center center no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 45%;
+    background-size: 100%;
+}
+.event-rotate {
+    flex-direction: row-reverse;
+}
+.event__photo-right {
+    padding-right: 117px;
+}
+.event-bg-right {
+    right: 0;
+    bottom: -140px;
+}
+.event__text-right {
+    margin-right: 50px;
+}
+.event:last-child {
+    margin-bottom: 50px;
+}
+
+            /*About*/
+
+.about__title {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+.about__photo {
+
+    height: auto;
+    margin-bottom: 35px;
+}
+.about__photo img {
+    width: 100%;
+}
+.about__text-block p {
+    margin-bottom: 35px;
+}
 
 
 
@@ -697,6 +913,40 @@ h1 {
     .main-block__buttons {
         margin-top: 40px;
     }
+
+    .puppy-page .container1, .about-page .container1  {
+        width: 85vw;
+        margin-right: 7.5vw;
+        margin-left: 7.5vw;
+    }
+    .puppy-main__photoes {
+        width: 40%;
+    }
+    .puppy-main__img {
+        width: 100%;
+        height: 0;
+        padding-top: 133%;
+        background-size: 100%;
+    }
+    .puppy__bg {
+        width: 100%;
+        left: -7.5vw;
+    }
+    .puppy-main__text {
+        margin-top: 0;
+        width: 54%;
+    }
+    .puppy-main__title {
+        font-size: 27px !important;
+    }
+    .puppy-main__info {
+        font-size: 16px;
+    }
+
+    .about__text-block p {
+        font-size: 16px;
+    }
+
 }
  
 
@@ -763,6 +1013,10 @@ h1 {
     .footer__rights {
         font-size: 13px;
     }
+
+    .event__title {
+        font-size: 30px;
+    }
     
 } 
 
@@ -809,6 +1063,28 @@ h1 {
     .feature__text {
         font-size: 16px;
     }
+
+    .event-bg {
+        height: 350px;
+        width: 100%;
+    }
+    .event-bg-left {
+        margin-left: -7.5vw;
+    }
+    .event-bg-right {
+        margin-right: -7.5vw;
+    }
+    .event__photo {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .event__photo-right {
+        width: 100%;
+    }
+    .birth-pic {
+        width: 100%;
+    }
+
 }
 @media (max-width: 1080px) { /*1060*/
     .nezhna {
@@ -857,7 +1133,39 @@ h1 {
     }
     .feature__bg {
         width: 400px;
-    }  
+    }
+
+    .puppy-main__title {
+        margin-bottom: 15px;
+    }
+    .puppy-main__info p {
+        margin-bottom: 10px;
+    }
+
+    .event__photo {
+        width: 40%;
+    }
+    .event__photo-right {
+        width: 70%;
+    }
+    .event__photo img {
+        width: 100%;
+    }
+    .event__text {
+        width: 54%;
+    }
+    .event__title {
+        font-size: 30px;
+    }
+    .event__heading {
+        margin-top: 20px;
+    }
+    .event__content {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+
 }    
 
 @media (max-width: 900px) {
@@ -1015,11 +1323,11 @@ h1 {
     .we-white .feature__description {
         order: 1;
     }
-
     .our-dogs {
         padding-top: 100px;
         margin-top: 0;
     }
+
 }
 @media (max-width: 818px) {
     .nav__phone {
@@ -1062,6 +1370,13 @@ h1 {
     }
     .contacts__distination {
         font-size: 16px;
+    }
+
+    .puppies__puppy {
+        width: 47%;
+    }
+    .puppy-main__info {
+        font-size: 14px;
     }
 
 }
@@ -1107,13 +1422,34 @@ h1 {
         margin-left: 10%;
     }
 
-
-    /*.break-footer__tabs {
-        flex-basis: 100%;
-        height: 0;
+    .puppy-main__title-fromtablet {
+        text-align: center;
         display: block;
-    }*/
-}  
+    }
+    .puppy-main__title {
+        display: none;
+    }
+    .puppy-main {
+        flex-direction: column;
+    }
+    .puppy__bg {
+        width: 60%;
+        bottom: -30px;
+    }
+    .puppy-main__photoes {
+        width: 100%;
+    }
+    .puppy-main__text {
+        margin-top: 50px;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .event__title {
+        font-size: 25px;
+    }
+}
 @media (max-width: 659px) { 
     .main {
         min-height: 700px;
@@ -1140,6 +1476,24 @@ h1 {
         margin-left: 0;
         margin-top: 15px;
     }
+
+    .event {
+        margin-top: 50px;
+        flex-direction: column-reverse;
+    }
+    .event-bg {
+        display: none;
+    }
+    .event__text {
+        margin-bottom: 30px;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .event__photo {
+        text-align: center;
+        width: 100%;
+    }
     
 } 
 @media (max-width: 650px) { 
@@ -1165,7 +1519,7 @@ h1 {
     .but-moreabout {
         margin: 15px auto;
     } 
-    .folowUs__socials {
+    .main-block .folowUs__socials {
         margin: 0 auto;
     } 
     .section__title {
@@ -1199,6 +1553,12 @@ h1 {
     }
     .footer__first-coloumn {
         margin-left: 0;
+    }
+    .puppies__puppy {
+        width: 100%;
+    }
+    .puppy__caption {
+        font-size: 16px;
     }
 
 }  
@@ -1236,6 +1596,18 @@ h1 {
         margin-right: 15px;
     }
 
+    .puppy-main__title-fromtablet {
+        font-size: 30px;
+    }
+
+    .about__title {
+        font-size: 21px;
+    }
+    .about__photo .container1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
 }  
 @media (max-width: 380px) {
     .feature__videoes, .simple-grow__pic  {
@@ -1254,5 +1626,9 @@ h1 {
     .logo__text-second {
         font-size: 13px;
     }
-}  
-   
+
+    .puppy-main__title-fromtablet {
+        font-size: 25px;
+    }
+}
+
