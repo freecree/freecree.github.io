@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dubyna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Scada:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row align-items-center ">
+            <div class="col-4 col-lg-2 ">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo">
+                </div>
+            </div>
+
+            <div class="col-2 col-lg-9  navbar-col " >
+                <div class="navbar-button">
+                    <img src="img/gamburger.svg" alt="Gamburger">
+                </div>
+                <ul class="navbar" id="navbar">
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="sales.html">Акції</a></li>
+                    <li><a href="form.html">Створити дизайн</a></li>
+                    <li><a href="#comments">Відгуки</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="ml-auto header__cart">
+                <a href="cart.html">
+                   <img src="img/basket.png" alt="Basket"> 
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="main d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <div class="main__heading">
+                    <h1 class="main__title">
+                        Dubyna
+                    </h1>
+                    <h3 class="main__title-sub">
+                        handmade
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="about" class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="section__title">
+                    Про нас
+                </h2>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8 ">
+                <div class="about__text">
+                    DUBYNA - це проект творчих та небайдужих людей, які мріють втілювати ваші креативні ідеї в життя. Ми створюємо унікальні вироби з дерева та враховуємо всі ваші побажання, такі як вид деревини, спосіб її обробки та дизайн виробу. Наша компанія має сертифікацію FSC, а також впровадила повністю безвідходне виробництво. Наші майстри мають багаторічний досвід роботи у сфері обробки деревини, різьби та випалюванні по дереву. Тому ви можете бути впевнені в походженні та екологічності деревини, та в якості готового виробу.
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col d-flex justify-content-center">
+                <a href="#" class="button create-button">
+                    Сворити власний </br>виріб
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="products">
+    <div class="container">
+        <div class="products__tabs">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-6">
+                    <ul class="tabs__caption">
+                        <li>
+                            <h2 class="products__title">
+                                Каталог
+                            </h2>
+                        </li>
+                        <li class = "active">
+                            <h2 class="products__title ">
+                                Акція
+                            </h2>
+                        </li>
+                        <li>
+                            <h2 class="products__title">
+                                Галерея
+                            </h2>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--  Каталог       -->
+
+            <div class="tabs__content">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="product">
+                            <img src="img/catalog1.jpg" class="img-fluid" alt="Product">
+                            <div class="product__img"></div>
+                            <div class="product__text-below">
+                                <div class="product__title">
+                                    Панно на стіну,</br>75x60см
+                                </div>
+                                <a href="#" class="product__button">
+                                    <div class="button__price">
+                                        1750 грн
+                                    </div>
+                                    <img src="img/cart.png" alt="Cart">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="product">
+                            <img src="img/catalog2.jpg" class="img-fluid" alt="Product">
+                            <div class="product__text-below">
+                                <div class="product__title">
+                                    Чашка з яблуні,</br>20мл
+                                </div>
+                                <a href="#" class="product__button">
+                                    <div class="button__price">
+                                        1750 грн
+                                    </div>
+                                    <img src="img/cart.png" alt="Cart">
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="product">
+                            <img src="img/catalog3.jpg" class="img-fluid" alt="Product">
+                            <div class="product__text-below">
+                                <div class="product__title">
+                                    Годинник на стіну,</br>45х45см
+                                </div>
+                                <a href="#" class="product__button">
+                                    <div class="button__price">
+                                        1750 грн
+                                    </div>
+                                    <img src="img/cart.png" alt="Cart">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="product">
+                            <img src="img/catalog4.jpg" class="img-fluid" alt="Product">
+                            <div class="product__text-below">
+                                <div class="product__title">
+                                    Фігурка лева,</br>20х10см
+                                </div>
+                                <a href="#" class="product__button">
+                                    <div class="button__price">
+                                        1750 грн
+                                    </div>
+                                    <img src="img/cart.png" alt="Cart">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="#" class="products-more d-flex align-items-center justify-content-center">
+                            <div>Дивитись ще</div>
+                            <img class="arrow" src="img/right-arrow.svg" alt="Arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--   Акции         -->
+
+            <div class="tabs__content  active">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="product">
+                            <img src="img/sale1.jpg" class="img-fluid" alt="Product">
+                            <div class="product__img"></div>
+                            <div class="product__text-below">
+                                <div class="product__title">
+                                    Підсвічник з<br>яблуні, 0 10см
+                                </div>
+                                <a href="#" class="product__button">
+                                    <div class="button__price">
+                                        300 грн
+                                    </div>
+                                    <img src="img/cart.png" alt="Cart">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="product">
+                            <img src="img/sale2.jpg" class="img-fluid" alt="Product">
+                            <div class="product__text-below">
+                                <div class="product__title">
+                                    Лампа в стилі</br>лофт, 0 30см
+                                </div>
+                                <a href="#" class="product__button">
+                                    <div class="button__price">
+                                        250 грн
+                                    </div>
+                                    <img src="img/cart.png" alt="Cart">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="product">
+                            <img src="img/sale3.jpg" class="img-fluid" alt="Product">
+                            <div class="product__text-below">
+                                <div class="product__title">
+                                    Ваза в </br>асортименті
+                                </div>
+                                <a href="#" class="product__button">
+                                    <div class="button__price">
+                                        200 грн
+                                    </div>
+                                    <img src="img/cart.png" alt="Cart">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="product">
+                            <img src="img/sale4.jpg" class="img-fluid" alt="Product">
+                            <div class="product__text-below">
+                                <div class="product__title">
+                                    Гребінець для</br>бороди
+                                </div>
+                                <a href="#" class="product__button">
+                                    <div class="button__price">
+                                        300 грн
+                                    </div>
+                                    <img src="img/cart.png" alt="Cart">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="#" class="products-more d-flex align-items-center justify-content-center">
+                            <div>Дивитись ще</div>
+                            <img class="arrow" src="img/right-arrow.svg" alt="Arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--  Галерея          -->
+
+            <div class="tabs__content">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="product">
+                            <img src="img/gallery1.jpg" class="img-fluid" alt="Product">
+                            <div class="product__img"></div>
+                            <div class="product__text-below">
+                                <div class="product__title">
+                                    Підставка для</br>вина
+                                </div>
+                                <div class="product__price">
+                                    300грн
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="product">
+                            <img src="img/gallery2.jpg" class="img-fluid" alt="Product">
+                            <div class="product__text-below">
+                                <div class="product__title">
+                                    Дошка для</br> нарізання хліба
+                                </div>
+                                <div class="product__price">
+                                    250грн
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="product">
+                            <img src="img/gallery3.jpg" class="img-fluid" alt="Product">
+                            <div class="product__text-below">
+                                <div class="product__title">
+                                    Вічний </br>календарь
+                                </div>
+                                <div class="product__price">
+                                    300грн
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="product">
+                            <img src="img/gallery4.jpg" class="img-fluid" alt="Product">
+                            <div class="product__text-below">
+                                <div class="product__title">
+                                    Дошка кухонна</br> обробна, 34х27см
+                                </div>
+                                <div class="product__price">
+                                    300грн
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="#" class="products-more d-flex align-items-center justify-content-center">
+                            <div>Дивитись ще</div>
+                            <img class="arrow" src="img/right-arrow.svg" alt="Arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="comments" class="comments">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="section__title">
+                    Відгуки
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="comment">
+                    <img src="img/comment_1.png" alt="Comment">
+                    <div class="comment__text">
+                        Дуже гарний магазин. Товари дійсно якісні, сертифіковані та супер екологічні. Ціни відповідають якості. Замовляв уже не один раз, усе прийшло вчасно, як і писали мені продавці. Сама ж упаковка екологічна, як і зазначено в продавця. З упевненістю можу рекомендувати усім знайомим та друзям.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="comment">
+                    <img src="img/comment_2.png" alt="Comment">
+                    <div class="comment__text">
+                        Знайшла ваш магазин геть випадково і жодного разу не пожалкувала. Дуже порадував ваш індивідуальний підхід до клієнта. Консультанти вислухали усі мої побажання щодо виробу. В обумовлений термін мені надіслали ескіз, а ще через деякий час - мій виріб уже пакували та надсилали мені. Зі мною тримали зв'язок протягом усього часу. Результат роботи мене дуже позитивно вразив своєю якість та відповідністю до усіх моїх побажань. Дуже вдячна за вашу працю.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="comment">
+                    <img src="img/comment_3.png" alt="Comment">
+                    <div class="comment__text">
+                        З-поміж багатьох магазинів зі схожим напрямком ваш - на голову вищий. Моє замовлення від початку і до самої відправки супроводжувалося грамотною підтримкою вашої команди. Ви врахували усі мої вимоги та побажання, відповіли на усі запитання. Сам товар відповідає усім стандартам якості та своїй ціні. Дякую за вашу працю, обов'язково замовлю у вас ще.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="contacts" class="footer">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-5 col">
+                <div class="socials">
+                    <a href="#">
+                        <img src="img/viber.svg" alt="Social icon">
+                    </a>
+                    <a href="#">
+                        <img src="img/google.svg" alt="Social icon">
+                    </a>
+                    <a href="#">
+                        <img src="img/instagram.svg" alt="Social icon">
+                    </a>
+                    <a href="#">
+                        <img src="img/telegram.svg" alt="Social icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src = "js/jquery-3.4.1.min.js"></script>
+<script src = "js/bootstrap.min.js"></script>
+<script src = "js/main.js"></script>
+</body>
+</html>

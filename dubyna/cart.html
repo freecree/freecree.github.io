@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Створити дизайн</title>
+    <link href="https://fonts.googleapis.com/css2?family=Scada:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row align-items-center ">
+            <div class="col-4 col-lg-2 ">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo">
+                </div>
+            </div>
+
+            <div class="col-2 col-lg-9  navbar-col " >
+                <div class="navbar-button">
+                    <img src="img/gamburger.svg" alt="Gamburger">
+                </div>
+                <ul class="navbar" id="navbar">
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="sales.html">Акції</a></li>
+                    <li><a href="form.html">Створити дизайн</a></li>
+                    <li><a href="#comments">Відгуки</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="ml-auto header__cart">
+                <a href="cart.html">
+                   <img src="img/basket.png" alt="Basket"> 
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="sub-page cart">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="mybreadcrumb">
+                    <a href="index.html">Головна /</a>
+                    <a href="#">Кошик</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="section__title">
+                    Кошик
+                </h2>
+            </div>
+        </div>
+        <div class="good-block">
+            <div class="row align-items-center row-relative">
+                <div class="col-sm-1 col-0 offset-sm-0 order-1 order-sm-0 product__cancel">
+                    <img src="img/cancel-button.svg" alt="Cancel">
+                </div>
+                <div class="col-sm-3 col-6 mr-auto ml-auto order-0 order-sm-1 ">
+                    <img src="img/catalog4.jpg" class="img-fluid" alt="pic">
+                </div>
+                <div class="col-sm-3 col-12 order-2 good__value">
+                    <div class="good__text-mob">Товар</div>
+                    <div class="good__name">Фігурка лева, 20х10см</div>
+                </div>
+                <div class="col-sm-2 col-12 order-3 good__value">
+                    <div class="good__text-mob">Ціна</div>
+                    <div class="good__price ">2000 грн</div>
+                </div>
+                <div class="col-sm-1 col-12 order-4 good__value">
+                    <div class="good__text-mob">К-сть</div>
+                    <div class="good__amount">
+                        1
+                    </div>
+                </div>
+                <div class="ml-auto col-sm-2 col-12 order-5 good__value">
+                    <div class="good__text-mob">Всього</div>
+                    <div class="good__price-whole">
+                        2000грн
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart__data">
+            <div class="row">
+                <div class="col-md-5 col-sm-6 offset-md-1">
+                    <h3 class="cart__title">
+                        Персональні дані
+                    </h3>
+                    <input type="text" name="name" placeholder="ПІБ*" ><Br>
+                    <input type="text" name="name" placeholder="E-mail*" ><Br>
+                    <input type="text" name="name" placeholder="Номер телефону*" ><Br>
+                    <input type="text" name="name" placeholder="Адреса доставки/пошти відділення" ><Br>
+                    <input type="text" name="name" placeholder="Коментар замовлення" ><Br>
+                    <p>Поля з * обов'язкові для заповнення</p>
+                </div>
+                <div class="col-md-5 col-sm-6 offset-md-1 offset-lg-1">
+                    <h3 class="cart__title">
+                        Сума замовлення
+                    </h3>
+                    <input type="text" name="name" placeholder="Код купону" ><Br>
+                    <div class="cart__summary d-flex justify-content-between">
+                        <div>Загальна сума</div>
+                        <div id="total-sum">2000 грн</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer id="contacts" class="footer">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-5 col">
+                <div class="socials">
+                    <a href="#">
+                        <img src="img/viber.svg" alt="Social icon">
+                    </a>
+                    <a href="#">
+                        <img src="img/google.svg" alt="Social icon">
+                    </a>
+                    <a href="#">
+                        <img src="img/instagram.svg" alt="Social icon">
+                    </a>
+                    <a href="#">
+                        <img src="img/telegram.svg" alt="Social icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src = "js/jquery-3.4.1.min.js"></script>
+<script src = "js/bootstrap.min.js"></script>
+<script src = "js/main.js"></script>
+</body>
+</html>
