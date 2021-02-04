@@ -77,10 +77,8 @@ $(function() {
     	   {
     		breakpoint: 1300,
     		settings: {
-    			
-    			variableWidth: false,
-
-    		  }
+        		variableWidth: false,
+    		   }
     	   }
         ],
         mobileFirst: false
@@ -95,7 +93,6 @@ $(function() {
         adaptiveHeight: true,
         prevArrow: "<img src='./img/arrow.svg' class='slick-prev' alt='arrow-1'>",
         nextArrow: "<img src='./img/arrow.svg' class='slick-next' alt='arrow-2'>",
-        //asNavFor: '.slider-puppy-nav'
     });
 
     //       tabs for puppy slider
@@ -105,28 +102,11 @@ $(function() {
         $(this)
             .addClass('puppy-pic-active').siblings().removeClass('puppy-pic-active')
             .closest('div.puppy-main__photoes').find('div.slider-puppy-for').slick('slickGoTo', $(this).index(), true);
-            //.closest('div.puppy-main__photoes').find('.slick-list img').css('opacity', '0').eq($(this).index()).css('opacity', '1');
-
     });
     $('.slider-puppy-for').on('click', '.slick-arrow', function() {
-        //console.log($(this).index());
         let currentSlide = $(this).closest('div.slider-puppy-for').slick('slickCurrentSlide');
         $(this)
             .closest('div.puppy-main__photoes').find('.puppy__sub img').removeClass('puppy-pic-active').eq(currentSlide).addClass('puppy-pic-active');
     });
-
-    // $('.slider-puppy-nav').slick({
-    //     slidesToShow: 3,
-    //     arrows: false,
-    //     slidesToScroll: 1,
-    //     asNavFor: '.slider-puppy-for',
-    //     dots: false,
-    //     variableWidth: true,
-    //     adaptiveHeight: true,
-    //     //centerMode: true,
-    //     focusOnSelect: true
-    // });
-
-
 });
  
