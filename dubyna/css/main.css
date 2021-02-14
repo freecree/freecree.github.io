@@ -290,7 +290,8 @@ input[type=file] {
     content: "";
     position: absolute;
     bottom: 0;
-    left: -7px;
+    left: 50%;
+    transform:translate(-50%, -50%);
     width: 30px;
     height: 1px;
     background: #1F0F08;
@@ -319,25 +320,37 @@ input[type=file] {
         justify-content: space-between;
     }
     .navbar {
-        padding: 10px 0;
+        padding: 0;
         top: 40px;
         display: none;
         position: absolute;
+        z-index: 5;
         background: #1F0F08;
         color: #fff;
+    }
+    .navbar-mobile {
+        display: block;
     }
     .navbar li {
         margin-right: 0;
         margin-top: 10px;
-        padding: 0 30px;
+        padding: 7.5px 30px; 
+    }
+    .navbar a {
+        
+        color: #fff3cd;
     }
     .navbar li:first-child {
         margin-top: 0;
     }
-    .navbar li:hover{
+    .navbar li:hover {
         background: #fff3cd;
-        color: #1F0F08;
+        
     }
+    .navbar li:hover a{
+       color: #1F0F08;  
+    }
+    
     .navbar-button {
         display: flex;
         justify-content: center;
@@ -379,6 +392,7 @@ input[type=file] {
     }
     .good__amount:before {
         left: 0px;
+        transform:translate(0, 0);
 
     }
     .row-relative {
