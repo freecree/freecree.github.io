@@ -36,7 +36,6 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	//transition: all 0.5s;
 }
 
 .btn:hover {
@@ -260,7 +259,6 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	//padding-top: 50px;
 }
 
 .why-us__title {
@@ -400,7 +398,6 @@ body {
 }
 
 .slick-disabled {
-  //display: none !important;
   visibility: hidden;
   transition: all .5s;
 }
@@ -415,7 +412,6 @@ body {
 
 .works__slider {
 	width: 75%;
-	//width: 1040px;
 	margin: 0 auto;
 }
 
@@ -438,15 +434,9 @@ body {
 	right: -50px;
 }
 
-.works__slide {
-	//background: #000;
-}	
-
 .works__slide img {
 	position: relative;
 	display: block;
-  //width: 80%;
-  	
   	opacity: 0.6;
 }
 
