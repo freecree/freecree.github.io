@@ -45,14 +45,17 @@
             </li>
           </ul>
         </nav>
-        <a class="btn header__btn">Заказать консультацию</a>
+        <a href="#form-popup" class="btn header__btn form-link">Заказать консультацию</a>
+        <a href="#form-popup" class="header__mobile form-link">
+          <img src="images/call.svg" alt="call icon">
+        </a>
       </div>
     </div>
   </header>
   <section class="top__main">
     <div class="container">
       <div class="top__wrapper">
-        <div class="top__left">
+        <div class="top__left   noselect">
           <h1 class="top__title">
             Создание нешаблонных <br><span class="title-border">Landing page</span>
           </h1>
@@ -61,7 +64,7 @@
           </p>
           <div class="top__bottom">
             <p class="top__bottom-text">
-              Цена до конца марта 
+              Цена до<span class="text-nl"> конца марта</span> 
             </p>
             <div class="top__bottom-price">
               <span class="price-big">от <span id="min_price">19 990</span></span>
@@ -70,18 +73,30 @@
           </div>
         </div>
         <div class="top__right">
-          <form action="#" class="form">
+          <form action="#" class="form top__form">
             <h5 class="form__title">
               Оставьте заявку и получите прототип будущего Landing page <span class="txt-yellow">бесплатно</span>
             </h5>
             <input name="name" type="text" class="form__input" placeholder="Введите ваше имя">
             <input name="phone" type="text" class="form__input" placeholder="Введите ваш телефон">
-            <button class="btn form__btn" type="submit">Отправить</button>
+            <button class="btn form__btn top__form-btn" type="submit">Отправить</button>
+            <button class="btn form__btn top__form-btn-mobile" type="submit">Заказать</button>
             <div class="form__caption">Мы не передаём ваши данные третьим лицам</div>
           </form>
         </div>
       </div>
-    </div>  
+    </div> 
+
+    <form id="form-popup" action="#" class="form">
+      <h5 class="form__title">
+        Оставьте свои личные данные и мы перезвоним Вам и ответим на все вопросы
+      </h5>
+      <input name="name" type="text" class="form__input" placeholder="Введите ваше имя">
+      <input name="phone" type="text" class="form__input" placeholder="Введите ваш телефон">
+      <button class="btn form__btn" type="submit">Отправить</button>
+      <div class="form__caption">Мы не передаём ваши данные третьим лицам</div>
+    </form>
+
   </section>
 </section>
 <section class="section-bg">
@@ -120,6 +135,7 @@
       </div>
     </div>
   </section>
+
   <section class="works">
     <div class="container">
       <h2 class="section__title works__title">
@@ -127,6 +143,27 @@
       </h2>
       <div class="works__slider">
         <div class="works__slide">
+          <img src="images/slider-image.png" alt="1">
+        </div>
+        <div class="works__slide">
+          <img src="images/slider-image.png" alt="2">
+        </div>
+        <div class="works__slide">
+          <img src="images/slider-image.png" alt="3">
+        </div>
+        <div class="works__slide">
+          <img src="images/slider-image.png" alt="4">
+        </div>
+        <div class="works__slide">
+          <img src="images/slider-image.png" alt="">
+        </div>
+        <div class="works__slide">
+          <img src="images/slider-image.png" alt="">
+        </div>
+        <div class="works__slide">
+          <img src="images/slider-image.png" alt="">
+        </div>
+        <div class="works__slide">
           <img src="images/slider-image.png" alt="">
         </div>
         <div class="works__slide">
@@ -141,14 +178,135 @@
         <div class="works__slide">
           <img src="images/slider-image.png" alt="">
         </div>
+        <div class="works__slide">
+          <img src="images/slider-image.png" alt="last">
+        </div>
+        
       </div>
       <div class="works__cards">
+
         <div class="works__card">
-          
+          <img class="card-image" src="images/card-image.png"alt="">
+          <div class="card-back">
+            <img class="card__logo" src="images/logo.svg" alt="Logo">
+            <div class="card-text">
+              Landing <br><span class="card-text-stretch">Studio</span>
+            </div>
+          </div>
         </div>
+        <div class="works__card">
+          <img class="card-image" src="images/card-image.png"alt="">
+          <div class="card-back">
+            <img class="card__logo" src="images/logo.svg" alt="Logo">
+            <div class="card-text">
+              Landing <br><span class="card-text-stretch">Studio</span>
+            </div>
+          </div>
+        </div>
+        <div class="works__card">
+          <img class="card-image" src="images/card-image.png"alt="">
+          <div class="card-back">
+            <img class="card__logo" src="images/logo.svg" alt="Logo">
+            <div class="card-text">
+              Landing <br><span class="card-text-stretch">Studio</span>
+            </div>
+          </div>
+        </div>
+        <div class="works__card">
+          <img class="card-image" src="images/card-image.png"alt="">
+          <div class="card-back">
+            <img class="card__logo" src="images/logo.svg" alt="Logo">
+            <div class="card-text">
+              Landing <br><span class="card-text-stretch">Studio</span>
+            </div>
+          </div>
+        </div>
+        <div class="works__card">
+          <img class="card-image" src="images/card-image.png"alt="">
+          <div class="card-back">
+            <img class="card__logo" src="images/logo.svg" alt="Logo">
+            <div class="card-text">
+              Landing <br><span class="card-text-stretch">Studio</span>
+            </div>
+          </div>
+        </div>
+        <div class="works__card">
+          <img class="card-image" src="images/card-image.png"alt="">
+          <div class="card-back">
+            <img class="card__logo" src="images/logo.svg" alt="Logo">
+            <div class="card-text">
+              Landing <br><span class="card-text-stretch">Studio</span>
+            </div>
+          </div>
+        </div>
+        <div class="works__card">
+          <img class="card-image" src="images/card-image.png"alt="">
+          <div class="card-back">
+            <img class="card__logo" src="images/logo.svg" alt="Logo">
+            <div class="card-text">
+              Landing <br><span class="card-text-stretch">Studio</span>
+            </div>
+          </div>
+        </div>
+        <div class="works__card">
+          <img class="card-image" src="images/card-image.png"alt="">
+          <div class="card-back">
+            <img class="card__logo" src="images/logo.svg" alt="Logo">
+            <div class="card-text">
+              Landing <br><span class="card-text-stretch">Studio</span>
+            </div>
+          </div>
+        </div>
+        <div class="works__card">
+          <img class="card-image" src="images/card-image.png"alt="">
+          <div class="card-back">
+            <img class="card__logo" src="images/logo.svg" alt="Logo">
+            <div class="card-text">
+              Landing <br><span class="card-text-stretch">Studio</span>
+            </div>
+          </div>
+        </div>
+        <div class="works__card">
+          <img class="card-image" src="images/card-image.png"alt="">
+          <div class="card-back">
+            <img class="card__logo" src="images/logo.svg" alt="Logo">
+            <div class="card-text">
+              Landing <br><span class="card-text-stretch">Studio</span>
+            </div>
+          </div>
+        </div>
+        <div class="works__card">
+          <img class="card-image" src="images/card-image.png"alt="">
+          <div class="card-back">
+            <img class="card__logo" src="images/logo.svg" alt="Logo">
+            <div class="card-text">
+              Landing <br><span class="card-text-stretch">Studio</span>
+            </div>
+          </div>
+        </div>
+        <div class="works__card">
+          <img class="card-image" src="images/card-image.png"alt="">
+          <div class="card-back">
+            <img class="card__logo" src="images/logo.svg" alt="Logo">
+            <div class="card-text">
+              Landing <br><span class="card-text-stretch">Studio</span>
+            </div>
+          </div>
+        </div>
+        <div class="works__card">
+          <img class="card-image" src="images/card-image.png"alt="">
+          <div class="card-back">
+            <img class="card__logo" src="images/logo.svg" alt="Logo">
+            <div class="card-text">
+              Landing <br><span class="card-text-stretch">Studio</span>
+            </div>
+          </div>
+        </div>
+        
       </div>  
     </div>
   </section>
+
   <section class="services">
     <div class="container">
       <h2 class="section__title services__title">
@@ -254,6 +412,60 @@
     </div>
   </section>
 </section>
+
+<section class="stock">
+  <div class="container">
+    <div class="stock-wrapper">
+      <div class="stock__image"></div>
+      <div class="stock__content">
+        <h2 class="section__title stock__title">
+          Акция  <span class="mazok">до 31.04!</span>
+        </h2>
+        <p class="stock__text">
+          Оставь заявку на создание Landing page через сайт и получи разработку 1 экрана будущего сайта <span class="txt-yellow">СОВЕРШЕННО БЕСПЛАТНО</span> 
+        </p>
+        <form action="#" class="stock__form">
+          <input name="name" type="text" class="form__input stock__input" placeholder="Введите ваше имя">
+          <input name="phone" type="text" class="form__input stock__input" placeholder="Введите ваш телефон">
+          <button class="btn form__btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__studio">
+        <a href="#" class="footer__logo logo">
+          <img src="images/logo-yellow.svg" alt="logo">
+        </a>
+        <p class="studio__info">
+          Создание нешаблонных <br>Landing page          
+        </p>
+      </div>
+      <div class="footer__socials">
+        <a href="#" class="footer__social">
+          <img src="images/facebook.svg" alt="facebook">
+        </a>
+        <a href="#" class="footer__social">
+          <img src="images/instagram.svg" alt="instagram">
+        </a>
+        <a href="#" class="footer__social">
+          <img src="images/telegram.svg" alt="telegram">
+        </a>
+      </div>
+      <a href="#" class="footer__up">
+        <img src="images/up-icon.svg" alt="Up">
+      </a>
+    </div>
+    <div class="footer__text">
+      2017 г. Все права защищены.
+    </div>
+  </div>
+  
+  
+</footer> 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
