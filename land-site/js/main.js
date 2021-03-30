@@ -61,6 +61,27 @@ $(window).on('load resize', function() {
     $(".why-us__blocks.slick-initialized").slick("unslick");
   }
 });
+$(window).on('load resize', function() {
+  if ($(window).width() < 1020) {
+    $('.services__packages:not(.slick-initialized)').slick({
+      centerMode: true,
+      dots: false,
+      arrows: false,
+      infinite: false,
+      speed: 100,
+      slidesToShow: 1,
+      initialSlide: 1
+      //centerPadding: 60,
+      //customPaging: 50
+      //adaptiveHeight: false,
+    });
+  } else {
+    $(".services__packages-initialized").slick("unslick");
+  }
+});
+// $(".services__packages").on('setPosition', function (event, slick) {
+//     slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+// });
 
   // slider
   var rev = $('.works__slider');
@@ -114,6 +135,10 @@ $(window).on('load resize', function() {
     },
     /*infinite: false,*/
   });
+
+  $(".package__list").each(function(indx){
+    console.log($(".package__list").height());
+  });  
 
 //Cards
 function showCards() {

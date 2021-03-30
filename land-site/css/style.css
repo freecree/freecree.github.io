@@ -375,7 +375,7 @@ body {
 /*.works__slider*/
 .works__slider .slick-list {
   padding-top: 15%!important;
-	padding-bottom: 10%!important;
+	padding-bottom: 15%!important;
 	padding-left: 5%!important;
 	padding-right: 5%!important;
 }
@@ -533,6 +533,7 @@ body {
 	color: #000;
 	display: flex;
 	justify-content: space-between;
+	align-items: stretch;
 	padding-bottom: 80px;
 	
 }
@@ -555,6 +556,8 @@ body {
 	text-align: center;
 	padding: 20px;
 	padding-bottom: 30px;
+	display: flex;
+	flex-direction: column;
 }
 
 .services__package+.services__package {
@@ -624,9 +627,6 @@ body {
 	margin-top: 15px;
 	text-align-last: left;
 	list-style: none;
-	min-height: 540px;
-	position: relative;
-
 }
 
 .package__list-item {
@@ -635,21 +635,23 @@ body {
 	text-align: left;
 }
 
-.package__list::after {
+.package__term {
+	font-weight: 500;
+	font-size: 14px;
+	margin: auto 0 20px;
+	padding-top: 12px;
+	color: #fff;
+	position: relative;
+}
+
+.package__term::before {
 	content: '';
 	position: absolute;
 	width: 100%;
 	height: 1px;
-	bottom: -5px;
+	top: -2px;
 	left: 0;
 	background: #CBCBCB;
-}
-
-.package__term {
-	font-weight: 500;
-	font-size: 14px;
-	margin: 17px 0 25px;
-	color: #fff;
 }
 
 .package__btn {
@@ -658,6 +660,7 @@ body {
 	font-size: 16px;
 	text-transform: uppercase;
 	width: 250px;
+	margin: 0 auto;
 	box-shadow: 0px 6px 10px rgba(255, 184, 0, 0.4);
 }
 
@@ -774,13 +777,27 @@ body {
 	color: #000;
 }
 
+@media (max-width: 1200px) {
+	.services__package+.services__package {
+		margin-left: 0;
+	}
+	.services__package {
+    width: 390px !important;
+    margin: 0 10px;
+  }  
+	.package__prices {
+		padding: 10px 0;
+	}
+
+}	
+
 
 @media (max-width: 1070px) {
 	.top__bottom-price {
 		font-size: 20px;
 	}
 	.price-big {
-        font-size: 40px;
+    font-size: 40px;
 	}
 
 }
@@ -836,6 +853,10 @@ body {
 		margin-left: auto;
 		margin-right: 100px;
 	}	
+	.works__card {
+		display: none;
+	}
+
 }
 
 @media (max-width: 950px) {	
@@ -857,7 +878,7 @@ body {
 		width: auto;
 	}
 	.works__slider .slick-arrow {
-		display: none;
+		display: none !important;
 	}
 	.works__slider {
     width: 100%;
@@ -889,6 +910,9 @@ body {
 	.price-big {
 	    font-size: 30px;
 	}
+	.works__slider .slick-current img {
+    filter: drop-shadow(0px 0px 11px rgba(255, 184, 0, 0.4));
+  }  
 }
 
 @media (max-width: 476px) {	
