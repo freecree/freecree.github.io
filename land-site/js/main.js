@@ -70,7 +70,21 @@ $(window).on('load resize', function() {
       infinite: false,
       speed: 100,
       slidesToShow: 1,
-      initialSlide: 1
+      initialSlide: 1,
+      variableWidth: true,
+      responsive: [
+      {
+        breakpoint: 476,
+        settings: {
+          //variableWidth: false,
+          //customPaging: 0,
+          //centerPadding: 60
+          variableWidth: false,
+          centerMode: false,
+        }
+      },
+      ]
+    
       //centerPadding: 60,
       //customPaging: 50
       //adaptiveHeight: false,
@@ -79,9 +93,9 @@ $(window).on('load resize', function() {
     $(".services__packages-initialized").slick("unslick");
   }
 });
-// $(".services__packages").on('setPosition', function (event, slick) {
-//     slick.$slides.css('height', slick.$slideTrack.height() + 'px');
-// });
+$(".services__packages").on('setPosition', function (event, slick) {
+    slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+});
 
   // slider
   var rev = $('.works__slider');
