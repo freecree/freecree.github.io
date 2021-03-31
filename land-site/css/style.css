@@ -501,8 +501,10 @@ body {
 }
 .works__card-opened {
 
-	transform: translateX(-40px) rotateY(-180deg) !important;
+	/*transform: translateX(-40px) rotateY(-180deg) !important;*/
   transition: transform 1s;
+  transform-origin: center top;
+  transform: translateX(-50%) rotate(-90deg) !important;
   z-index: 1;
 }
 
