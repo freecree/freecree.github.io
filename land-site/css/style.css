@@ -431,11 +431,6 @@ body {
   transform: translate3d(-30%, 0, 0px);
 }
 
-.slick-disabled {
-  visibility: hidden;
-  transition: all .5s;
-}
-
 .test {
   display: block;
   width: 100%;
@@ -454,7 +449,7 @@ body {
 	justify-content: center;
 }
 
-.slick-arrow {
+.works__slider .slick-arrow {
 	position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -495,10 +490,20 @@ body {
 	transition: all ease .3s;
 	cursor: pointer;
 	position: absolute;
+	transform: rotateY(0deg) ;
+
+}
+.card-image {
+	/*transform: rotate(360deg);
+  transition: transform 1s;*/
+  /*transition: 1s;*/
+  transform: rotateY(180deg) ;
 }
 .works__card-opened {
 
-	transform: translateX(0) rotateX(360deg);
+	transform: translateX(-40px) rotateY(-180deg) !important;
+  transition: transform 1s;
+  z-index: 1;
 }
 
 /*.works__card:nth-child(1) {
@@ -555,9 +560,26 @@ body {
 	justify-content: space-between;
 	align-items: stretch;
 	padding-bottom: 80px;
-	
 }
 
+
+.services__packages .slick-arrow {
+	cursor: pointer;
+	position: absolute;
+	top: 10px;
+	z-index: 1;
+}
+.services__packages .right-arrow {
+  left: calc(50% + 135px);
+}
+.services__packages .left-arrow {
+  left: calc(50% - 175px);
+}
+
+.services__packages .slick-disabled  {
+	opacity: 0.3;
+	cursor: auto;
+}
 .start-package {
 	background: linear-gradient(172.87deg, #EFEFEF 5.56%, #728070 100%);
 }
@@ -863,8 +885,8 @@ body {
 		height: 24px;
 		border: none;
 		cursor: pointer;
-		border-top: 2px solid #fefefe;
-		border-bottom: 2px solid #fefefe;
+		border-top: 2px solid #FFB800;
+		border-bottom: 2px solid #FFB800;
 		background: transparent;
 		position: relative;
 	}
@@ -875,7 +897,7 @@ body {
 		height: 2px;
 		top: 9px;
 		left: 0;
-		background-color: #fefefe;
+		background-color: #FFB800;
 	}
 	.header__btn {
 		margin-left: auto;
@@ -884,7 +906,7 @@ body {
 	.services__title {
     margin: 30px 0 40px;
 	}
-	.works__card {
+	.works__cards {
 		display: none;
 	}
 	.stock {
@@ -1115,6 +1137,13 @@ body {
   .services__package+.services__package {
   	margin-left: 10px;
   }
+  .services__packages .left-arrow {
+    left: 20px;
+	}
+	.services__packages .right-arrow {
+    left: auto;
+    right: 20px;
+	}
   .section__title {
   	font-size: 40px;
   }

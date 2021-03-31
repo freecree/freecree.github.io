@@ -46,12 +46,14 @@ $(window).on('load resize', function() {
         $('.services__packages:not(.slick-initialized)').slick({
             centerMode: true,
             dots: false,
-            arrows: false,
+            arrows: true,
             infinite: false,
             speed: 100,
             slidesToShow: 1,
             initialSlide: 1,
             variableWidth: true,
+            prevArrow: '<img class="left-arrow" src="images/left-arrow.svg" alt="">',
+            nextArrow: '<img class="right-arrow" src="images/right-arrow.svg" alt="">',
             // adaptiveHeight: true,
             // variableHeight: true,
             responsive: [
@@ -152,48 +154,42 @@ function showCards() {
 } 
 showCards();
 
+function cardC(element) {
+    console.log("In CardC()");
+    $(element).children(".card-back").hide();
+    $(element).children(".card-image").show(); 
+}
+
 function cardFront(element) {
     console.log( "in show()" );
     $(element).addClass("works__card-opened");
-    $(element).children(".card-back").hide();
-    $(element).children(".card-image").show();
-    $(element).css("z-index",1);
-    //$(element).css("transform", `translateX(-60px)`);
-    //$(element).css("transform", `translateX(0px)`);
-    //$(element).css('-webkit-transform','rotateX(' + 360 + 'deg)');
-    
-    // $(element).animate({
-    //     opacity: 0.25,
-    //     left: "+=50",
-    //     height: "toggle"
-    //   }, 5000, function() {
-    // // Animation complete.
-    // });
-    // $(element).animate({  textIndent: 0 /* или любое другое не очень-то нужное здесь свойство */ }, {
-    //     step: function(now, fx) {
-    //       $(element).css('-webkit-transform','rotate(' + now + 'deg)');
-    //     },
-    //     duration: 'slow'
-    // }, 'linear');  
+    window.mytimeout1 = setTimeout(cardC, 500, element);
+    //$(element).children(".card-back").hide();
+    //$(element).children(".card-image").show();
+
+    //$(element).css("z-index",1);
 }
 
 function cardBack(element) {
     console.log("In showBack()");
     $(element).children(".card-image").hide();
     $(element).children(".card-back").show();
-    $(element).css("zIndex",0);
+    //$(element).css("zIndex",0);
     $(element).removeClass("works__card-opened");
 } 
 
 $('.works__card').mousemove(function(){
-    clearTimeout(window.mytimeout);  
+    clearTimeout(window.mytimeout);
+    //clearTimeout(window.mytimeout1);   
     window.mytimeout = setTimeout(cardFront, 300, this);
     if ($(this).children(".card-image").is(":visible")) {
         cardBack(this);
     }
 });
 $('.works__card').mouseleave(function(){
-    clearTimeout(window.mytimeout);  
+    clearTimeout(window.mytimeout); 
+    clearTimeout(window.mytimeout1); 
+    $(this).removeClass("works__card-opened"); 
 });
 $('.card-image').mousedown(function(event){
   //console.log("click"+$(this).parent().index());
