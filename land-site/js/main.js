@@ -145,10 +145,13 @@ function showCards() {
     var leftPos = 0;
     var leftAdd = 40;
     var cardsAmount = $('.works__card').length;
+    var leftDefoult = (containerWidth - ((cardsAmount-1)*leftAdd+cardWidth))/2;
+    console.log(cardsAmount*leftAdd+cardWidth);
+    console.log("container: "+containerWidth);
     //var cardsBlockW = cardsAmount*cardWidth - translAdd*(cardsAmount-1);
     //var margLeft = (containerWidth - cardsBlockW)/2
     $(".works__card").each(function(indx){
-        $(this).css( { left : leftPos+"px" } );
+        $(this).css( { left : leftDefoult + leftPos+"px" } );
         leftPos += leftAdd;
     });
 } 
@@ -166,10 +169,13 @@ function cardFront(element) {
 
 function cardBack(element) {
     $(element).removeClass("card-rotated");
-    $(element).removeClass("card-half-rotated");
+    $(element).removeClass("card-half-rotated");   
     // $(element).addClass("card-half-unrotated");
+    // $(element).css("transform", `translateX(-100px)`);
     // window.backRotatetimout = setTimeout(function(element){
-    //    $(element).removeClass("card-half-unrotated");   
+    //     $(element).css("transform", `translateX(0px)`);
+    //    //$(element).removeClass("card-half-unrotated");
+       
     // }, 500, element);
    
 } 
