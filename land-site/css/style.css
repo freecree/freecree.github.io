@@ -503,11 +503,11 @@ body {
 
 .card-image {
 	transform: rotateY(180deg);
-	//transform-origin: left center;
+	transform-origin: left center;
 }
 
 .card-back {
-	
+	transform-origin: right center;
 	padding: 25px;
 	width: 100%;
 	height: 100%;
