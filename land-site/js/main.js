@@ -154,22 +154,24 @@ function showCards() {
 } 
 showCards();
 
-function cardC(element) {
-    //console.log("In CardC()");
-    $(element).children(".card-back").hide();
-    $(element).children(".card-image").show(); 
-}
 
 function cardFront(element) {
-    $(element).addClass("works__card-opened");
-    window.mytimeout1 = setTimeout(cardC, 500, element);
+    $(element).addClass("card-half-rotated");
+    window.rotatetimout = setTimeout(function(element){
+       $(element).addClass("card-rotated"); 
+    }, 700, element);
+    //window.mytimeout = setTimeout(cardHalf, 300, this);
+    
 }
 
 function cardBack(element) {
-    $(element).children(".card-image").hide();
-    $(element).children(".card-back").show();
-    $(element).removeClass("works__card-opened");
-    console.log("cardBack()");
+    $(element).removeClass("card-rotated");
+    $(element).removeClass("card-half-rotated");
+    // $(element).addClass("card-half-unrotated");
+    // window.backRotatetimout = setTimeout(function(element){
+    //    $(element).removeClass("card-half-unrotated");   
+    // }, 500, element);
+   
 } 
 $('.works__card').hover(function(){
     window.mytimeout = setTimeout(cardFront, 300, this);
@@ -177,28 +179,11 @@ $('.works__card').hover(function(){
 },
 function() {
     clearTimeout(window.mytimeout);
-    clearTimeout(window.mytimeout1);
-    $(this).removeClass("works__card-opened");
-    if ($(this).children(".card-image").is(":visible")) {
-        cardBack(this);
-    } 
+    clearTimeout(window.rotatetimout);
+    //clearTimeout(window.backRotatetimout);
+    cardBack(this);
+}); 
 
-    //console.log("unhover()");
-});    
-
-// $('.works__card').mousemove(function(){
-//     clearTimeout(window.mytimeout);
-//     //clearTimeout(window.mytimeout1);   
-//     window.mytimeout = setTimeout(cardFront, 300, this);
-//     if ($(this).children(".card-image").is(":visible")) {
-//         cardBack(this);
-//     }
-// });
-// $('.works__card').mouseleave(function(){
-//     clearTimeout(window.mytimeout); 
-//     clearTimeout(window.mytimeout1); 
-//     $(this).removeClass("works__card-opened"); 
-// });
 $('.card-image').mousedown(function(event){
   //console.log("click"+$(this).parent().index());
     $('.works__slider').slick("slickGoTo",$(this).parent().index());
