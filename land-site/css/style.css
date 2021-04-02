@@ -15,6 +15,15 @@ a {
 }
 
 input, button {outline: 0 !important;}
+body {
+	-moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;   
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -khtml-us
+}
 
 .container {
 	max-width: 1220px;
@@ -31,13 +40,13 @@ input, button {outline: 0 !important;}
 }
 
 .noselect {
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;   
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    -khtml-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;   
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -khtml-user-select: none;
 }
 
 .btn {
@@ -1197,6 +1206,10 @@ body {
 }
 
 @media (max-width: 476px) {	
+	.section-bg {
+		background: linear-gradient(255.79deg, #000 0%, #372E15 50.52%, #030200 100%)
+	}
+	
 	.thanks__block {
 		padding-left: 50px;
 	}
@@ -1263,7 +1276,8 @@ body {
 		display: none;
 	}
 	.top__form-btn-mobile {
-		display: block;
+		display: flex;
+    color: #000;
 	}
 
 	.why-us__block-text {
