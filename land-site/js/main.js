@@ -1,5 +1,25 @@
 $(function(){
-  //form popup
+ 
+$('.menu__btn').on('click', function() {
+    $('.menu__list').toggleClass('menu__list--active')
+});
+$('body').on('click', function(e){
+
+var $menu = $('.menu'),
+    $target = $(e.target),
+    $menu_link = $('.menu__item');
+
+if (!$menu.find($target).length ||
+    $menu_link.find($target).length) {
+        console.log("click");
+        $('.menu__list').removeClass('menu__list--active');
+    }
+});
+$('.menu__btn-exit').on('click', function(){
+    $('.menu__list').removeClass('menu__list--active');
+});
+
+ //form popup
 $(function(){
     $(".form-link").fancybox({
         margin: 0,
@@ -22,6 +42,28 @@ $(function(){
         }, 
 
     });
+    $("thanks").fancybox({
+        margin: 0,
+        padding: 20,
+        maxWidth: 300,
+        autoScale: true,
+        transitionIn: 'none',
+        transitionOut: 'none',
+        type: 'inline',
+        helpers: {
+        overlay: {
+          locked: false
+        }
+    },
+    // 'afterOpen' : function() {
+    //   $(".header__form").hide();
+    // },
+        'afterClose' : function() {
+            $(".top__form").show();
+        }, 
+
+    });
+
 });
 $('.header__btn').mousedown(function(event){
     $(".top__form").hide();
@@ -194,7 +236,24 @@ $('.card-image').mousedown(function(event){
   //console.log("click"+$(this).parent().index());
     $('.works__slider').slick("slickGoTo",$(this).parent().index());
 });
-  
+
+$("form").submit(function() { //Change
+    //alert("here");
+    var th = $(this);
+    $.ajax({
+        type: "POST",
+        url: "mail.php", //Change
+        data: th.serialize()
+    }).done(function() {
+        $("#thanks").fancybox().trigger('click');
+        //alert("Thank you1!");
+        setTimeout(function() {
+            // Done Functions
+            th.trigger("reset");
+        }, 1000);
+    });
+    return false;
+}); 
 
 
 });

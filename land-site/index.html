@@ -23,6 +23,7 @@
         <nav class="menu">
           <button class="menu__btn"></button>
           <ul class="menu__list">
+            <img class="menu__btn-exit" src="images/left-arrow.svg" alt="Left arrow">
             <li class="menu__item">
               <a class="menu__list-link" href="#">
                 Главная
@@ -82,8 +83,13 @@
             <h5 class="form__title">
               Оставьте заявку и получите прототип будущего Landing page <span class="txt-yellow">бесплатно</span>
             </h5>
-            <input name="name" type="text" class="form__input" placeholder="Введите ваше имя">
-            <input name="phone" type="text" class="form__input" placeholder="Введите ваш телефон">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Landing Studio">
+            <input type="hidden" name="admin_email" value="bodya20126@gmail.com">
+            <input type="hidden" name="form_subject" value="Форма на главной">
+            <!-- END Hidden Required Fields -->
+            <input required name="name" maxlength="15" type="text" class="form__input" placeholder="Введите ваше имя">
+            <input required name="phone" data-tel-input type="text" class="form__input phone-field" placeholder="Введите ваш телефон">
             <button class="btn form__btn top__form-btn" type="submit">Отправить</button>
             <button class="btn form__btn top__form-btn-mobile" type="submit">Заказать</button>
             <div class="form__caption">Мы не передаём ваши данные третьим лицам</div>
@@ -96,11 +102,30 @@
       <h5 class="form__title">
         Оставьте свои личные данные и мы перезвоним Вам и ответим на все вопросы
       </h5>
-      <input name="name" type="text" class="form__input" placeholder="Введите ваше имя">
-      <input name="phone" type="text" class="form__input" placeholder="Введите ваш телефон">
+      <!-- Hidden Required Fields -->
+      <input type="hidden" name="project_name" value="Landing Studio">
+      <input type="hidden" name="admin_email" value="bodya20126@gmail.com">
+      <input type="hidden" name="form_subject" value="Форма на главной">
+      <!-- END Hidden Required Fields -->
+      <input required name="name" maxlength="15" type="text" class="form__input" placeholder="Введите ваше имя">
+      <input required name="phone" data-tel-input type="text" class="form__input phone-field" placeholder="Введите ваш телефон">
       <button class="btn form__btn" type="submit">Отправить</button>
       <div class="form__caption">Мы не передаём ваши данные третьим лицам</div>
     </form>
+    <div id="thanks" class="thanks">
+      <div class="thanks__block">
+        <div class="thanks__img"></div>
+        <div class="thanks__text">
+          <div class="thanks__title">
+            СПАСИБО!
+          </div>
+          <p class="thanks__message">
+            Мы свяжемся с Вами в ближайшее время
+          </p>
+        </div>
+      </div>
+      
+    </div>
 
   </section>
 </section>
@@ -484,8 +509,13 @@
           Оставь заявку на создание Landing page через сайт и получи разработку 1 экрана будущего сайта<br> <span class="txt-yellow">СОВЕРШЕННО БЕСПЛАТНО</span> 
         </p>
         <form action="#" class="stock__form">
-          <input name="name" maxlength="15" type="text" class="form__input stock__input" placeholder="Введите ваше имя">
-          <input name="phone" type="tel" class="form__input stock__input" placeholder="Введите ваш телефон">
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="Landing Studio">
+          <input type="hidden" name="admin_email" value="bodya20126@gmail.com">
+          <input type="hidden" name="form_subject" value="Форма акции">
+          <!-- END Hidden Required Fields -->
+          <input required name="name" maxlength="15" type="text" class="form__input" placeholder="Введите ваше имя">
+          <input required name="phone" data-tel-input type="text" class="form__input phone-field" placeholder="Введите ваш телефон">
           <button class="btn form__btn" type="submit">Отправить</button>
         </form>
       </div>
@@ -527,6 +557,7 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/phoneinput.js" type="text/javascript"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
