@@ -68,7 +68,7 @@ body {
 	display: none;
 }
 .thanks {
-	max-width: 300px;
+	/*max-width: 300px;*/
 	display: none;
 	position: absolute;
 	left: 50%;
@@ -604,21 +604,15 @@ body {
 	transform: rotateY(180deg);
 }
 .card-half-rotated .card-image {
-	transform: rotateY(360deg);
-}
 
-.card-half-unrotated .card-back {
-	transform: rotateY(0deg);
-}
-.card-half-unrotated .card-image {
-	transform: rotateY(180deg);
+	transform: rotateY(360deg) translateZ(-205px);
 }
 
 .card-rotated .card-back {
 	transform: rotateY(180deg);
 }
 .card-rotated .card-image {
-	transform: rotateY(360deg);
+	transform: rotateY(360deg) translateZ(0);
 }
 
 .card-text {
@@ -1381,7 +1375,9 @@ body {
 		.btn {
 			font-size: 14px;
 		}
-
+		.stock__form {
+			padding: 0;
+		}
 		.stock__text {
 	    width: 190px;
 	    font-size: 13px;

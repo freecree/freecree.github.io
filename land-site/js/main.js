@@ -163,7 +163,7 @@ rev.slick({
     infinite: true,
     centerMode: true,
     //initialSlide: 2,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     slidesPerRow: 1,
     slidesToShow: 3,
@@ -204,7 +204,7 @@ function cardFront(element) {
     $(element).addClass("card-half-rotated");
     window.rotatetimout = setTimeout(function(element){
        $(element).addClass("card-rotated"); 
-    }, 700, element);
+    }, 300, element);
     //window.mytimeout = setTimeout(cardHalf, 300, this);
     
 }
@@ -236,6 +236,8 @@ $('.card-image').mousedown(function(event){
   //console.log("click"+$(this).parent().index());
     $('.works__slider').slick("slickGoTo",$(this).parent().index());
 });
+
+var formSubject = "";
 
 $("form").submit(function() { //Change
     //alert("here");
