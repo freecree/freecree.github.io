@@ -15,7 +15,6 @@ a {
 }
 
 input, button {outline: 0 !important;}
-<<<<<<< HEAD
 body {
 	-moz-user-select: none;
   -webkit-user-select: none;
@@ -25,8 +24,6 @@ body {
   user-select: none;
   -khtml-us
 }
-=======
->>>>>>> parent of 2340d89 (bg)
 
 .container {
 	max-width: 1220px;
