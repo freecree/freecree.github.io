@@ -15,15 +15,7 @@ a {
 }
 
 input, button {outline: 0 !important;}
-body {
-	-moz-user-select: none;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;   
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  -khtml-us
-}
+<<<<<<< HEAD
 
 form {
 	position: relative;
@@ -48,6 +40,8 @@ form::after {
 form._sending::after {
 	visibility: visible;
 }
+=======
+>>>>>>> parent of 2340d89 (bg)
 
 .container {
 	max-width: 1220px;
@@ -68,13 +62,13 @@ form._sending::after {
 }
 
 .noselect {
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;   
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  -khtml-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;   
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -khtml-user-select: none;
 }
 
 .btn {
@@ -1347,11 +1341,19 @@ body {
 	
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 @media (max-width: 475.98px) {	
 	.section-bg {
 		background: linear-gradient(255.79deg, #000 0%, #372E15 50.52%, #030200 100%)
 	}
 	
+=======
+@media (max-width: 476px) {	
+>>>>>>> parent of 2340d89 (bg)
+=======
+@media (max-width: 476px) {	
+>>>>>>> parent of 2340d89 (bg)
 	.thanks__block {
 		padding-left: 50px;
 	}
@@ -1420,7 +1422,17 @@ body {
 	.form__caption:before {
 		top: -3px;
 	}
+<<<<<<< HEAD
 		
+=======
+	.top__form-btn {
+		display: none;
+	}
+	.top__form-btn-mobile {
+		display: block;
+	}
+
+>>>>>>> parent of 2340d89 (bg)
 	.why-us__block-text {
 		width: 100%;
 	}
