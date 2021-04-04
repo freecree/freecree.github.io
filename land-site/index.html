@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body >
-<section class="top">
+<section id="top" class="top">
   <header class="header">
     <div class="container">
       <div class="header__inner">
@@ -25,7 +25,7 @@
           <ul class="menu__list">
             <img class="menu__btn-exit" src="images/left-arrow.svg" alt="Left arrow">
             <li class="menu__item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="#top">
                 Главная
               </a>
             </li>
@@ -51,8 +51,8 @@
             </li>
           </ul>
         </nav>
-        <a href="#form-popup" class="btn header__btn form-link">Заказать консультацию</a>
-        <a href="#form-popup" class="header__mobile form-link">
+        <a href="#form-popup" class="btn header__btn form-link consultation-order">Заказать консультацию</a>
+        <a href="#form-popup" class="header__mobile form-link consultation-order">
           <img src="images/call.svg" alt="call icon">
         </a>
       </div>
@@ -70,7 +70,7 @@
           </p>
           <div class="top__bottom">
             <p class="top__bottom-text">
-              Цена до<span class="text-nl"> конца марта</span> 
+              Цена до<span class="text-nl"> конца <span id="stock_month"></span></span> 
             </p>
             <div class="top__bottom-price">
               <span class="price-big">от <span id="min_price">19 990</span></span>
@@ -79,36 +79,62 @@
           </div>
         </div>
         <div class="top__right">
-          <form action="#" class="form top__form">
+          <form class="form top__form short-form">
             <h5 class="form__title">
               Оставьте заявку и получите прототип будущего Landing page <span class="txt-yellow">бесплатно</span>
             </h5>
             <!-- Hidden Required Fields -->
             <input type="hidden" name="project_name" value="Landing Studio">
-            <input type="hidden" name="admin_email" value="x9221@yandex.ru">
+            <input type="hidden" name="admin_email" value="bodya20126@gmail.com">
             <input type="hidden" name="form_subject" value="Форма на главной">
             <!-- END Hidden Required Fields -->
             <input required name="name" maxlength="15" type="text" class="form__input" placeholder="Введите ваше имя">
-            <input required name="phone" data-tel-input type="text" class="form__input phone-field" placeholder="Введите ваш телефон">
-            <button class="btn form__btn top__form-btn" type="submit">Отправить</button>
-            <a href="#form-popup" class="btn form__btn top__form-btn-mobile form-link">Заказать</a>
+            <div class="form__contacts">
+              <div class="form__text">
+              Выберите удобный тип связи
+              </div>
+              <div class="form__contacts-items">
+                <img data-contact="telegram" class="form__contacts-img" src="images/telegram-form.svg" alt="Telegram" class="form__contact">
+                <img data-contact="viber" class="form__contacts-img" src="images/viber-form.svg" alt="Viber" class="form__contact">
+                <img data-contact="whatsapp" class="form__contacts-img" src="images/whatsapp-form.svg" alt="Whatsapp" class="form__contact">
+              </div>
+            </div>
+            <input maxlength="32" data-contact="contact-inp" required name="" type="text" class="form__input contact-input" placeholder="Введите ваш контакт">
+            <button class="btn form__btn" type="submit">Отправить</button>
             <div class="form__caption">Мы не передаём ваши данные третьим лицам</div>
           </form>
+
+          <div class="form form-mobile">
+            <h5 class="form__title">
+              Оставьте заявку и получите прототип будущего Landing page <span class="txt-yellow">бесплатно</span>
+            </h5>
+            <a href="#form-popup" class="btn form__btn form-mobile__btn form-link" type="submit">Заказать</a>
+          </div>
         </div>
       </div>
     </div> 
 
-    <form id="form-popup" action="#" class="form">
+    <form id="form-popup" class="form short-form">
       <h5 class="form__title">
         Оставьте свои личные данные и мы перезвоним Вам и ответим на все вопросы
       </h5>
       <!-- Hidden Required Fields -->
       <input type="hidden" name="project_name" value="Landing Studio">
-      <input type="hidden" name="admin_email" value="x9221@yandex.ru">
-      <input type="hidden" name="form_subject" value="Форма на главной">
+      <input type="hidden" name="admin_email" value="bodya20126@gmail.com">
+      <input type="hidden" class="form-subject" name="form_subject" value="">
       <!-- END Hidden Required Fields -->
       <input required name="name" maxlength="15" type="text" class="form__input" placeholder="Введите ваше имя">
-      <input required name="phone" data-tel-input type="text" class="form__input phone-field" placeholder="Введите ваш телефон">
+      <div class="form__contacts">
+        <div class="form__text">
+        Выберите удобный тип связи
+        </div>
+        <div class="form__contacts-items">
+          <img data-contact="telegram" class="form__contacts-img" src="images/telegram-form.svg" alt="Telegram" class="form__contact">
+          <img data-contact="viber" class="form__contacts-img" src="images/viber-form.svg" alt="Viber" class="form__contact">
+          <img data-contact="whatsapp" class="form__contacts-img" src="images/whatsapp-form.svg" alt="Whatsapp" class="form__contact">
+        </div>
+      </div>
+      <input maxlength="32" data-contact="contact-inp" required name="" type="text" class="form__input contact-input" placeholder="Введите ваш контакт">
       <button class="btn form__btn" type="submit">Отправить</button>
       <div class="form__caption">Мы не передаём ваши данные третьим лицам</div>
     </form>
@@ -124,14 +150,13 @@
           </p>
         </div>
       </div>
-      
     </div>
-
   </section>
 </section>
+
 <section  class="section-bg">
-  <section id="why-us" class="why-us">
-    <div class="container side-caption">
+  <section id="why-us" class="why-us section">
+    <div class="container side-caption wy-us__side-caption">
       <h2 class="section__title why-us__title">Почему мы?</h2>
       <div class="why-us__blocks">  
         <div class="why-us__block">
@@ -167,7 +192,7 @@
   </section>
 
   <section id="works" class="works">
-    <div class="container">
+    <div class="container section side-caption works__side-caption">
       <h2 class="section__title works__title">
         Наши работы
       </h2>
@@ -386,19 +411,17 @@
           </div>
           <img class="card-image" src="images/card-image.png"alt="">
         </div>
-
-
       </div>
     </div>  
   </section>
  
-  <section id="services" class="services">
-    <div class="container">
+  <section id="services" class="services section">
+    <div class="container side-caption services__side-caption">
       <h2 class="section__title services__title">
         Пакеты услуг
       </h2>
       <div class="services__packages">
-        <div class="services__package start-package">
+        <div class="services__package start-package" data-package="Пакет Старт">
           <h3 class="package__title green">
             СТАРТ
           </h3>
@@ -422,12 +445,11 @@
           <p class="package__term">
             Срок реализации - от 7 дней
           </p>
-          <a href="#" class="btn package__btn">
+          <a href="#form-popup" class="btn package__btn form-link">
             Заказать
           </a>
         </div>
-
-        <div class="services__package standart-package">
+        <div class="services__package standart-package" data-package="Пакет Стандарт">
           <h3 class="package__title blue">
             СТАНДАРТ
           </h3>
@@ -454,12 +476,12 @@
           <p class="package__term">
             Срок реализации - от 10 дней
           </p>
-          <a href="#" class="btn package__btn">
+          <a href="#form-popup" class="btn package__btn form-link">
             Заказать
           </a>
         </div>
 
-        <div class="services__package business-package">
+        <div class="services__package business-package" data-package="Пакет Бизнес">
           <h3 class="package__title brown">
             БИЗНЕС
           </h3>
@@ -489,7 +511,7 @@
           <p class="package__term">
             Срок реализации - от 7 дней
           </p>
-          <a href="#" class="btn package__btn">
+          <a href="#form-popup" class="btn package__btn form-link">
             Заказать
           </a>
         </div>
@@ -503,19 +525,29 @@
       <div class="stock__image"></div>
       <div class="stock__content">
         <h2 class="section__title stock__title">
-          Акция  <span class="mazok">до 31.04!</span>
+          Акция  <span class="mazok">до <span id="stock_date"></span>!</span>
         </h2>
         <p class="stock__text">
           Оставь заявку на создание Landing page через сайт и получи разработку 1 экрана будущего сайта<br> <span class="txt-yellow">СОВЕРШЕННО БЕСПЛАТНО</span> 
         </p>
-        <form action="#" class="stock__form">
+        <form class="stock__form short-form">
           <!-- Hidden Required Fields -->
           <input type="hidden" name="project_name" value="Landing Studio">
-          <input type="hidden" name="admin_email" value="x9221@yandex.ru">
+          <input type="hidden" name="admin_email" value="bodya20126@gmail.com">
           <input type="hidden" name="form_subject" value="Форма акции">
           <!-- END Hidden Required Fields -->
-          <input required name="name" maxlength="15" type="text" class="form__input" placeholder="Введите ваше имя">
-          <input required name="phone" data-tel-input type="tel" class="form__input phone-field" placeholder="Введите ваш телефон">
+          <input required name="name" maxlength="15" type="text" class="form__input stock__input" placeholder="Введите ваше имя">
+          <div class="form__contacts stock__form-contacts">
+            <div class="form__text stock__form-text">
+            Выберите удобный тип связи
+            </div>
+            <div class="form__contacts-items">
+              <img data-contact="telegram" class="form__contacts-img" src="images/telegram-form.svg" alt="Telegram" class="form__contact">
+              <img data-contact="viber" class="form__contacts-img" src="images/viber-form.svg" alt="Viber" class="form__contact">
+              <img data-contact="whatsapp" class="form__contacts-img" src="images/whatsapp-form.svg" alt="Whatsapp" class="form__contact">
+            </div>
+          </div>
+          <input maxlength="32" data-contact="contact-inp" required name="" type="text" class="form__input stock__input contact-input" placeholder="Введите ваш контакт">
           <button class="btn form__btn" type="submit">Отправить</button>
         </form>
       </div>
@@ -535,13 +567,13 @@
       </div>
       <div class="footer__socials">
         <a href="#" class="footer__social">
-          <img src="images/facebook.svg" alt="facebook">
+          <img class="footer__social-img" src="images/telegram.svg" alt="telegram">
         </a>
         <a href="#" class="footer__social">
-          <img src="images/instagram.svg" alt="instagram">
+          <img class="footer__social-img" src="images/viber-yellow.svg" alt="viber">
         </a>
         <a href="#" class="footer__social">
-          <img src="images/telegram.svg" alt="telegram">
+          <img class="footer__social-img" src="images/whatsapp-yellow.svg" alt="whatsapp">
         </a>
       </div>
       <a href="#" class="footer__up">
