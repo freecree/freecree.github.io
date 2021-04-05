@@ -11,7 +11,6 @@ var $menu = $('.menu'),
 
 if (!$menu.find($target).length ||
     $menu_link.find($target).length) {
-        console.log("click");
         $('.menu__list').removeClass('menu__list--active');
     }
 });
@@ -19,109 +18,91 @@ $('.menu__btn-exit').on('click', function(){
     $('.menu__list').removeClass('menu__list--active');
 });
 
+$(".menu").on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+    top = $(id).offset().top-30;
+    console.log(id);
+    if (id == "#top") top=0;
+    $('body,html').animate({scrollTop: top}, 1500);
+});
+
+
  //form popup
-$(function(){
-    $(".form-link").fancybox({
-        margin: 0,
-        padding: 20,
-        maxWidth: 300,
-        autoScale: true,
-        transitionIn: 'none',
-        transitionOut: 'none',
-        type: 'inline',
-        helpers: {
-        overlay: {
-          locked: false
-        }
-    },
-    // 'afterOpen' : function() {
-    //   $(".header__form").hide();
-    // },
-        'afterClose' : function() {
-            $(".top__form").show();
-        }, 
 
-    });
-    $("thanks").fancybox({
-        margin: 0,
-        padding: 20,
-        maxWidth: 300,
-        autoScale: true,
-        transitionIn: 'none',
-        transitionOut: 'none',
-        type: 'inline',
-        helpers: {
-        overlay: {
-          locked: false
-        }
-    },
-    // 'afterOpen' : function() {
-    //   $(".header__form").hide();
-    // },
-        'afterClose' : function() {
-            $(".top__form").show();
-        }, 
+$(".form-link").fancybox({
+    margin: 0,
+    padding: 20,
+    maxWidth: 300,
+    autoScale: true,
+    touch: false,
+    transitionIn: 'none',
+    transitionOut: 'none',
+    type: 'inline',
+    helpers: {
+    overlay: {
+      locked: false
+    }
 
-    });
+    },
+    'afterClose' : function() {
+        $("form").removeClass("chosen");
+        $(".top__form").show();
+    }, 
 
 });
+
 $('.header__btn').mousedown(function(event){
     $(".top__form").hide();
 });
 
-$(window).on('load resize', function() {
-    if ($(window).width() < 935) {
-        $('.why-us__blocks:not(.slick-initialized)').slick({
-            centerMode: false,
-            dots: false,
-            arrows: false,
-            infinite: true,
-            speed: 100,
-            slidesToShow: 1,
-            });
-    } else {
-        $(".why-us__blocks.slick-initialized").slick("unslick");
-    }
-});
-$(window).on('load resize', function() {
-    if ($(window).width() < 1020) {
-        $('.services__packages:not(.slick-initialized)').slick({
-            centerMode: true,
-            dots: false,
-            arrows: true,
-            infinite: false,
-            speed: 100,
-            slidesToShow: 1,
-            initialSlide: 1,
-            variableWidth: true,
-            prevArrow: '<img class="left-arrow" src="images/left-arrow.svg" alt="">',
-            nextArrow: '<img class="right-arrow" src="images/right-arrow.svg" alt="">',
-            // adaptiveHeight: true,
-            // variableHeight: true,
-            responsive: [
-            {
-            breakpoint: 476,
-            settings: {
-              //variableWidth: false,
-              //customPaging: 0,
-              //centerPadding: 60
-              variableWidth: false,
-              centerMode: false,
-            }
-        },
-        ]
+// $(window).on('load resize', function() {
+//     console.log("load");
+if ($(window).width() < 935) {
     
-      //centerPadding: 60,
-      //customPaging: 50
-      //adaptiveHeight: false,
-    });
-    } else {
-        $(".services__packages-initialized").slick("unslick");
-    }
+    $('.why-us__blocks:not(.slick-initialized)').slick({
+        centerMode: false,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 100,
+        slidesToShow: 1,
+        });
+} else {
+    $(".why-us__blocks.slick-initialized").slick("unslick");
+}
+if ($(window).width() < 1056) {
+    $('.services__packages:not(.slick-initialized)').slick({
+        centerMode: true,
+        dots: false,
+        arrows: true,
+        infinite: false,
+        speed: 100,
+        slidesToShow: 1,
+        initialSlide: 1,
+        variableWidth: true,
+        prevArrow: '<img class="left-arrow" src="images/left-arrow.svg" alt="">',
+        nextArrow: '<img class="right-arrow" src="images/right-arrow.svg" alt="">',
+        responsive: [
+        {
+        breakpoint: 476,
+        settings: {
+        variableWidth: false,
+        centerMode: false,
+        //adaptiveHeight: true
+        }
+    },
+    ]
 });
-$(".services__packages").on('setPosition', function (event, slick) {
-    slick.$slides.css('height', slick.$slideTrack.height() + 'px');
-});
+} else {
+    $(".services__packages-initialized").slick("unslick");
+}
+
+//});
+
+// $(".services__packages").on('setPosition', function (event, slick) {
+//     slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+// });
 
   // slider
 var rev = $('.works__slider');
@@ -136,10 +117,8 @@ rev.on('init', function(event, slick, currentSlide) {
     slick.$prev = prev;
     slick.$next = next;
 }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-//console.log('beforeChange');
     var
     cur = $(slick.$slides[nextSlide]);
-    //console.log(slick.$prev, slick.$next);
     slick.$prev.removeClass('slick-sprev');
     slick.$next.removeClass('slick-snext');
     next = cur.next(),
@@ -163,7 +142,7 @@ rev.slick({
     infinite: true,
     centerMode: true,
     //initialSlide: 2,
-    autoplay: false,
+    //autoplay: true,
     autoplaySpeed: 3000,
     slidesPerRow: 1,
     slidesToShow: 3,
@@ -173,12 +152,7 @@ rev.slick({
     customPaging: function(slider, i) {
       return '';
     },
-    /*infinite: false,*/
 });
-
-$(".package__list").each(function(indx){
-    //console.log($(".package__list").height());
-});  
 
 //Cards
 function showCards() {
@@ -188,10 +162,6 @@ function showCards() {
     var leftAdd = 40;
     var cardsAmount = $('.works__card').length;
     var leftDefoult = (containerWidth - ((cardsAmount-1)*leftAdd+cardWidth))/2;
-    console.log(cardsAmount*leftAdd+cardWidth);
-    console.log("container: "+containerWidth);
-    //var cardsBlockW = cardsAmount*cardWidth - translAdd*(cardsAmount-1);
-    //var margLeft = (containerWidth - cardsBlockW)/2
     $(".works__card").each(function(indx){
         $(this).css( { left : leftDefoult + leftPos+"px" } );
         leftPos += leftAdd;
@@ -199,61 +169,110 @@ function showCards() {
 } 
 showCards();
 
-
 function cardFront(element) {
     $(element).addClass("card-half-rotated");
     window.rotatetimout = setTimeout(function(element){
        $(element).addClass("card-rotated"); 
-    }, 700, element);
-    //window.mytimeout = setTimeout(cardHalf, 300, this);
-    
+    }, 400, element);
 }
 
 function cardBack(element) {
     $(element).removeClass("card-rotated");
     $(element).removeClass("card-half-rotated");   
-    // $(element).addClass("card-half-unrotated");
-    // $(element).css("transform", `translateX(-100px)`);
-    // window.backRotatetimout = setTimeout(function(element){
-    //     $(element).css("transform", `translateX(0px)`);
-    //    //$(element).removeClass("card-half-unrotated");
-       
-    // }, 500, element);
-   
 } 
 $('.works__card').hover(function(){
     window.mytimeout = setTimeout(cardFront, 300, this);
-    console.log("hover()");
 },
 function() {
     clearTimeout(window.mytimeout);
     clearTimeout(window.rotatetimout);
-    //clearTimeout(window.backRotatetimout);
     cardBack(this);
 }); 
 
 $('.card-image').mousedown(function(event){
-  //console.log("click"+$(this).parent().index());
     $('.works__slider').slick("slickGoTo",$(this).parent().index());
 });
 
+var formSubject = "";
+
+$('.consultation-order').mousedown(function(event){
+    formSubject = "Заказать консультацию";
+    $("#form-popup .form-subject").val(formSubject);
+}); 
+$('.package__btn').mousedown(function(event){
+    var service = $(this).parents(".services__package");
+    formSubject = service.attr('data-package');
+    console.log(formSubject);
+    $("#form-popup .form-subject").val(formSubject);
+});
+$('.form-mobile__btn').mousedown(function(event){
+    formSubject = "Форма на главной";
+    $("#form-popup .form-subject").val(formSubject);
+}); 
+
+
+function setContactInp(name, inp) {
+    iconClass = "contact-input-"+name;
+    $(inp).attr("type", "text");
+    $(inp).attr("name", name);
+    $(inp).addClass(iconClass);
+}
+
+$(".form__contacts-img").mousedown(function(event){
+    $(this).parents("form").addClass("chosen");
+    var name  = $(this).attr('data-contact');
+    var inp = $(this).parents("form").children(".contact-input");
+    setContactInp(name, inp);
+});    
+
+
 $("form").submit(function() { //Change
-    //alert("here");
+    var form = this; 
+    $(form).addClass("_sending");
     var th = $(this);
     $.ajax({
         type: "POST",
         url: "mail.php", //Change
         data: th.serialize()
     }).done(function() {
-        $("#thanks").fancybox().trigger('click');
-        //alert("Thank you1!");
+        $(form).removeClass("_sending");
+        $.fancybox.open({
+            src  : '#thanks',
+            type : 'inline',
+            'afterOpen': function(){
+                setTimeout( function() {$.fancybox.close(); },3000); // 3000 = 3 secs
+            }
+        });
+        
         setTimeout(function() {
             // Done Functions
+            $(form).removeClass("chosen");
+            $(form).children(".contact-inp").removeClass("contact-input-telegram contact-input-viber contact-input-whatsapp");
+
+            $.fancybox.close(true);
             th.trigger("reset");
-        }, 1000);
+        },  3000);
     });
     return false;
 }); 
+
+function calcDate() {
+    const MONTHS = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+    let now = new Date();
+    let m = now.getMonth() + 1;
+    let y = now.getMonth();
+    let days = new Date(y, m-1, 0).getDate();
+    let monthName = MONTHS[m-1];
+    m = m < 10 ? '0' + m : m;
+    days = days < 10 ? '0' + days : days;
+    let stockDate = `${days}.${m}`;
+    $("#stock_month").text(monthName);
+    $("#stock_date").text(stockDate);
+    //alert(monthName+stockDate);
+
+}
+
+calcDate();
 
 
 });
