@@ -19,10 +19,14 @@ $('.menu__btn-exit').on('click', function(){
 });
 
 $(".menu").on("click","a", function (event) {
+
     event.preventDefault();
     var id  = $(this).attr('href'),
-    top = $(id).offset().top-30;
-    console.log(id);
+    top = $(id).offset().top+30;
+    if ($(window).width() < 600) {
+        top -= 30;
+    }    
+    //console.log(id);
     if (id == "#top") top=0;
     $('body,html').animate({scrollTop: top}, 1500);
 });
@@ -170,15 +174,20 @@ function showCards() {
 showCards();
 
 function cardFront(element) {
-    $(element).addClass("card-half-rotated");
-    window.rotatetimout = setTimeout(function(element){
-       $(element).addClass("card-rotated"); 
-    }, 400, element);
+    //$(element).removeClass("key-unrotate");
+    $(element).addClass("key-rotate");
+    // $(element).addClass("card-half-rotated");
+    // window.rotatetimout = setTimeout(function(element){
+    //    $(element).addClass("card-rotated"); 
+    // }, 400, element);
 }
 
 function cardBack(element) {
-    $(element).removeClass("card-rotated");
-    $(element).removeClass("card-half-rotated");   
+    // $(element).removeClass("card-rotated");
+    // $(element).removeClass("card-half-rotated");
+    $(element).addClass("key-unrotate");
+    $(element).removeClass("key-rotate");
+         
 } 
 $('.works__card').hover(function(){
     window.mytimeout = setTimeout(cardFront, 300, this);
@@ -265,7 +274,7 @@ function calcDate() {
     let monthName = MONTHS[m-1];
     m = m < 10 ? '0' + m : m;
     days = days < 10 ? '0' + days : days;
-    let stockDate = `${days}.${m}`;
+    let stockDate = days+"."+m;//`${days}.${m}`;
     $("#stock_month").text(monthName);
     $("#stock_date").text(stockDate);
     //alert(monthName+stockDate);
