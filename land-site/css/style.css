@@ -854,11 +854,12 @@ body {
 }
 
 .card-image, .card-back {
+	perspective: 800px;
 	-webkit-backface-visibility: hidden;
 	        backface-visibility: hidden;
-	-webkit-transition: all ease 1s;
+	/*-webkit-transition: all ease 1s;
 	-o-transition: all ease 1s;
-	transition: all ease 1s;
+	transition: all ease 1s;*/
 	position: absolute;
 }
 

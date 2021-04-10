@@ -173,9 +173,36 @@ function showCards() {
 } 
 showCards();
 
+let cardFront_x, cardFront_r;
+
 function cardFront(element) {
+    let card_front = $(element).children(".card-image");
+    let card_back = $(element).children(".card-back");
+    $(element).css('zIndex', '1');
+    gsap.to(card_back, {duration: 1, rotationY: 180});
+    gsap.to(card_front, {duration: 0,  x: 205 });
+    cardFront_x = 205;
+    gsap.to(card_front, {duration: 1, rotationY: 360,
+    onUpdate: function() {
+        let elem = this.targets()[0];
+        cardFront_r = gsap.getProperty(elem, "rotationY");
+        //console.log("r: "+cardFront_r);
+        }    
+
+    });
+    gsap.to(card_front, {duration: 1, x: 20, delay: .5,
+        onUpdate: function() {
+            let elem = this.targets()[0];
+            cardFront_x = gsap.getProperty(elem, "x");
+            //console.log("x: "+cardFront_x);
+        }   
+
+    });
+    //gsap.to(element, {duration: 1, x: 0, delay: .5});
+    //gsap.to(card_front, {duration: 1, x: 0, delay: .5});
     //$(element).removeClass("key-unrotate");
-    $(element).addClass("key-rotate");
+    //$(element).addClass("key-rotate");
+
     // $(element).addClass("card-half-rotated");
     // window.rotatetimout = setTimeout(function(element){
     //    $(element).addClass("card-rotated"); 
@@ -183,19 +210,41 @@ function cardFront(element) {
 }
 
 function cardBack(element) {
+    let card_front = $(element).children(".card-image");
+    let card_back = $(element).children(".card-back");
+    
+    $(element).css('zIndex', '0');
+    //let mx = gsap.getProperty(card_front, "x");
+    //let mx =  card_front._gsTransform.rotation;
+    //console.log(mx);
+
+    if (cardFront_r > 270) {
+       gsap.to(card_back, {duration: 0,  x: cardFront_x-185 }); 
+       console.log(cardFront_r);
+    }
+    gsap.to(card_front, {duration: 1, rotationY: 180 });
+    gsap.to(card_back, {duration: 1, rotationY: 0});
+    gsap.to(card_back, {duration: 1,  x: 0, delay: .5});
+
+    
+    
+    //gsap.to(card_front, {duration: 1, z: 0, x: 20, delay: .5});
     // $(element).removeClass("card-rotated");
     // $(element).removeClass("card-half-rotated");
-    $(element).addClass("key-unrotate");
-    $(element).removeClass("key-rotate");
+
+    // $(element).addClass("key-unrotate");
+    // $(element).removeClass("key-rotate");
          
 } 
 $('.works__card').hover(function(){
+    //cardFront_r = 0;
     window.mytimeout = setTimeout(cardFront, 300, this);
 },
 function() {
     clearTimeout(window.mytimeout);
     clearTimeout(window.rotatetimout);
     cardBack(this);
+    cardFront_r = 0;
 }); 
 
 $('.card-image').mousedown(function(event){
