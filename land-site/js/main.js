@@ -146,7 +146,7 @@ rev.slick({
     infinite: true,
     centerMode: true,
     //initialSlide: 2,
-    //autoplay: true,
+    autoplay: true,
     autoplaySpeed: 3000,
     slidesPerRow: 1,
     slidesToShow: 3,
@@ -173,13 +173,20 @@ function showCards() {
 } 
 showCards();
 
-let cardFront_x, cardFront_r;
+let cardFront_x, cardFront_r, cardBack_r;
 
 function cardFront(element) {
     let card_front = $(element).children(".card-image");
     let card_back = $(element).children(".card-back");
     $(element).css('zIndex', '1');
-    gsap.to(card_back, {duration: 1, rotationY: 180});
+    gsap.to(card_back, {duration: 1, rotationY: 180,
+       onUpdate: function() {
+        let elem = this.targets()[0];
+        cardBack_r = gsap.getProperty(elem, "rotationY");
+        //console.log("r: "+cardFront_r);
+        } 
+
+    });
     gsap.to(card_front, {duration: 0,  x: 205 });
     cardFront_x = 205;
     gsap.to(card_front, {duration: 1, rotationY: 360,
@@ -217,14 +224,21 @@ function cardBack(element) {
     //let mx = gsap.getProperty(card_front, "x");
     //let mx =  card_front._gsTransform.rotation;
     //console.log(mx);
-
-    if (cardFront_r > 270) {
+    console.log("cardBack()f: "+ cardFront_r);
+    console.log("cardBack()b: "+ cardBack_r);
+    if (cardFront_r == 360) {
        gsap.to(card_back, {duration: 0,  x: cardFront_x-185 }); 
-       console.log(cardFront_r);
+       //console.log(cardFront_r);
     }
-    gsap.to(card_front, {duration: 1, rotationY: 180 });
+    gsap.to(card_front, {duration: 1, rotationY: 180,
+    onUpdate: function() {
+            let elem = this.targets()[0];
+            cardFront_x = gsap.getProperty(elem, "x");
+            //console.log("x: "+cardFront_x);
+        }  
+    });
     gsap.to(card_back, {duration: 1, rotationY: 0});
-    gsap.to(card_back, {duration: 1,  x: 0, delay: .5});
+    gsap.to(card_back, {duration: 1,  x: 0, delay: .3});
 
     
     
@@ -237,14 +251,14 @@ function cardBack(element) {
          
 } 
 $('.works__card').hover(function(){
-    //cardFront_r = 0;
+    cardFront_r = 0;
     window.mytimeout = setTimeout(cardFront, 300, this);
 },
 function() {
     clearTimeout(window.mytimeout);
     clearTimeout(window.rotatetimout);
     cardBack(this);
-    cardFront_r = 0;
+    //cardFront_r = 0;
 }); 
 
 $('.card-image').mousedown(function(event){
