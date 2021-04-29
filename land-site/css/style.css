@@ -181,7 +181,7 @@ form._sending::after {
 	font-size: 20px;
 }
 body {
-	font-family: 'Gotham Pro';
+	font-family: 'Gotham Pro', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 16px;
