@@ -1,0 +1,9 @@
+
+@font-face {
+  font-family: 'dpix_8pt';
+  src: url('../fonts/dpix_8pt/dpix_8pt.woff2') format('woff2'),
+/*       url('../fonts/dpix_8pt/dpix_8pt.ttf')  format('truetype'), */
+       url('../fonts/dpix_8pt/dpix_8pt.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
