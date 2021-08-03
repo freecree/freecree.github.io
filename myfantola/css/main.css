@@ -2152,9 +2152,9 @@ h1, h2, h3, h4, h5, h6{
 
 .myglitch {
   position: relative;
-  color: white;
-  font-size: 4em;
-  letter-spacing: 0.5em;
+  /* color: white; */
+  /* font-size: 4em;
+  letter-spacing: 0.5em; */
  /* Animation provies a slight random skew. Check bottom of doc for more information on how to random skew. */
   animation: glitch-skew 1s infinite linear alternate-reverse;
 }
@@ -2166,7 +2166,7 @@ h1, h2, h3, h4, h5, h6{
   width: 100%;
   height: 100%;
   left: 2px;
-  text-shadow: -2px 0 #ff00c1;
+  /* text-shadow: -2px 0 #ff00c1; */
  /* Creates an initial clip for our glitch. This works in a typical top,right,bottom,left fashion and creates a mask to only show a certain part of the glitch at a time. */
   clip: rect(44px, 450px, 56px, 0);
  /* Runs our glitch-anim defined below to run in a 5s loop, infinitely, with an alternating animation to keep things fresh. */
@@ -2180,7 +2180,7 @@ h1, h2, h3, h4, h5, h6{
   width: 100%;
   height: 100%;
   left: -2px;
-  text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+  /* text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1; */
   animation: glitch-anim2 1s infinite linear alternate-reverse;
 }
 
@@ -2390,4 +2390,12 @@ h1, h2, h3, h4, h5, h6{
   100% {
     transform: skew(-3deg);
  }
+}
+
+.header_txt::before {
+  text-shadow: -2px 0 #eb376e;
+}
+
+.header_txt::after {
+  text-shadow: -2px 0 #eb376e, 2px 2px #ff00c1;
 }
