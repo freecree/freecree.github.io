@@ -307,8 +307,9 @@ function calcDate() {
     const MONTHS = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
     let now = new Date();
     let m = now.getMonth() + 1;
+    console.log("m: "+m);
     let y = now.getMonth();
-    let days = new Date(y, m-1, 0).getDate();
+    let days = new Date(y, m, 0).getDate();
     let monthName = MONTHS[m-1];
     m = m < 10 ? '0' + m : m;
     days = days < 10 ? '0' + days : days;
