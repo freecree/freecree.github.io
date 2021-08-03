@@ -552,8 +552,7 @@ h1, h2, h3, h4, h5, h6{
 .item_brand_concept p {
     font-size: 22px;
     line-height: 36px;
-    /* color: #fff; */
-    color: yellow;
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin: 0;
