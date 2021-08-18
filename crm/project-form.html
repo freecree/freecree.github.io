@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CRM-ProjectForm</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">
+					CRM
+				</div>
+				<div class="burger-btn">
+				  <span></span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="top form-page">
+		<div class="top__inner">
+			<aside class="sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<img class="sidebar__img" src="images/icon-dash.svg" alt="">
+						<div class="sidebar__text">
+							Dashboard
+						</div>
+					</li>
+					<li class="sidebar__item sidebar__item_active">
+						<img class="sidebar__img" src="images/icon-client.svg" alt="">
+						<div class="sidebar__text">
+							Клиенты
+						</div>
+					</li>
+					<li class="sidebar__item">
+						<img class="sidebar__img" src="images/icon-project.svg" alt="">
+						<div class="sidebar__text">
+							Проекты
+						</div>
+					</li>
+					<li class="sidebar__item">
+						<img class="sidebar__img" src="images/icon-task.svg" alt="">
+						<div class="sidebar__text">
+							Задачи
+						</div>
+					</li>
+				</ul>
+			</aside>
+			<div class="top__main top__main_active">
+				<div class="container">
+					<h1 class="top__title">Заголовок</h1>
+					<div class="top__breadcrumbs">
+						Главная/Задачи /Активные
+					</div>
+					<div class="top__blocks">
+						<div class="form-page__wrapper">
+							<form class="form content-box form-page__box">
+								<div class="content-box__inner">
+									<div class="form__line">
+										<div class="form__line-caption">
+											Название проекта
+										</div>
+										<input class="form__input" name="project-name" type="text" placeholder="Введите название проекта">
+									</div>
+									<div class="form__line">
+										<div class="form__line-caption">
+											Ссылка на сайт
+										</div>
+										<input class="form__input" name="project-url" type="text" placeholder="Введите URL">
+									</div>
+									<div class="form__line">
+										<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+										<div class="custom-select">
+											<select class="form__input form__input_list">
+												<option class="custom-select__nullval" value="0">Выберите клиента</option>
+												<option value="2">Петрова Элина Денисовна</option>
+												<option value="3">Филиппова Александра Мироновна</option>
+												<option value="4">Воронина Полина Александровна</option>
+												<option value="5">Сидоров Али Егорович</option>
+												<option value="6">Игнатова Виктория Ивановна</option>
+												<option value="4">Воронина Полина Александровна</option>
+												<option value="5">Сидоров Али Егорович</option>
+												<option value="6">Игнатова Виктория Ивановна</option>
+												<option value="4">Воронина Полина Александровна</option>
+												<option value="5">Сидоров Али Егорович</option>
+												<option value="6">Игнатова Виктория Ивановна</option>
+											</select>
+										</div>
+										
+									</div>
+									
+									<div class="form__line">
+										<div class="form__line-caption">
+											Заметка
+										</div>
+										<textarea class="form__input form__input_textarea" name="note" cols="20" rows="5"></textarea>
+									</div>
+									<button class="form__btn" type="submit">Добавить</button>
+								</div>
+							</form>
+						</div>	
+					</div>
+				</div>
+			</div>		
+
+		</div>
+	</section>
+	<script src="js/select.js"></script>
+	<script src="js/phoneinput.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

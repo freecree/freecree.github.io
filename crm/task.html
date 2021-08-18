@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CRM-Task</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">
+					CRM
+				</div>
+				<div class="burger-btn">
+				  <span></span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="top item-page task-page">
+		<div class="top__inner">
+			<aside class="sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<img class="sidebar__img" src="images/icon-dash.svg" alt="">
+						<div class="sidebar__text">
+							Dashboard
+						</div>
+					</li>
+					<li class="sidebar__item">
+						<img class="sidebar__img" src="images/icon-client.svg" alt="">
+						<div class="sidebar__text">
+							Клиенты
+						</div>
+					</li>
+					<li class="sidebar__item">
+						<img class="sidebar__img" src="images/icon-project.svg" alt="">
+						<div class="sidebar__text">
+							Проекты
+						</div>
+					</li>
+					<li class="sidebar__item sidebar__item_active">
+						<img class="sidebar__img" src="images/icon-task.svg" alt="">
+						<div class="sidebar__text">
+							Задачи
+						</div>
+					</li>
+				</ul>
+			</aside>
+			<div class="top__main top__main_active">
+				<div class="container">
+					<h1 class="top__title">Заголовок</h1>
+					<div class="top__breadcrumbs">
+						Главная/Задачи /Активные
+					</div>
+					<div class="top__blocks">
+						<div class="task-page__wrapper">
+							<div class="content-box task-box task-page__box">
+								<div class="content-box__inner">
+									<div class="task-box-heading task-page__heading">
+										<label class="task-box-heading__checkbox">
+											<input type="checkbox">
+											<span></span>
+										</label>
+										<h2 class="content-box-title tasks__title">Название задачи  написаное в две строки</h2>
+									</div>
+									<div class="item-page__line">
+										<div class="item-page__caption">
+											Ссылка на сайт
+										</div>
+										<div class="project-info-line">
+											<img class="project-info-line__icon" src="images/icon-link.svg" alt="" >
+											<object>
+												<a class="project-info-line__text project-info-line__text_link" href="#" >https://fonts.google.com</a>
+											</object>
+										</div>
+									</div>
+									<div class="item-page__line">
+										<div class="item-page__caption">
+											Проект
+										</div>
+										<div class="project-info-line">
+											<img class="project-info-line__icon" src="images/icon-project.svg" alt="" >
+												<div class="project-info-line__text" >
+													Название текущего проекта написаное
+в две строки текста
+												</div>
+										</div>
+									</div>
+									<div class="item-page__line-wrapper">
+										<div class="item-page__line">
+											<div class="item-page__caption">
+												Срок
+											</div>
+											<div class="task-time-line">
+												<img class="task-time-line__icon" src="images/icon-calendar.svg" alt="">
+												<div class="task-time-line__text">
+													31.02.2023
+												</div>
+												<div class="task-time-line__time">
+													12:42
+												</div>
+											</div>
+										</div>
+										<div class="item-page__line">
+											<div class="item-page__caption">
+												Оценка времени
+											</div>
+											<div class="project-info-line">
+												<img class="project-info-line__icon" src="images/icon-timer.svg" alt="" >
+													<div class="project-info-line__text" >
+														05ч 45м
+													</div>
+											</div>
+										</div>
+									</div>
+									<div class="item-page__line">
+										<div class="item-page__caption">
+											Описание задачи
+										</div>
+										<div class="note-text">
+											<p>
+												Это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом.  Есть много вариантов Lorem Ipsum.
+											</p>
+											<p>
+												но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова.
+											</p>
+											<p>
+												Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст.	
+											</p>
+											<p>
+												Это единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений.
+											</p>	
+										</div>
+									</div>
+								</div>
+								<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
+								</svg>
+							</div>
+							<div class="content-box task-sub-box task-page__box">
+								<div class="task-sub-box__wrapper">
+									<div class="task-sub-box__top">
+										<div class="task-sub-box__heading">
+											<div class="task-sub-box__heading-caption">
+												Затрачено времени
+											</div>
+											<div class="task-sub-box__heading-value" >
+												07ч 55м
+											</div>
+										</div>
+										<table class="task-sub-box__info">
+											<tr class="task-sub-info-item">
+												<td class="task-sub-info-item__date">23.12.2028
+												</td>
+												<td class="task-sub-info-item__time">1ч 30 м
+												</dh>
+												<td class="task-sub-info-item__desc">
+												Правки на сайте
+												</td>
+												<td class="task-sub-info__delete"><img src="images/icon-close.svg" alt="">
+												</td>
+											</tr>
+											<tr class="task-sub-info-item">
+												<td class="task-sub-info-item__date">31.12.2028
+												</td>
+												<td class="task-sub-info-item__time">5ч 15 м
+												</td>
+												<td class="task-sub-info-item__desc">
+												Обновление проекта на боевом сервере
+												</td>
+												<td class="task-sub-info__delete"><img src="images/icon-close.svg" alt="">
+												</td>
+											</tr>
+											<tr class="task-sub-info-item">
+												<td class="task-sub-info-item__date">31.12.2028
+												</td>
+												<td class="task-sub-info-item__time">1ч 10 м
+												</td>
+												<td class="task-sub-info-item__desc">
+												Третий пункт списка
+												</td>
+												<td class="task-sub-info__delete"><img src="images/icon-close.svg" alt="">
+												</td>
+											</tr>
+										</table>
+									</div>
+									<div class="task-sub-box__down">
+										<form action="" class="form">
+											<div class="form__line">
+												<div class="form__line-caption">
+													Комментарий
+												</div>
+												<input class="form__input" name="project-url" type="text" placeholder="Введите текст коментария">
+											</div>
+											<div class="form-lines-wrapper">
+												<div class="form-lines-wrapper__item">
+													<div class="form__line-caption">
+														Дата
+													</div>
+													<input class="form__input form__input_small" name="task-date" type="text" placeholder="31.12.2028">
+												</div>
+												<div class="form-lines-wrapper__item">
+													<div class="form__line-caption">
+														Время
+													</div>
+													<input class="form__input form__input_small" name="task-time" type="text" placeholder="05ч 45м">
+												</div>
+												<button class="form__btn form__btn_small" type="submit">Добавить</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-box task-sub-box task-page__box">
+								<div class="task-sub-box__wrapper">
+									<div class="task-sub-box__top">
+										<div class="task-sub-box__heading">
+											<div class="task-sub-box__heading-caption">
+												Оплачено
+											</div>
+											<div class="task-sub-box__heading-value" >
+												14 980 р
+											</div>
+										</div>
+										<table class="task-sub-box__info">
+											<tr class="task-sub-info-item">
+												<td class="task-sub-info-item__date">23.12.2028
+												</td>
+												<td class="task-sub-info-item__cost">1000 р
+												</dh>
+												<td class="task-sub-info__delete"><img src="images/icon-close.svg" alt="">
+												</td>
+											</tr>
+											<tr class="task-sub-info-item">
+												<td class="task-sub-info-item__date">31.12.2028
+												</td>
+												<td class="task-sub-info-item__cost">13 898 р
+												</td>
+												<td class="task-sub-info__delete"><img src="images/icon-close.svg" alt="">
+												</td>
+											</tr>
+										</table>
+									</div>
+									<div class="task-sub-box__down">
+										<form action="" class="form">
+											<div class="form-lines-wrapper">
+												<div class="form-lines-wrapper__item">
+													<div class="form__line-caption">
+														Дата
+													</div>
+													<input class="form__input form__input_small" name="task-date" type="text" placeholder="31.12.2028">
+												</div>
+												<div class="form-lines-wrapper__item">
+													<div class="form__line-caption">
+														Сумма
+													</div>
+													<input class="form__input form__input_small" name="task-cost" type="text" placeholder="Введите сумму">
+												</div>
+												<button class="form__btn form__btn_small" type="submit">Добавить</button>
+											</div>
+										</form>
+										
+									</div>
+								</div>
+							</div>	
+						</div>	
+					</div>
+				</div>
+			</div>		
+		</div>
+	</section>
+	<div class="modal-overlay">
+		<form class="delete-modal">
+		<div class="delete-modal__content">
+			<img class="delete-modal__img" src="images/icon-delete.svg" alt="" >
+			<div class="delete-modal__text">
+				<div class="delete-modal__title">
+					Удаление проекта
+				</div>
+				<div class="delete-modal__caption">
+					Вы уверены, что хотите удалить проект <span class="delete-modal__obj-name">«Квесты по родному городу своими руками»?</span> 
+				</div>
+			</div>
+		</div>
+		<div class="delete-modal__buttons">
+			<div class="delete-modal__btn delete-modal__btn_cancel">
+				Отмена
+			</div>
+			<button type="submit" class="delete-modal__btn delete-modal__btn_delete">
+				Удалить
+			</button>
+		</div>
+	</form>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>

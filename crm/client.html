@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CRM-Client</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">
+					CRM
+				</div>
+				<div class="burger-btn">
+				  <span></span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="top item-page">
+		<div class="top__inner">
+			<aside class="sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<img class="sidebar__img" src="images/icon-dash.svg" alt="">
+						<div class="sidebar__text">
+							Dashboard
+						</div>
+					</li>
+					<li class="sidebar__item sidebar__item_active">
+						<img class="sidebar__img" src="images/icon-client.svg" alt="">
+						<div class="sidebar__text">
+							Клиенты
+						</div>
+					</li>
+					<li class="sidebar__item">
+						<img class="sidebar__img" src="images/icon-project.svg" alt="">
+						<div class="sidebar__text">
+							Проекты
+						</div>
+					</li>
+					<li class="sidebar__item">
+						<img class="sidebar__img" src="images/icon-task.svg" alt="">
+						<div class="sidebar__text">
+							Задачи
+						</div>
+					</li>
+				</ul>
+			</aside>
+			<div class="top__main top__main_active">
+				<div class="container">
+					<h1 class="top__title">Заголовок</h1>
+					<div class="top__breadcrumbs">
+						Главная/Задачи /Активные
+					</div>
+					<div class="top__blocks">
+						<div class="item-page__wrapper">
+							<div class="content-box item-page__box">
+								<div class="content-box__inner">
+									<div class="item-page__line">
+										<div class="item-page__caption">
+											Фаммилия Имя Отчество
+										</div>
+										<h2 class="content-box-title">Волкова Мария Матвеевна						
+										</h2>
+									</div>
+									
+									<div class="item-page__line">
+										<div class="item-page__caption">
+											Номер телефона
+										</div>
+										<a class="client-contact" href="tel:+70735095029">
+											<span class="client-contact__number">+7 (073) 509-50-29</span>
+										</a>
+									</div>
+									<div class="item-page__line">
+										<div class="item-page__caption">
+											E-mai
+										</div>
+										<a class="client-contact" href="mailto:veui-2847@yopmail.com">
+										<span class="client-contact__email">veui-2847@yopmail.com</span>
+									</a>
+									</div>
+									<div class="item-page__line">
+										<div class="item-page__caption">
+											Заметка
+										</div>
+										<div class="note-text">
+											<p>
+												Это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом. 
+											</p>
+										</div>
+										
+									</div>
+									
+								</div>
+								<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
+								</svg>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>		
+
+		</div>
+	</section>
+	<script src="js/main.js"></script>
+</body>
+</html>

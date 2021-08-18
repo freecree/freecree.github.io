@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CRM-Project</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">
+					CRM
+				</div>
+				<div class="burger-btn">
+				  <span></span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="top item-page">
+		<div class="top__inner">
+			<aside class="sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<img class="sidebar__img" src="images/icon-dash.svg" alt="">
+						<div class="sidebar__text">
+							Dashboard
+						</div>
+					</li>
+					<li class="sidebar__item">
+						<img class="sidebar__img" src="images/icon-client.svg" alt="">
+						<div class="sidebar__text">
+							Клиенты
+						</div>
+					</li>
+					<li class="sidebar__item sidebar__item_active">
+						<img class="sidebar__img" src="images/icon-project.svg" alt="">
+						<div class="sidebar__text">
+							Проекты
+						</div>
+					</li>
+					<li class="sidebar__item">
+						<img class="sidebar__img" src="images/icon-task.svg" alt="">
+						<div class="sidebar__text">
+							Задачи
+						</div>
+					</li>
+				</ul>
+			</aside>
+			<div class="top__main top__main_active">
+				<div class="container">
+					<h1 class="top__title">Заголовок</h1>
+					<div class="top__breadcrumbs">
+						Главная/Задачи /Активные
+					</div>
+					<div class="top__blocks">
+						<div class="item-page__wrapper">
+							<div class="content-box item-page__box">
+								<div class="content-box__inner">
+									<div class="project-heading project-page__box-heading">
+										<div class="project-heading__letter">
+											<div>Н</div>
+										</div>
+										<h2 class="content-box-title projects__title">
+										Название проекта написаное в две строки
+										</h2>
+									</div>
+									<div class="project-words project-page__words">
+										<span class="project-words__word">Администратор</span>
+										<span class="project-words__word">FTP</span>
+										<span class="project-words__word">SSH</span>
+										<span class="project-words__word">Хостинг</span>
+										<span class="project-words__word">Домен</span>
+										<span class="project-words__word">Хостинг</span>
+										<span class="project-words__word">FTP</span>
+									</div>
+								</div>
+									
+									<div class="item-page__line">
+										<div class="item-page__caption">
+											Ссылка на сайт
+										</div>
+										<div class="project-info-line">
+											<img class="project-info-line__icon" src="images/icon-link.svg" alt="" >
+											<object>
+												<a class="project-info-line__text project-info-line__text_link" href="#" >https://fonts.google.com</a>
+											</object>
+										</div>
+									</div>
+									<div class="item-page__line">
+										<div class="item-page__caption">
+											E-mai
+										</div>
+										<div class="project-info-line">
+											<img class="project-info-line__icon" src="images/icon-client.svg" alt="" >
+											<div class="project-info-line__text" href="#" >
+											Елисеев Василий Игоревич
+											</div>
+										</div>
+									</div>
+									<div class="item-page__line">
+										<div class="item-page__caption">
+											Описание проекта
+										</div>
+										<div class="note-text big-text">
+											Это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом. Есть<span class="big-text__dots"> ...</span><span class="big-text__more">
+													много вариантов Lorem Ipsum.
+
+													<p>
+													но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова.
+													</p>
+													Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст. 
+													<p>
+													Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений.
+													</p>
+												</span>
+												<div class="big-text__btn">Смотреть полностью</div>
+											</div>
+										</div>
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
+								</svg>
+									
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>		
+		</div>
+	</section>
+	<div class="modal-overlay">
+		<form class="delete-modal">
+		<div class="delete-modal__content">
+			<img class="delete-modal__img" src="images/icon-delete.svg" alt="" >
+			<div class="delete-modal__text">
+				<div class="delete-modal__title">
+					Удаление проекта
+				</div>
+				<div class="delete-modal__caption">
+					Вы уверены, что хотите удалить проект <span class="delete-modal__obj-name">«Квесты по родному городу своими руками»?</span> 
+				</div>
+			</div>
+		</div>
+		<div class="delete-modal__buttons">
+			<div class="delete-modal__btn delete-modal__btn_cancel">
+				Отмена
+			</div>
+			<button type="submit" class="delete-modal__btn delete-modal__btn_delete">
+				Удалить
+			</button>
+		</div>
+	</form>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>

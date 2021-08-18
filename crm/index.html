@@ -12,11 +12,18 @@
 </head>
 <body>
 	<header class="header">
-		<div class="header__logo">
-			CRM
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">
+					CRM
+				</div>
+				<div class="burger-btn">
+				  <span></span>
+				</div>
+			</div>
 		</div>
 	</header>
-	<section class="top">
+	<section class="top main-page">
 		<div class="top__inner">
 			<aside class="sidebar">
 				<ul class="sidebar__list">
@@ -47,8 +54,7 @@
 				</ul>
 			</aside>
 		
-		
-			<div class="top__main dashboard">
+			<div class="dashboard top__main top__main_active">
 				<div class="container">
 					<h1 class="top__title">Заголовок</h1>
 					<div class="top__breadcrumbs">
@@ -97,7 +103,10 @@
 									</h2>
 									<div class="dashboard__month-items">
 										<div class="dashboard__month-item">
-											<img class="dashboard__month-item-img" src="images/icon-coin.svg"></img>
+											<svg class="money-progres-img dashboard__progres" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="38" cy="38" r="35" fill="transparent" stroke="#F4F5F7" stroke-width="6"></circle>
+											  <circle class="progress-ring" data-value="42500" data-min="0" data-max="60000" cx="38" cy="38" r="35" fill="transparent" stroke="#5DAAD6" stroke-width="6" ></circle>
+											</svg>						
 											<div class="dashboard__month-item-txt">
 												<div class="dashboard__month-item-capture">
 													Получено денег
@@ -108,7 +117,10 @@
 											</div>
 										</div>
 										<div class="dashboard__month-item">
-											<img class="dashboard__month-item-img" src="images/icon-clock.svg"></img>
+											<svg class="time-progres-img dashboard__progres" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="38" cy="38" r="35" fill="transparent" stroke="#F4F5F7" stroke-width="6"></circle>
+											  <circle class="progress-ring" data-value="42500" data-min="0" data-max="60000" cx="38" cy="38" r="35" fill="transparent" stroke="#5DAAD6" stroke-width="6" ></circle>
+											</svg>
 											<div class="dashboard__month-item-txt">
 												<div class="dashboard__month-item-capture">
 													Затрачено времени
@@ -126,7 +138,10 @@
 									</h2>
 									<div class="dashboard__month-items">
 										<div class="dashboard__month-item">
-											<img class="dashboard__month-item-img" src="images/icon-coin.svg"></img>
+											<svg class="money-progres-img dashboard__progres" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="38" cy="38" r="35" fill="transparent" stroke="#F4F5F7" stroke-width="6"></circle>
+											  <circle class="progress-ring" data-value="42500" data-min="0" data-max="60000" cx="38" cy="38" r="35" fill="transparent" stroke="#5DAAD6" stroke-width="6" ></circle>
+											</svg>
 											<div class="dashboard__month-item-txt">
 												<div class="dashboard__month-item-capture">
 													Получено денег
@@ -137,7 +152,10 @@
 											</div>
 										</div>
 										<div class="dashboard__month-item">
-											<img class="dashboard__month-item-img" src="images/icon-clock.svg"></img>
+											<svg class="time-progres-img dashboard__progres" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="38" cy="38" r="35" fill="transparent" stroke="#F4F5F7" stroke-width="6"></circle>
+											  <circle class="progress-ring" data-value="42500" data-min="0" data-max="60000" cx="38" cy="38" r="35" fill="transparent" stroke="#5DAAD6" stroke-width="6" ></circle>
+											</svg>
 											<div class="dashboard__month-item-txt">
 												<div class="dashboard__month-item-capture">
 													Затрачено времени
@@ -155,7 +173,10 @@
 									</h2>
 									<div class="dashboard__month-items">
 										<div class="dashboard__month-item">
-											<img class="dashboard__month-item-img" src="images/icon-coin.svg"></img>
+											<svg class="money-progres-img dashboard__progres" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="38" cy="38" r="35" fill="transparent" stroke="#F4F5F7" stroke-width="6"></circle>
+											  <circle class="progress-ring" data-value="42500" data-min="0" data-max="60000" cx="38" cy="38" r="35" fill="transparent" stroke="#5DAAD6" stroke-width="6" ></circle>
+											</svg>
 											<div class="dashboard__month-item-txt">
 												<div class="dashboard__month-item-capture">
 													Получено денег
@@ -166,7 +187,10 @@
 											</div>
 										</div>
 										<div class="dashboard__month-item">
-											<img class="dashboard__month-item-img" src="images/icon-clock.svg"></img>
+											<svg class="time-progres-img dashboard__progres" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="38" cy="38" r="35" fill="transparent" stroke="#F4F5F7" stroke-width="6"></circle>
+											  <circle class="progress-ring" data-value="42500" data-min="0" data-max="60000" cx="38" cy="38" r="35" fill="transparent" stroke="#5DAAD6" stroke-width="6" ></circle>
+											</svg>
 											<div class="dashboard__month-item-txt">
 												<div class="dashboard__month-item-capture">
 													Затрачено времени
@@ -192,75 +216,898 @@
 					</div>
 					<div class="top__blocks">
 						<div class="clients__wrapper">
-							<div class="content-box clients__box">
-								<h2 class="content-box-title clients__title">Волкова Мария Матвеевна						
-								</h2>
-								<a class="clients__contact" href="tel:+70735095029">
-									<img class="clients__contact-img" src="images/icon-call.svg" alt="">
-									<span class="clients__tel-number">+7 (073) 509-50-29</span>
-								</a>
-								<a class="clients__contact" href="mailto:veui-2847@yopmail.com">
-									<img class="clients__contact-img" src="images/icon-email.svg" alt="">
-									<span class="clients__email-name">veui-2847@yopmail.com</span>
-								</a>
-								<p class="clients__text">
-									Это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом. 
-								</p>
-								<svg class="close__btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<a href="client.html" class="content-box clients__box content-box_scalable">
+								<div class="content-box__inner">
+									<h2 class="content-box-title clients__title">Волкова Мария Матвеевна						
+									</h2>
+									<object>
+										<a class="client-contact clients__contact" href="tel:+70735095029">
+											<img class="clients__contact-img" src="images/icon-call.svg" alt="">
+											<span class="clients__tel-number">+7 (073) 509-50-29</span>
+										</a>
+									</object>
+									<object>
+										<a class="client-contact clients__contact" href="mailto:veui-2847@yopmail.com">
+										<img class="clients__contact-img" src="images/icon-email.svg" alt="">
+										<span class="clients__email-name">veui-2847@yopmail.com</span>
+									</a>
+									</object>
+									
+									<p class="note-text clients__text">
+										Это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом. 
+									</p>
+								</div>
+								<object>
+									<a href="#">
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
-								</svg>
-							</div>
-							<div class="content-box clients__box">
-								<h2 class="content-box-title clients__title">Волкова Мария Матвеевна						
-								</h2>
-								<a class="clients__contact" href="tel:+70735095029">
-									<img class="clients__contact-img" src="images/icon-call.svg" alt="">
-									<span class="clients__tel-number">+7 (073) 509-50-29</span>
-								</a>
-								<a class="clients__contact" href="mailto:veui-2847@yopmail.com">
-									<img class="clients__contact-img" src="images/icon-email.svg" alt="">
-									<span class="clients__email-name">veui-2847@yopmail.com</span>
-								</a>
-								<p class="clients__text">
-									Это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом. 
-								</p>
-								<svg class="close__btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									</svg>
+									</a>
+								</object>
+								
+							</a>
+							<a href="client.html" class="content-box clients__box content-box_scalable">
+								<div class="content-box__inner">
+									<h2 class="content-box-title clients__title">Волкова Мария Матвеевна
+									</h2>
+									<object>
+										<a class="client-contact clients__contact" href="tel:+70735095029">
+											<img class="clients__contact-img" src="images/icon-call.svg" alt="">
+											<span class="clients__tel-number">+7 (073) 509-50-29</span>
+										</a>
+									</object>
+									<object>
+										<a class="client-contact clients__contact" href="mailto:veui-2847@yopmail.com">
+										<img class="clients__contact-img" src="images/icon-email.svg" alt="">
+										<span class="clients__email-name">veui-2847@yopmail.com</span>
+									</a>
+									</object>
+									
+									<p class="note-text clients__text">
+										Это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом. 
+									</p>
+								</div>
+								<object>
+									<a href="#">
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
-								</svg>
-							</div>
-							<div class="content-box clients__box">
-								<h2 class="content-box-title clients__title">Волкова Мария Матвеевна						
-								</h2>
-								<a class="clients__contact" href="tel:+70735095029">
-									<img class="clients__contact-img" src="images/icon-call.svg" alt="">
-									<span class="clients__tel-number">+7 (073) 509-50-29</span>
-								</a>
-								<a class="clients__contact" href="mailto:veui-2847@yopmail.com">
-									<img class="clients__contact-img" src="images/icon-email.svg" alt="">
-									<span class="clients__email-name">veui-2847@yopmail.com</span>
-								</a>
-								<p class="clients__text">
-									Это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом. 
-								</p>
-								<svg class="close__btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									</svg>
+									</a>
+								</object>
+							</a>
+							<a href="client.html" class="content-box clients__box content-box_scalable">
+								<div class="content-box__inner">
+									<h2 class="content-box-title clients__title">Волкова Мария Матвеевна
+									</h2>
+									<object>
+										<a class="client-contact clients__contact" href="tel:+70735095029">
+											<img class="clients__contact-img" src="images/icon-call.svg" alt="">
+											<span class="clients__tel-number">+7 (073) 509-50-29</span>
+										</a>
+									</object>
+									<object>
+										<a class="client-contact clients__contact" href="mailto:veui-2847@yopmail.com">
+										<img class="clients__contact-img" src="images/icon-email.svg" alt="">
+										<span class="clients__email-name">veui-2847@yopmail.com</span>
+									</a>
+									</object>
+									<p class="note-text clients__text">
+										Это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом. 
+									</p>
+								</div>
+								<object>
+									<a href="#">
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
-								</svg>
-							</div>
+									</svg>
+									</a>
+								</object>
+							</a>
 
-							<div class="content-box clients__box clients__box_theme_add">
-								<svg class="clients__add-box-img" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<line x1="13.5" y1="2.18557e-08" x2="13.5" y2="27"/>
-								<line x1="27" y1="13.5" y2="13.5"/>
-								</svg>
-
-								<!-- <img class="clients__add-box-img" src="images/icon-plus.svg" alt=""> -->
+							<div class="content-box clients__box content-box_theme_add">
+								<div class="content-box__inner">
+									<a href="client-form.html">
+										<svg class="content-box__add-box-img" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<line x1="13.5" y1="2.18557e-08" x2="13.5" y2="27"/>
+										<line x1="27" y1="13.5" y2="13.5"/>
+										</svg>
+									</a>
+									
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>		
+				</div>
+			</div>	
 
+			<div class="projects top__main">
+				<div class="container">
+					<h1 class="top__title">Заголовок</h1>
+					<div class="top__breadcrumbs">
+						Главная/Задачи /Активные
+					</div>
+					<div class="top__blocks">
+						<div class="projects__wrapper">
+							<a href="project.html" class="content-box projects__box content-box_scalable">
+								<div class="content-box__inner">
+									<div class="project-heading projects__box-heading">
+										<div class="project-heading__letter">
+											<div>Н</div>
+										</div>
+										<h2 class="content-box-title projects__title">
+										Название проекта написаное в две строки
+										</h2>
+									</div>
+									<div class="project-words projects__words">
+										<span class="project-words__word">Администратор</span>
+										<span class="project-words__word">FTP</span>
+										<span class="project-words__word">SSH</span>
+										<span class="project-words__word">Хостинг</span>
+										<span class="project-words__word">Домен</span>
+										<span class="project-words__word">Хостинг</span>
+										<span class="project-words__word">FTP</span>
+									</div>
+									<div class="project-info-line projects__info-line">
+										<img class="project-info-line__icon" src="images/icon-link.svg" alt="" >
+										<object>
+											<a class="project-info-line__text project-info-line__text_link" href="#" >https://fonts.google.com</a>
+										</object>
+										
+									</div>
+									<div class="project-info-line projects__info-line">
+										<img class="project-info-line__icon" src="images/icon-client.svg" alt="" >
+										<div class="project-info-line__text" href="#" >
+										Елисеев Василий Игоревич
+										</div>
+									</div>
+								</div>
+								<object>
+									<a href="#">
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
+									</svg>
+									</a>
+								</object>
+							</a>
+
+							<a href="project.html" class="content-box projects__box content-box_scalable">
+								<div class="content-box__inner">
+									<div class="project-heading projects__box-heading">
+										<div class="project-heading__letter">
+											<div>Н</div>
+										</div>
+										<h2 class="content-box-title projects__title">
+										Название проекта написаное в две строки
+										</h2>
+									</div>
+									<div class="project-words projects__words">
+										<span class="project-words__word">Администратор</span>
+										<span class="project-words__word">FTP</span>
+										<span class="project-words__word">SSH</span>
+										<span class="project-words__word">Хостинг</span>
+										<span class="project-words__word">Домен</span>
+										<span class="project-words__word">Хостинг</span>
+										<span class="project-words__word">FTP</span>
+									</div>
+									<div class="project-info-line projects__info-line">
+										<img class="project-info-line__icon" src="images/icon-link.svg" alt="" >
+										<object>
+											<a class="project-info-line__text project-info-line__text_link" href="#" >https://fonts.google.com</a>
+										</object>
+										
+									</div>
+									<div class="project-info-line projects__info-line">
+										<img class="project-info-line__icon" src="images/icon-client.svg" alt="" >
+										<div class="project-info-line__text" href="#" >
+										Елисеев Василий Игоревич
+										</div>
+									</div>
+								</div>
+								<object>
+									<a href="#">
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
+									</svg>
+									</a>
+								</object>
+							</a>
+
+							<a href="project.html" class="content-box projects__box content-box_scalable">
+								<div class="content-box__inner">
+									<div class="project-heading projects__box-heading">
+										<div class="project-heading__letter">
+											<div>Н</div>
+										</div>
+										<h2 class="content-box-title projects__title">
+										Название проекта написаное в две строки
+										</h2>
+									</div>
+									<div class="project-words projects__words">
+										<span class="project-words__word">Администратор</span>
+										<span class="project-words__word">FTP</span>
+										<span class="project-words__word">SSH</span>
+										<span class="project-words__word">Хостинг</span>
+										<span class="project-words__word">Домен</span>
+										<span class="project-words__word">Хостинг</span>
+										<span class="project-words__word">FTP</span>
+									</div>
+									<div class="project-info-line projects__info-line">
+										<img class="project-info-line__icon" src="images/icon-link.svg" alt="" >
+										<object>
+											<a class="project-info-line__text project-info-line__text_link" href="#" >https://fonts.google.com</a>
+										</object>
+										
+									</div>
+									<div class="project-info-line projects__info-line">
+										<img class="project-info-line__icon" src="images/icon-client.svg" alt="" >
+										<div class="project-info-line__text" href="#" >
+										Елисеев Василий Игоревич
+										</div>
+									</div>
+								</div>
+								<object>
+									<a href="#">
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
+									</svg>
+									</a>
+								</object>
+							</a>
+
+							<div class="content-box projects__box content-box_theme_add">
+								<a href="project-form.html">
+									<svg class="content-box__add-box-img" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<line x1="13.5" y1="2.18557e-08" x2="13.5" y2="27"/>
+									<line x1="27" y1="13.5" y2="13.5"/>
+									</svg>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>	
+
+			<div class="tasks top__main">
+				<div class="container">
+					<div class="top__heading">
+						<div class="top__heading-text">
+							<h1 class="top__title">Заголовок</h1>
+							<div class="top__breadcrumbs">
+								Главная/Задачи /Активные
+							</div>
+						</div>
+						<div class="top__heading-buttons">
+							<a href="task-form.html" class="top__heading-add-btn">
+								<img class="top__heading-add-img" src="images/icon-plus.svg" alt="">
+							</a>
+							<div class="top__heading-switcher">
+								<a href="#" class="top__heading-btn top__heading-btn_active">
+									В работе
+								</a>
+								<a href="#" class="top__heading-btn ">
+									Выполненные
+								</a>
+								<a href="#" class="top__heading-btn">
+									Не оплаченные
+								</a>
+							</div>
+						</div>						
+					</div>
+					<h2 class="top__subtitle">
+						Срок сегодня
+					</h2>
+					<div class="top__blocks">
+						<div class="tasks__wrapper">
+							<a href="task.html" class="content-box task-box tasks__box content-box_scalable">
+								<div class="content-box__inner">
+									<div class="tasks__pay-label">
+										PAY
+									</div>
+									<div class="task-box-heading">
+											<label class="task-box-heading__checkbox">
+												<input type="checkbox">
+												<span></span>
+											</label>
+										<h2 class="content-box-title tasks__title">Название задачи  написаное в две строки</h2>
+									</div>
+									<div class="tasks__project-name">
+										<img class="tasks__project-name-icon" src="images/icon-project.svg" alt="">
+										<div class="tasks__project-name-text">
+											Название текущего проекта написаное в две строки
+										</div>
+									</div>
+									<div class="task-time-line tasks__deadline">
+										<img class="task-time-line__icon" src="images/icon-calendar.svg" alt="">
+										<div class="task-time-line__text">
+											31.02.2023
+										</div>
+										<div class="task-time-line__time">
+											12:42
+										</div>
+									</div>
+									<div class="tasks__time-diagram">
+										<svg class="time-progres-img tasks__time-diagram-img" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="38" cy="38" r="35" fill="transparent" stroke="#F4F5F7" stroke-width="6"></circle>
+									  <circle class="progress-ring" data-value="42500" data-min="0" data-max="60000" cx="38" cy="38" r="35" fill="transparent" stroke="#5DAAD6" stroke-width="6" ></circle>
+										</svg>
+										<div class="tasks__diagram-text">
+											<div class="tasks__diagram-capture">
+												Затрачено времени
+											</div>
+											<div class="tasks__diagram-value">
+												4,5 / 12ч
+											</div>
+										</div>
+									</div>	
+								</div>
+								<object>
+									<a href="#">
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
+									</svg>
+									</a>
+								</object>
+							</a>
+
+							<a href="task.html" class="content-box task-box tasks__box content-box_scalable">
+								<div class="content-box__inner">
+									<div class="tasks__pay-label">
+										PAY
+									</div>
+									<div class="task-box-heading">
+											<label class="task-box-heading__checkbox">
+												<input type="checkbox">
+												<span></span>
+											</label>
+										<h2 class="content-box-title tasks__title">Название задачи  написаное в две строки</h2>
+									</div>
+									<div class="tasks__project-name">
+										<img class="tasks__project-name-icon" src="images/icon-project.svg" alt="">
+										<div class="tasks__project-name-text">
+											Название текущего проекта написаное в две строки
+										</div>
+									</div>
+									<div class="task-time-line tasks__deadline">
+										<img class="task-time-line__icon" src="images/icon-calendar.svg" alt="">
+										<div class="task-time-line__text">
+											31.02.2023
+										</div>
+										<div class="task-time-line__time">
+											12:42
+										</div>
+									</div>
+									<div class="tasks__time-diagram">
+										<svg class="time-progres-img tasks__time-diagram-img" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="38" cy="38" r="35" fill="transparent" stroke="#F4F5F7" stroke-width="6"></circle>
+									  <circle class="progress-ring" data-value="42500" data-min="0" data-max="60000" cx="38" cy="38" r="35" fill="transparent" stroke="#5DAAD6" stroke-width="6" ></circle>
+										</svg>
+										<div class="tasks__diagram-text">
+											<div class="tasks__diagram-capture">
+												Затрачено времени
+											</div>
+											<div class="tasks__diagram-value">
+												4,5 / 12ч
+											</div>
+										</div>
+									</div>	
+								</div>
+								<object>
+									<a href="#">
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
+									</svg>
+									</a>
+								</object>
+							</a>
+
+							<a href="task.html" class="content-box task-box tasks__box content-box_scalable">
+								<div class="content-box__inner">
+									<div class="tasks__pay-label">
+										PAY
+									</div>
+									<div class="task-box-heading">
+											<label class="task-box-heading__checkbox">
+												<input type="checkbox">
+												<span></span>
+											</label>
+										<h2 class="content-box-title tasks__title">Название задачи  написаное в две строки</h2>
+									</div>
+									<div class="tasks__project-name">
+										<img class="tasks__project-name-icon" src="images/icon-project.svg" alt="">
+										<div class="tasks__project-name-text">
+											Название текущего проекта написаное в две строки
+										</div>
+									</div>
+									<div class="task-time-line tasks__deadline">
+										<img class="task-time-line__icon" src="images/icon-calendar.svg" alt="">
+										<div class="task-time-line__text">
+											31.02.2023
+										</div>
+										<div class="task-time-line__time">
+											12:42
+										</div>
+									</div>
+									<div class="tasks__time-diagram">
+										<svg class="time-progres-img tasks__time-diagram-img" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="38" cy="38" r="35" fill="transparent" stroke="#F4F5F7" stroke-width="6"></circle>
+									  <circle class="progress-ring" data-value="42500" data-min="0" data-max="60000" cx="38" cy="38" r="35" fill="transparent" stroke="#5DAAD6" stroke-width="6" ></circle>
+										</svg>
+										<div class="tasks__diagram-text">
+											<div class="tasks__diagram-capture">
+												Затрачено времени
+											</div>
+											<div class="tasks__diagram-value">
+												4,5 / 12ч
+											</div>
+										</div>
+									</div>	
+								</div>
+								<object>
+									<a href="#">
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
+									</svg>
+									</a>
+								</object>
+							</a>
+
+							<a href="task.html" class="content-box task-box tasks__box content-box_scalable">
+								<div class="content-box__inner">
+									<div class="tasks__pay-label">
+										PAY
+									</div>
+									<div class="task-box-heading">
+											<label class="task-box-heading__checkbox">
+												<input type="checkbox">
+												<span></span>
+											</label>
+										<h2 class="content-box-title tasks__title">Название задачи  написаное в две строки</h2>
+									</div>
+									<div class="tasks__project-name">
+										<img class="tasks__project-name-icon" src="images/icon-project.svg" alt="">
+										<div class="tasks__project-name-text">
+											Название текущего проекта написаное в две строки
+										</div>
+									</div>
+									<div class="task-time-line tasks__deadline">
+										<img class="task-time-line__icon" src="images/icon-calendar.svg" alt="">
+										<div class="task-time-line__text">
+											31.02.2023
+										</div>
+										<div class="task-time-line__time">
+											12:42
+										</div>
+									</div>
+									<div class="tasks__time-diagram">
+										<svg class="time-progres-img tasks__time-diagram-img" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="38" cy="38" r="35" fill="transparent" stroke="#F4F5F7" stroke-width="6"></circle>
+									  <circle class="progress-ring" data-value="42500" data-min="0" data-max="60000" cx="38" cy="38" r="35" fill="transparent" stroke="#5DAAD6" stroke-width="6" ></circle>
+										</svg>
+										<div class="tasks__diagram-text">
+											<div class="tasks__diagram-capture">
+												Затрачено времени
+											</div>
+											<div class="tasks__diagram-value">
+												4,5 / 12ч
+											</div>
+										</div>
+									</div>	
+								</div>
+								<object>
+									<a href="#">
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
+									</svg>
+									</a>
+								</object>
+							</a>
+
+						</div>
+					</div>
+
+					<h2 class="top__subtitle">
+						Срок завтра
+					</h2>
+					<div class="top__blocks">
+						<div class="tasks__wrapper">
+							<a href="task.html" class="content-box task-box tasks__box content-box_scalable">
+								<div class="content-box__inner">
+									<div class="tasks__pay-label">
+										PAY
+									</div>
+									<div class="task-box-heading">
+											<label class="task-box-heading__checkbox">
+												<input type="checkbox">
+												<span></span>
+											</label>
+										<h2 class="content-box-title tasks__title">Название задачи  написаное в две строки</h2>
+									</div>
+									<div class="tasks__project-name">
+										<img class="tasks__project-name-icon" src="images/icon-project.svg" alt="">
+										<div class="tasks__project-name-text">
+											Название текущего проекта написаное в две строки
+										</div>
+									</div>
+									<div class="task-time-line tasks__deadline">
+										<img class="task-time-line__icon" src="images/icon-calendar.svg" alt="">
+										<div class="task-time-line__text">
+											31.02.2023
+										</div>
+										<div class="task-time-line__time">
+											12:42
+										</div>
+									</div>
+									<div class="tasks__time-diagram">
+										<svg class="time-progres-img tasks__time-diagram-img" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="38" cy="38" r="35" fill="transparent" stroke="#F4F5F7" stroke-width="6"></circle>
+									  <circle class="progress-ring" data-value="42500" data-min="0" data-max="60000" cx="38" cy="38" r="35" fill="transparent" stroke="#5DAAD6" stroke-width="6" ></circle>
+										</svg>
+										<div class="tasks__diagram-text">
+											<div class="tasks__diagram-capture">
+												Затрачено времени
+											</div>
+											<div class="tasks__diagram-value">
+												4,5 / 12ч
+											</div>
+										</div>
+									</div>	
+								</div>
+								<object>
+									<a href="#">
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
+									</svg>
+									</a>
+								</object>
+							</a>
+
+							<a href="task.html" class="content-box task-box tasks__box content-box_scalable">
+								<div class="content-box__inner">
+									<div class="tasks__pay-label">
+										PAY
+									</div>
+									<div class="task-box-heading">
+											<label class="task-box-heading__checkbox">
+												<input type="checkbox">
+												<span></span>
+											</label>
+										<h2 class="content-box-title tasks__title">Название задачи  написаное в две строки</h2>
+									</div>
+									<div class="tasks__project-name">
+										<img class="tasks__project-name-icon" src="images/icon-project.svg" alt="">
+										<div class="tasks__project-name-text">
+											Название текущего проекта написаное в две строки
+										</div>
+									</div>
+									<div class="task-time-line tasks__deadline">
+										<img class="task-time-line__icon" src="images/icon-calendar.svg" alt="">
+										<div class="task-time-line__text">
+											31.02.2023
+										</div>
+										<div class="task-time-line__time">
+											12:42
+										</div>
+									</div>
+									<div class="tasks__time-diagram">
+										<svg class="time-progres-img tasks__time-diagram-img" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="38" cy="38" r="35" fill="transparent" stroke="#F4F5F7" stroke-width="6"></circle>
+									  <circle class="progress-ring" data-value="42500" data-min="0" data-max="60000" cx="38" cy="38" r="35" fill="transparent" stroke="#5DAAD6" stroke-width="6" ></circle>
+										</svg>
+										<div class="tasks__diagram-text">
+											<div class="tasks__diagram-capture">
+												Затрачено времени
+											</div>
+											<div class="tasks__diagram-value">
+												4,5 / 12ч
+											</div>
+										</div>
+									</div>	
+								</div>
+								<object>
+									<a href="#">
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
+									</svg>
+									</a>
+								</object>
+							</a>
+
+							<a href="task.html" class="content-box task-box tasks__box content-box_scalable">
+								<div class="content-box__inner">
+									<div class="tasks__pay-label">
+										PAY
+									</div>
+									<div class="task-box-heading">
+											<label class="task-box-heading__checkbox">
+												<input type="checkbox">
+												<span></span>
+											</label>
+										<h2 class="content-box-title tasks__title">Название задачи  написаное в две строки</h2>
+									</div>
+									<div class="tasks__project-name">
+										<img class="tasks__project-name-icon" src="images/icon-project.svg" alt="">
+										<div class="tasks__project-name-text">
+											Название текущего проекта написаное в две строки
+										</div>
+									</div>
+									<div class="task-time-line tasks__deadline">
+										<img class="task-time-line__icon" src="images/icon-calendar.svg" alt="">
+										<div class="task-time-line__text">
+											31.02.2023
+										</div>
+										<div class="task-time-line__time">
+											12:42
+										</div>
+									</div>
+									<div class="tasks__time-diagram">
+										<svg class="time-progres-img tasks__time-diagram-img" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="38" cy="38" r="35" fill="transparent" stroke="#F4F5F7" stroke-width="6"></circle>
+									  <circle class="progress-ring" data-value="42500" data-min="0" data-max="60000" cx="38" cy="38" r="35" fill="transparent" stroke="#5DAAD6" stroke-width="6" ></circle>
+										</svg>
+										<div class="tasks__diagram-text">
+											<div class="tasks__diagram-capture">
+												Затрачено времени
+											</div>
+											<div class="tasks__diagram-value">
+												4,5 / 12ч
+											</div>
+										</div>
+									</div>	
+								</div>
+								<object>
+									<a href="#">
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
+									</svg>
+									</a>
+								</object>
+							</a>
+													
+						</div>
+					</div>
+
+					<h2 class="top__subtitle">
+						Остальные
+					</h2>
+					<div class="top__blocks">
+						<div class="tasks__wrapper">
+							<a href="task.html" class="content-box task-box tasks__box content-box_scalable">
+								<div class="content-box__inner">
+									<div class="tasks__pay-label">
+										PAY
+									</div>
+									<div class="task-box-heading">
+											<label class="task-box-heading__checkbox">
+												<input type="checkbox">
+												<span></span>
+											</label>
+										<h2 class="content-box-title tasks__title">Название задачи  написаное в две строки</h2>
+									</div>
+									<div class="tasks__project-name">
+										<img class="tasks__project-name-icon" src="images/icon-project.svg" alt="">
+										<div class="tasks__project-name-text">
+											Название текущего проекта написаное в две строки
+										</div>
+									</div>
+									<div class="task-time-line tasks__deadline">
+										<img class="task-time-line__icon" src="images/icon-calendar.svg" alt="">
+										<div class="task-time-line__text">
+											31.02.2023
+										</div>
+										<div class="task-time-line__time">
+											12:42
+										</div>
+									</div>
+									<div class="tasks__time-diagram">
+										<svg class="time-progres-img tasks__time-diagram-img" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="38" cy="38" r="35" fill="transparent" stroke="#F4F5F7" stroke-width="6"></circle>
+									  <circle class="progress-ring" data-value="42500" data-min="0" data-max="60000" cx="38" cy="38" r="35" fill="transparent" stroke="#5DAAD6" stroke-width="6" ></circle>
+										</svg>
+										<div class="tasks__diagram-text">
+											<div class="tasks__diagram-capture">
+												Затрачено времени
+											</div>
+											<div class="tasks__diagram-value">
+												4,5 / 12ч
+											</div>
+										</div>
+									</div>	
+								</div>
+								<object>
+									<a href="#">
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
+									</svg>
+									</a>
+								</object>
+							</a>
+
+							<a href="task.html" class="content-box task-box tasks__box content-box_scalable">
+								<div class="content-box__inner">
+									<div class="tasks__pay-label">
+										PAY
+									</div>
+									<div class="task-box-heading">
+											<label class="task-box-heading__checkbox">
+												<input type="checkbox">
+												<span></span>
+											</label>
+										<h2 class="content-box-title tasks__title">Название задачи  написаное в две строки</h2>
+									</div>
+									<div class="tasks__project-name">
+										<img class="tasks__project-name-icon" src="images/icon-project.svg" alt="">
+										<div class="tasks__project-name-text">
+											Название текущего проекта написаное в две строки
+										</div>
+									</div>
+									<div class="task-time-line tasks__deadline">
+										<img class="task-time-line__icon" src="images/icon-calendar.svg" alt="">
+										<div class="task-time-line__text">
+											31.02.2023
+										</div>
+										<div class="task-time-line__time">
+											12:42
+										</div>
+									</div>
+									<div class="tasks__time-diagram">
+										<svg class="time-progres-img tasks__time-diagram-img" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="38" cy="38" r="35" fill="transparent" stroke="#F4F5F7" stroke-width="6"></circle>
+									  <circle class="progress-ring" data-value="42500" data-min="0" data-max="60000" cx="38" cy="38" r="35" fill="transparent" stroke="#5DAAD6" stroke-width="6" ></circle>
+										</svg>
+										<div class="tasks__diagram-text">
+											<div class="tasks__diagram-capture">
+												Затрачено времени
+											</div>
+											<div class="tasks__diagram-value">
+												4,5 / 12ч
+											</div>
+										</div>
+									</div>	
+								</div>
+								<object>
+									<a href="#">
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
+									</svg>
+									</a>
+								</object>
+							</a>
+
+							<a href="task.html" class="content-box task-box tasks__box content-box_scalable">
+								<div class="content-box__inner">
+									<div class="tasks__pay-label">
+										PAY
+									</div>
+									<div class="task-box-heading">
+											<label class="task-box-heading__checkbox">
+												<input type="checkbox">
+												<span></span>
+											</label>
+										<h2 class="content-box-title tasks__title">Название задачи  написаное в две строки</h2>
+									</div>
+									<div class="tasks__project-name">
+										<img class="tasks__project-name-icon" src="images/icon-project.svg" alt="">
+										<div class="tasks__project-name-text">
+											Название текущего проекта написаное в две строки
+										</div>
+									</div>
+									<div class="task-time-line tasks__deadline">
+										<img class="task-time-line__icon" src="images/icon-calendar.svg" alt="">
+										<div class="task-time-line__text">
+											31.02.2023
+										</div>
+										<div class="task-time-line__time">
+											12:42
+										</div>
+									</div>
+									<div class="tasks__time-diagram">
+										<svg class="time-progres-img tasks__time-diagram-img" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="38" cy="38" r="35" fill="transparent" stroke="#F4F5F7" stroke-width="6"></circle>
+									  <circle class="progress-ring" data-value="42500" data-min="0" data-max="60000" cx="38" cy="38" r="35" fill="transparent" stroke="#5DAAD6" stroke-width="6" ></circle>
+										</svg>
+										<div class="tasks__diagram-text">
+											<div class="tasks__diagram-capture">
+												Затрачено времени
+											</div>
+											<div class="tasks__diagram-value">
+												4,5 / 12ч
+											</div>
+										</div>
+									</div>	
+								</div>
+								<object>
+									<a href="#">
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
+									</svg>
+									</a>
+								</object>
+							</a>
+
+							<a href="task.html" class="content-box task-box tasks__box content-box_scalable">
+								<div class="content-box__inner">
+									<div class="tasks__pay-label">
+										PAY
+									</div>
+									<div class="task-box-heading">
+											<label class="task-box-heading__checkbox">
+												<input type="checkbox">
+												<span></span>
+											</label>
+										<h2 class="content-box-title tasks__title">Название задачи  написаное в две строки</h2>
+									</div>
+									<div class="tasks__project-name">
+										<img class="tasks__project-name-icon" src="images/icon-project.svg" alt="">
+										<div class="tasks__project-name-text">
+											Название текущего проекта написаное в две строки
+										</div>
+									</div>
+									<div class="task-time-line tasks__deadline">
+										<img class="task-time-line__icon" src="images/icon-calendar.svg" alt="">
+										<div class="task-time-line__text">
+											31.02.2023
+										</div>
+										<div class="task-time-line__time">
+											12:42
+										</div>
+									</div>
+									<div class="tasks__time-diagram">
+										<svg class="time-progres-img tasks__time-diagram-img" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="38" cy="38" r="35" fill="transparent" stroke="#F4F5F7" stroke-width="6"></circle>
+									  <circle class="progress-ring" data-value="42500" data-min="0" data-max="60000" cx="38" cy="38" r="35" fill="transparent" stroke="#5DAAD6" stroke-width="6" ></circle>
+										</svg>
+										<div class="tasks__diagram-text">
+											<div class="tasks__diagram-capture">
+												Затрачено времени
+											</div>
+											<div class="tasks__diagram-value">
+												4,5 / 12ч
+											</div>
+										</div>
+									</div>	
+								</div>
+								<object>
+									<a href="#">
+										<svg class="delete-btn" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5 1L6.25 6.25M1 11.5L6.25 6.25M6.25 6.25L1 1L11.5 11.5"/>
+									</svg>
+									</a>
+								</object>
+							</a>
+							
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>							
 	</section>
+	<div class="modal-overlay">
+		<form class="delete-modal">
+		<div class="delete-modal__content">
+			<img class="delete-modal__img" src="images/icon-delete.svg" alt="" >
+			<div class="delete-modal__text">
+				<div class="delete-modal__title">
+					Удаление проекта
+				</div>
+				<div class="delete-modal__caption">
+					Вы уверены, что хотите удалить проект <span class="delete-modal__obj-name">«Квесты по родному городу своими руками»?</span> 
+				</div>
+			</div>
+		</div>
+		<div class="delete-modal__buttons">
+			<div class="delete-modal__btn delete-modal__btn_cancel">
+				Отмена
+			</div>
+			<button type="submit" class="delete-modal__btn delete-modal__btn_delete">
+				Удалить
+			</button>
+		</div>
+	</form>
+	</div>
+	
+	<script src="js/main.js"></script>
 </body>
 </html>

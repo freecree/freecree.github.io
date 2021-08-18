@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CRM-TaskForm</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">
+					CRM
+				</div>
+				<div class="burger-btn">
+				  <span></span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="top form-page">
+		<div class="top__inner">
+			<aside class="sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<img class="sidebar__img" src="images/icon-dash.svg" alt="">
+						<div class="sidebar__text">
+							Dashboard
+						</div>
+					</li>
+					<li class="sidebar__item">
+						<img class="sidebar__img" src="images/icon-client.svg" alt="">
+						<div class="sidebar__text">
+							Клиенты
+						</div>
+					</li>
+					<li class="sidebar__item">
+						<img class="sidebar__img" src="images/icon-project.svg" alt="">
+						<div class="sidebar__text">
+							Проекты
+						</div>
+					</li>
+					<li class="sidebar__item sidebar__item_active">
+						<img class="sidebar__img" src="images/icon-task.svg" alt="">
+						<div class="sidebar__text">
+							Задачи
+						</div>
+					</li>
+				</ul>
+			</aside>
+			<div class="top__main top__main_active">
+				<div class="container">
+					<h1 class="top__title">Заголовок</h1>
+					<div class="top__breadcrumbs">
+						Главная/Задачи /Активные
+					</div>
+					<div class="top__blocks">
+						<div class="form-page__wrapper">
+							<form class="form content-box form-page__box">
+								<div class="content-box__inner">
+									<div class="form__line">
+										<div class="form__line-caption">
+											Название задачи
+										</div>
+										<input class="form__input" name="task-name" type="text" placeholder="Введите название задачи">
+									</div>
+									<div class="form__line">
+										<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+										<div class="custom-select">
+											<select class="form__input form__input_list">
+												<option class="custom-select__nullval" value="0">Выберите проект</option>
+												<option value="1">Проект1</option>
+												<option value="2">Проект2</option>
+												<option value="3">Проект3</option>
+												<option value="4">Проект4</option>
+												<option value="5">Проект5</option>
+												<option value="6">Проект6</option>
+												<option value="7">Проект7</option>
+											</select>
+										</div>
+										
+									</div>
+									
+									<div class="form__line">
+										<div class="form__line-caption">
+											Описание задачи
+										</div>
+										<textarea class="form__input form__input_textarea" name="note" cols="20" rows="5"></textarea>
+									</div>
+									<button class="form__btn" type="submit">Добавить</button>
+								</div>
+							</form>
+						</div>	
+					</div>
+				</div>
+			</div>		
+
+		</div>
+	</section>
+	<script src="js/select.js"></script>
+	<script src="js/phoneinput.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
