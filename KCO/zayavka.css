@@ -1,0 +1,533 @@
+.es17 {
+    height: 684px;
+    background: url(img/es17-fon1.jpg) top center no-repeat;
+    padding-top: 50px;
+}
+
+.es17 .wrapper {
+    background: url(img/es17-fon2.png) right top no-repeat;
+    height: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: -1px;
+    max-width: 1244px;
+    position: relative;
+}
+
+.es17 h2 {
+    color: #3d3d3b;
+    /* line-height: 1;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: "Calibri-Bold"; */
+}
+
+.es17__phone {
+    font-size: 60px;
+    /* font-family: "Calibri-Bold"; */
+    font-family: "FiraSans-Bold";
+}
+
+._green {
+    color: #329f2f;
+}
+
+.es17__desc {
+    font-family: "Noteworthy-Light";
+    font-size: 27px;
+    position: relative;
+    width: 415px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.es17__form {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 39px;
+}
+
+.form-group._phone {
+    position: relative;
+}
+
+.es17__phone ._green:hover {
+    color: #23527c;
+}
+
+.es17__form .form-group {
+    margin-right: 20px;
+    max-width: 290px;
+}
+.form-group {
+    margin-bottom: 17px;
+}
+.icon-phone-form,
+.form-group._phone:before {
+    background-position: -55px -630px;
+    height: 52px;
+    width: 55px;
+}
+.form-group._phone:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 13px;
+}
+
+.form-group._phone .form-control {
+    padding-left: 90px;
+}
+form label {
+    font-weight: normal;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.form-group._phone .form-control {
+    padding-left: 90px;
+}
+.form-control {
+    display: block;
+    min-width: 280 px;
+    width: 100%;
+    height: 66 px;
+    padding: 6 px 10 px 6 px 10 px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding;
+    -o-background-clip: padding-box;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+    background-color: #fff;
+    color: #000;
+    font-size: 24px;
+    font-family: "Calibri-Bold";
+    border: 1 px solid #a0a0a0;
+    -moz-border-radius: 3px/3px 3px 3px 3px;
+    -webkit-border-radius: 1;
+    border-radius: 3 px / 3 px 3 px 3 px 3 px;
+    -moz-background-clip: padding;
+    -o-background-clip: padding-box;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+}
+.form-control {
+    display: block;
+    min-width: 280 px;
+    width: 100%;
+    height: 66px;
+    padding: 6px 10px 6px 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding;
+    -o-background-clip: padding-box;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+    background-color: #fff;
+    color: #000;
+    font-size: 24px;
+    font-family: "Calibri-Bold";
+    border: 1 px solid #a0a0a0;
+    -moz-border-radius: 3px/3px 3px 3px 3px;
+    -webkit-border-radius: 1;
+    border-radius: 3px / 3px 3px 3px 3px;
+    -moz-background-clip: padding;
+    -o-background-clip: padding-box;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+}
+
+.es17 .btn {
+    line-height: 1;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3 px;
+    border-radius: 3 px;
+    -moz-background-clip: padding;
+    -o-background-clip: padding-box;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+    background-color: #df7307;
+    -moz-box-shadow: 0 3px 0 #963500;
+    -webkit-box-shadow: 0 3px 0 #963500;
+    box-shadow: 0 3px 0 #963500;
+    background-image: url(img/btn-grad.svg);
+    /* background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2QxMzYwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmODQwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==); */
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #d13600), color-stop(100%, #ff8400));
+    background-image: -moz-linear-gradient(bottom, #d13600 0%, #ff8400 100%);
+    background-image: -webkit-linear-gradient(bottom, #d13600 0%, #ff8400 100%);
+    background-image: linear-gradient(to top, #d13600 0%, #ff8400 100%);
+    color: #fff;
+    padding: 9 px 29 px 11 px 29 px;
+    font-size: 30px;
+    font-family: "Calibri-Bold";
+    text-shadow: 0 1px 1px rgb(96 33 0 / 75%);
+}
+.es17 .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    /* font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143; */
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* background-image: none; */
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.es17 .btn:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+form .btn {
+    text-transform: none;
+    font-size: 28px;
+    padding: 7px 15px 11px 15px;
+    width: 280px;
+    height: 64px;
+}
+
+.icon-sprite,
+.icon-active,
+.b-filter__tub_item.active:before,
+.icon-active2,
+.icon-all,
+.b-input__group .b-input__control:before,
+.icon-arrowBgRght-2,
+.es14 button.bx-next,
+.es15 .prev1,
+.es38 .prev2,
+.icon-arrowBgRght-def,
+.es15 .prev1.unselectable,
+.es38 .prev2.unselectable,
+.icon-arrowBgRght,
+.es3 .bx-controls-direction .bx-next,
+.icon-arrowBglft-2,
+.es14 button.bx-prev,
+.es15 .next1,
+.es38 .next2,
+.icon-arrowBglft-def,
+.es15 .next1.unselectable,
+.es38 .next2.unselectable,
+.icon-arrowBglft,
+.es3 .bx-controls-direction .bx-prev,
+.icon-bad,
+.es4__block_dinamic ul li.bad:before,
+.icon-check2-act,
+.b-input_type_checkbox input[type="checkbox"]:checked + span:before,
+.icon-check2,
+.b-input_type_checkbox input[type="checkbox"] + span:before,
+.icon-chek-2,
+.es1._rassrochka ul li:before,
+.icon-chek-act,
+.basechek .b-input_type_checkbox input[type="radio"]:checked + span:before,
+.row6__step1_ttl:after,
+.row6__step3_pict:after,
+.row6__step4_pict:after,
+.row6__radio .b-radio.active:before,
+.b-form.ok .b-form_info:before,
+.icon-chek-otziv,
+.es26__block .es14__item_pict:before,
+.icon-chek,
+.basechek .b-input_type_checkbox input[type="radio"] + span:before,
+.row6__step1_ttl:before,
+.row6__step3_pict:before,
+.row6__step4_pict:before,
+.row6__radio .b-radio:before,
+.icon-cheked-2,
+.es14__rejting_item:before,
+.icon-cheked,
+.icon-close-white,
+.icon-close,
+.b-form .i-close,
+#legal-info .i-close,
+.icon-close2,
+.b-form.want-cheaper-main .i-close,
+.icon-comm,
+.filter-item-hint-question,
+.filter-item-hint-warning,
+.icon-down,
+.icon-download,
+.form-group._download:before,
+.icon-download2,
+.icon-es1-ico1,
+.icon-es1-ico2,
+.icon-es1-ico3,
+.icon-es4-chek,
+.es4__block_static ul li:before,
+.icon-es4-rub,
+.es4__block_static .es4_price:before,
+.es4__block_dinamic .es4_price:before,
+.icon-es4-str,
+.es4 .es__desc:before,
+.icon-good,
+.es1__menu .link:before,
+.es4__block_dinamic ul li.good:before,
+.icon-hit,
+.katalog .b-card__pict:before,
+.icon-i-plus,
+.icon.plus,
+.icon-i-rub,
+.icon.rub,
+.icon-ico1,
+.icon-ico2,
+.icon-ico3,
+.es18__block .link._ico1:before,
+.icon-ico4,
+.icon-ico5,
+.icon-ico7,
+.es18__block .link._ico7:before,
+.icon-kalk2,
+.btn-price:before,
+.icon-lbl,
+.es13 h2:before,
+.icon-li,
+.b-card__item ul li:before,
+.icon-line,
+.b-katalog__price_old:before,
+.icon-line2,
+.b-price._old span:before,
+.icon-line3,
+.b-card__price_item .b-price._old span:before,
+.icon-line4,
+.es25__block_ttl .line:before,
+.icon-lupa,
+.fa-search:before,
+.icon-minus,
+.icon.minus,
+.icon-name-form-green,
+.form-group._name.green:before,
+.icon-name-form,
+.form-group._name:before,
+.icon-phone-form-green,
+.form-group._phone.green:before,
+.icon-phone-form,
+.form-group._phone:before,
+.icon-plus,
+.icon-r,
+.icon-r2,
+.icon-recommend,
+.es14__comment_recom:before,
+.icon-row6-next,
+.icon.next,
+.icon-row6-prev,
+.icon.prev,
+.icon-rub,
+.icon-rub2,
+.icon-rub3,
+.icon-sale,
+.btn._sale:before,
+.icon-star,
+.es14__comment_star .star,
+.icon-str1,
+.icon-str2,
+.icon-str3,
+.icon-str4,
+.es16__sale span:before,
+.icon-str5,
+.es17__desc:before,
+.icon-str6,
+.es18__block span:before,
+.icon-tm-1,
+.b-menu__main_item .link-dark.tm-1:before,
+.icon-tm-2-act,
+.b-menu__item.active .link-dark.tm-2:before,
+.icon-tm-2,
+.b-menu__main_item .link-dark.tm-2:before,
+.es18__block .link._ico2:before,
+.icon-tm-3-act,
+.b-menu__item.active .link-dark.tm-3:before,
+.icon-tm-3,
+.b-menu__main_item .link-dark.tm-3:before,
+.es18__block .link._ico3:before,
+.icon-tm-4-act,
+.b-menu__item.active .link-dark.tm-4:before,
+.icon-tm-4,
+.b-menu__main_item .link-dark.tm-4:before,
+.icon-tm-5,
+.b-menu__main_item .link-dark.tm-5:before,
+.icon-tm-6,
+.b-menu__main_item .link-dark.tm-6:before,
+.icon-tm-7,
+.b-menu__main_item .link-dark.tm-7:before,
+.icon-ugl-l,
+.es26__block .es14__item_comment._lft:before,
+.icon-ugl-r,
+.es26__block .es14__item_comment._rght:before,
+.icon-ugl,
+.es1-adress__map_info:before,
+.icon-underline-2,
+.icon-underline-3,
+.icon-underline,
+.icon-vnim,
+.icon.vnim,
+.icon-zakaz,
+.btn-zakaz2:before,
+.icon-zv,
+.icon.zv {
+    background-image: url(img/icon-s7c1bc4b403.png);
+    background-repeat: no-repeat;
+}
+.es17__desc:before {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: -50px;
+    left: -50px;
+}
+.icon-str5,
+.es17__desc:before {
+    background-position: -282px -435px;
+    height: 83px;
+    width: 32px;
+}
+.b-master {
+    position: absolute;
+    font-size: 18px;
+    top: 162px;
+    right: 95px;
+}
+.es17 .b-master {
+    right: 20px;
+}
+.es17 .b-prav {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    margin-top: -12px;
+    width: 600px;
+    margin-left: 40px;
+}
+.b-prav {
+    font-size: 15px;
+    font-family: "Calibri";
+    line-height: 1;
+}
+
+@media (max-width: 992px) {
+    .es17 {
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .es17 .wrapper {
+        background: none;
+        height: auto;
+    }
+    .es17 h2 {
+        text-align: center;
+        font-size: 56px;
+        width: auto;
+    }
+    .es17__desc {
+        margin: auto;
+    }
+    .es17__desc:before {
+        bottom: -25px;
+    }
+    .es17__block {
+        text-align: center;
+    }
+    .es17__form {
+        display: inline-flex;
+        margin-left: 0;
+    }
+    .es17 .b-master {
+        display: none;
+    }
+    .es17 .b-prav {
+        margin-left: 0;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .es17__block {
+        padding-top: 60 px;
+    }
+    .es17 h2 {
+        font-size: 50px;
+    }
+    .es17__phone {
+        font-size: 50px;
+    }
+    .es17 .b-prav {
+        width: 96%;
+    }
+}
+@media (max-width: 700px) {
+    .es17__form {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .es17__form .form-group {
+        margin-right: 0px;
+        margin: 0 auto 15px auto;
+    }
+    .es17__desc {
+        font-size: 25px;
+    }
+    .es17__desc:before {
+        bottom: -50px;
+        left: 7px;
+    }
+}
+@media (max-width: 600px) {
+    /* line 18, ../../sass/blocks/es17/_es17.sass */
+    .es17 h2 {
+        font-size: 44px;
+    }
+    .es17__phone {
+        font-size: 44px;
+    }
+    .es17__desc {
+        font-size: 23px;
+        width: 380px;
+    }
+}
+@media (max-width: 480px) {
+    /* line 18, ../../sass/blocks/es17/_es17.sass */
+    .es17 h2 {
+        font-size: 40px;
+    }
+    .es17__phone {
+        font-size: 36px;
+    }
+}
+@media (max-width: 430px) {
+    .es17__desc {
+        width: 100%;
+        margin: 15px auto 0 auto;
+    }
+    .es17__desc:before {
+        content: "";
+        display: none;
+    }
+}
+
+
+/* Map */
+
+

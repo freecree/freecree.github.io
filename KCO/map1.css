@@ -1,0 +1,330 @@
+div.map-block {
+    position: relative;
+    min-height: 500px;
+}
+
+div.map-block.no-map {
+    min-height: initial;
+}
+
+div.map-block div.map-height {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* z-index: 5; */
+    width: 100%;
+    height: 100%;
+}
+
+div.map-block div.map-height > * {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+div.map-block table.wrap-table {
+    min-height: 500px;
+}
+
+div.map-block div.map-descript-wrap {
+    min-height: 300px;
+    position: relative;
+}
+
+div.map-block div.map-descript-wrap div.map-descript {
+    position: relative;
+    z-index: 10;
+    background: #fff;
+    display: inline-block;
+    padding: 30px;
+    margin: 100px 0 100px 50px;
+    -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.32);
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.32);
+}
+
+div.map-block div.map-descript-wrap div.map-descript div.name {
+    font-size: 13px;
+    line-height: 18px;
+    color: #616161;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+div.map-block div.map-descript-wrap div.map-descript div.text-table-wrap {
+}
+
+div.map-block div.map-descript-wrap div.map-descript div.text-table-wrap div.text-table {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+div.map-block div.map-descript-wrap div.map-descript div.text-table-wrap div.text-table:first-child {
+    padding-top: 0;
+}
+
+div.map-block div.map-descript-wrap div.map-descript div.text-table-wrap div.text-table:last-child {
+    border-bottom: 1px solid transparent;
+    padding-bottom: 0;
+}
+
+div.map-block div.map-descript-wrap div.map-descript div.text-table-wrap div.text-table div.text-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div.map-block div.map-descript-wrap div.map-descript div.text-table-wrap div.text-table div.text-cell.icon {
+    width: 39px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.map-block div.map-descript-wrap div.map-descript div.text-table-wrap div.text-table div.text-cell.icon.icon-point {
+    background-image: url("img/map-ic-point.png");
+}
+
+div.map-block div.map-descript-wrap div.map-descript div.text-table-wrap div.text-table div.text-cell.icon.icon-phone {
+    background-image: url("img/map-ic-phone.png");
+}
+
+div.map-block div.map-descript-wrap div.map-descript div.text-table-wrap div.text-table div.text-cell.icon.icon-mail {
+    background-image: url("img/map-ic-mail.png");
+}
+
+div.map-block div.map-descript-wrap div.map-descript div.text-table-wrap div.text-table div.text-cell.text {
+    padding: 25px 15px 25px 25px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #131313;
+}
+
+div.map-block div.map-descript-wrap div.map-descript div.text-table-wrap div.text-table div.text-cell.text.phone a {
+    color: #131313;
+    cursor: default;
+    border-bottom: 0;
+}
+
+div.map-block
+    div.map-descript-wrap
+    div.map-descript
+    div.text-table-wrap
+    div.text-table
+    div.text-cell.text.phone
+    a:hover {
+}
+
+div.map-block div.map-descript-wrap div.map-descript div.text-table-wrap div.text-table div.text-cell.text a.mail {
+    color: #3091ce;
+}
+
+div.map-block div.overlay {
+    position: absolute;
+}
+
+div.map-block div.bot-wrap {
+    background: #f8f8f8;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    bottom: 0;
+}
+
+div.map-block.no-map div.bot-wrap {
+    position: static;
+}
+
+div.map-block div.bot-wrap div.text-table-wrap {
+    width: 100%;
+    table-layout: fixed;
+    padding: 40px 0;
+}
+
+div.map-block div.bot-wrap div.text-table-wrap div.text-cell-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+
+div.map-block div.bot-wrap div.text-table-wrap div.text-cell-wrap div.name {
+    font-size: 13px;
+    line-height: 18px;
+    color: #616161;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+div.map-block div.bot-wrap div.text-table-wrap div.text-cell-wrap div.text-table {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+div.map-block div.bot-wrap div.text-table-wrap div.text-cell-wrap div.text-table div.text-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div.map-block div.bot-wrap div.text-table-wrap div.text-cell-wrap div.text-table div.text-cell.icon {
+    width: 39px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.map-block div.bot-wrap div.text-table-wrap div.text-cell-wrap div.text-table div.text-cell.icon.icon-point {
+    background-image: url("img/map-ic-point.png");
+}
+
+div.map-block div.bot-wrap div.text-table-wrap div.text-cell-wrap div.text-table div.text-cell.icon.icon-phone {
+    background-image: url("img/map-ic-phone.png");
+}
+
+div.map-block div.bot-wrap div.text-table-wrap div.text-cell-wrap div.text-table div.text-cell.icon.icon-mail {
+    background-image: url("img/map-ic-mail.png");
+}
+
+div.map-block div.bot-wrap div.text-table-wrap div.text-cell-wrap div.text-table div.text-cell.text {
+    padding: 0 15px 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: #131313;
+}
+
+div.map-block div.bot-wrap div.text-table-wrap div.text-cell-wrap div.text-table div.text-cell.text.e-mail a,
+div.map-block div.bot-wrap div.text-table-wrap div.text-cell-wrap div.text-table div.text-cell.text.e-mail a {
+    text-decoration: underline;
+}
+
+div.map-block div.bot-wrap div.text-table-wrap div.text-cell-wrap div.text-table div.text-cell.text.e-mail a:hover,
+div.map-block div.bot-wrap div.text-table-wrap div.text-cell-wrap div.text-table div.text-cell.text.e-mail a:hover {
+    text-decoration: none;
+}
+
+div.map-block div.bot-wrap div.text-table-wrap div.text-cell-wrap div.text-table div.text-cell.text.phone a {
+    border-bottom: 0;
+    color: #131313;
+    cursor: default;
+}
+
+div.map-block div.bot-wrap div.text-table-wrap div.text-cell-wrap div.text-table div.text-cell.text.phone a:hover {
+}
+
+div.map-block div.bot-wrap div.text-table-wrap div.text-cell-wrap div.text-table div.text-cell.text {
+}
+
+div.map-block div.main-button-wrap {
+    display: none;
+}
+.secondary,
+.button-def.secondary:active,
+.button-def.secondary:focus {
+    background-color: rgba(241, 241, 241, 0.7);
+}
+.button-def {
+    /* font-weight: normal; */
+    font-size: 15px;
+    line-height: 15px;
+    cursor: pointer;
+    border: 0 solid #2285c4;
+    white-space: nowrap;
+    padding: 15px 25px;
+    text-decoration: none !important;
+    text-align: center;
+    outline: none;
+    display: inline-block;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+}
+.button-def.secondary:hover,
+.wrapper-mbox div.m-box-inner div.body td.left-p div.buttons table td.left a:hover {
+    background-color: #00b86b;
+    color: white;
+    border: 0;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+@media (max-width: 768px) {
+    div.map-block div.map-descript-wrap div.map-descript {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+    div.map-block div.map-descript-wrap div.map-descript div.name {
+        text-align: left;
+        font-size: 16px;
+        line-height: 20px;
+        border-bottom: 3px solid #2878b8;
+        padding: 10px;
+    }
+    div.map-block table.wrap-table {
+        min-height: initial;
+    }
+    div.map-block div.main-button-wrap {
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+    .button-def {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    div.map-block div.map-descript-wrap div.map-descript {
+        margin: 0;
+    }
+}
+
+/* Footer */
+.footer1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    background-color: #f0f3f8;
+    position: relative;
+    min-height: 90px;
+    margin-top: -90px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.footer1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(img/line.png);
+}
+
+.b-foot__block:before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    background: url(img/regim.png) no-repeat;
+    width: 44px;
+    height: 44px;
+}
+.b-footer__item .phone {
+    font-size: 30px;
+    font-family: "FiraSans-Bold";
+}
+
+
