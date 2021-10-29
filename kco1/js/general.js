@@ -1,4 +1,10 @@
 $(document).ready(function(){
+    var strGET = window.location.search;
+    if (strGET == '?modal') {
+        $(document).ready(function(){
+          $('#want_zamer-main').modal('show');
+      });
+    }
 	$("input[name=phone]").inputmask("+38 (999) 999-9999",{
 		"onincomplete": function(){ $(this).addClass('false'); },
 		"onKeyValidation": function(){ $(this).addClass('false'); },
