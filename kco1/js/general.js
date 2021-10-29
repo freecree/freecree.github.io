@@ -10,9 +10,9 @@ $(document).ready(function(){
 		"onKeyValidation": function(){ $(this).addClass('false'); },
 		"oncomplete": function(){ $(this).removeClass('false');}
 	});
-	$(document).on('click', '.navbar-toggle', function(){
-		$('.b-menu__main.navbar-collapse').toggleClass('in');
-	})	
+	// $(document).on('click', '.navbar-toggle', function(){
+	// 	$('.b-menu__main.navbar-collapse').toggleClass('in');
+	// })	
 	//срабатывание ссылки в главном меню если есть подменю
     $('.navbar .dropdown-toggle').on('click.location',function(){
         var $parent = $(this).parent();
