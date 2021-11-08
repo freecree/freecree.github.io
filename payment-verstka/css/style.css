@@ -618,6 +618,11 @@ a {
         cursor: pointer;
         position: relative;
     }
+
+    .payment-way-accordion__header, .payment__accordion {
+        webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
     .payment__accordion.opened .payment__content-block {
         display: block;
     }
