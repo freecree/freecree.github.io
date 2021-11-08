@@ -5,7 +5,7 @@ $(document).ready(function(){
           $('#want_zamer-main').modal('show');
       });
     }
-	$("input[name=phone]").inputmask("+38 (999) 999-9999",{
+	$("input[name=phone]").inputmask("+7 (999) 999-9999",{
 		"onincomplete": function(){ $(this).addClass('false'); },
 		"onKeyValidation": function(){ $(this).addClass('false'); },
 		"oncomplete": function(){ $(this).removeClass('false');}
@@ -34,45 +34,45 @@ $(document).ready(function(){
 
 	/* Rewiew Slider */
 
-    // var reviewSlider = $reviewSlider = $('.owl-slider-rewiew'),
-    //     reviewSliderAutoplay = reviewSlider.attr('data-autoplay'),
-    //     reviewSliderAutoplayTimeout = reviewSlider.attr('data-autoplay-timeout');
+    var reviewSlider = $reviewSlider = $('.owl-slider-rewiew'),
+        reviewSliderAutoplay = reviewSlider.attr('data-autoplay'),
+        reviewSliderAutoplayTimeout = reviewSlider.attr('data-autoplay-timeout');
 
-    //     if( reviewSliderAutoplay == "true" ) { reviewSliderAutoplay = true; } else { reviewSliderAutoplay = false; }
-    // $('.owl-slider-rewiew').owlCarousel({
-    //     margin:31,
-    //     nav : true,
-    //     navText : ["",""],
-    //     responsiveClass:true,
-    //     navContainerClass : "owl-nav owl-nav_rewiews",
-    //     dotsClass : "owl-dots owl-dots_rewiews",
-    //     loop : false,
-    //     autoHeight : true,
-    //     rewind : true,
-    //     autoplay : reviewSliderAutoplay,
-    //     autoplayTimeout : reviewSliderAutoplayTimeout,
-    //     responsive:{
-    //         0:{
-    //             items:1,
-    //             nav:false,
-    //             autoHeight: true
-    //         },
-    //         769:{
-    //             items:1,
-    //             nav:true,
-    //             autoHeight: true
-    //         },
-    //         1000:{
-    //             items:2,
-    //             nav:true,
-    //         },
-    //         1300:{
-    //             autoplayHoverPause : true,
-    //             items:3,
-    //             nav:true,
-    //         }
-    //     }
-    // })
+        if( reviewSliderAutoplay == "true" ) { reviewSliderAutoplay = true; } else { reviewSliderAutoplay = false; }
+    $('.owl-slider-rewiew').owlCarousel({
+        margin:31,
+        nav : true,
+        navText : ["",""],
+        responsiveClass:true,
+        navContainerClass : "owl-nav owl-nav_rewiews",
+        dotsClass : "owl-dots owl-dots_rewiews",
+        loop : false,
+        autoHeight : true,
+        rewind : true,
+        autoplay : reviewSliderAutoplay,
+        autoplayTimeout : reviewSliderAutoplayTimeout,
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+                autoHeight: true
+            },
+            769:{
+                items:1,
+                nav:true,
+                autoHeight: true
+            },
+            1000:{
+                items:2,
+                nav:true,
+            },
+            1300:{
+                autoplayHoverPause : true,
+                items:3,
+                nav:true,
+            }
+        }
+    })
 
 /* Rewiew Slider */
 	
@@ -8790,50 +8790,6 @@ $(document).ready(function(){
 });
 /* Main Slider */
 
-/* Rewiew Slider */
-$(document).ready(function(){
-    var reviewSlider = $reviewSlider = $('.owl-slider-rewiew'),
-        reviewSliderAutoplay = reviewSlider.attr('data-autoplay'),
-        reviewSliderAutoplayTimeout = reviewSlider.attr('data-autoplay-timeout');
-
-        if( reviewSliderAutoplay == "true" ) { reviewSliderAutoplay = true; } else { reviewSliderAutoplay = false; }
-    $('.owl-slider-rewiew').owlCarousel({
-        margin:31,
-        nav : true,
-        //dots: true,
-        navText : ["",""],
-        responsiveClass:true,
-        navContainerClass : "owl-nav owl-nav_rewiews",
-        dotsClass : "owl-dots owl-dots_rewiews",
-        loop : false,
-        autoHeight : true,
-        rewind : true,
-        autoplay : reviewSliderAutoplay,
-        autoplayTimeout : reviewSliderAutoplayTimeout,
-        responsive:{
-            0:{
-                items:1,
-                nav:false,
-                autoHeight: true
-            },
-            769:{
-                items:1,
-                nav:true,
-                autoHeight: true
-            },
-            1000:{
-                items:2,
-                nav:true,
-            },
-            1300:{
-                autoplayHoverPause : true,
-                items:3,
-                nav:true,
-            }
-        }
-    })
-});
-/* Rewiew Slider */
 
 /* Partners Slider */
 $(document).ready(function(){
@@ -9475,21 +9431,20 @@ $( document ).ready(function() {
     });
 });
 /* End */
-;
-; /* Start:"a:4:{s:4:"full";s:54:"/bitrix/templates/bitcorp_s1/js/custom.js?154713736779";s:6:"source";s:41:"/bitrix/templates/bitcorp_s1/js/custom.js";s:3:"min";s:0:"";s:3:"map";s:0:"";}"*/
+/* Start:"a:4:{s:4:"full";s:54:"/bitrix/templates/bitcorp_s1/js/custom.js?154713736779";s:6:"source";s:41:"/bitrix/templates/bitcorp_s1/js/custom.js";s:3:"min";s:0:"";s:3:"map";s:0:"";}"*/
 /* Pishite svoi JS v etom file. Pri obnovlenii shablona etot file ne zatretca*/
 /* End */
-;; /* /bitrix/templates/bitcorp_s1/assets/float-labels/fluid-labels.js?15471373672793*/
-; /* /bitrix/templates/bitcorp_s1/assets/owlcarousel/owl.carousel.min.js?154713736742766*/
-; /* /bitrix/templates/bitcorp_s1/assets/jqModal/jqModal_bitcorp.js?154713736711043*/
-; /* /bitrix/templates/bitcorp_s1/assets/jquery.fancybox.min.js?154713736752302*/
-; /* /bitrix/templates/bitcorp_s1/assets/spectrum/spectrum.js?154713736779093*/
-; /* /bitrix/templates/bitcorp_s1/assets/jquery.cookie.js?15471373673121*/
-; /* /bitrix/templates/bitcorp_s1/assets/jquery.smooth-scroll.js?15471373677201*/
-; /* /bitrix/templates/bitcorp_s1/assets/jquery.inputmask.bundle.js?1547137367220752*/
-; /* /bitrix/templates/bitcorp_s1/assets/jquery.validate.js?154713736748676*/
-; /* /bitrix/templates/bitcorp_s1/assets/jquery-ui-custom/jquery-ui.min.js?1547137367109576*/
-; /* /bitrix/templates/bitcorp_s1/assets/Sticky/jquery.sticky.js?154713736710085*/
-; /* /bitrix/templates/bitcorp_s1/assets/jquery.matchHeight-min.js?15471373673380*/
-; /* /bitrix/templates/bitcorp_s1/js/main.js?154713736724424*/
-; /* /bitrix/templates/bitcorp_s1/js/custom.js?154713736779*/
+ /* /bitrix/templates/bitcorp_s1/assets/float-labels/fluid-labels.js?15471373672793*/
+/* /bitrix/templates/bitcorp_s1/assets/owlcarousel/owl.carousel.min.js?154713736742766*/
+/* /bitrix/templates/bitcorp_s1/assets/jqModal/jqModal_bitcorp.js?154713736711043*/
+/* /bitrix/templates/bitcorp_s1/assets/jquery.fancybox.min.js?154713736752302*/
+/* /bitrix/templates/bitcorp_s1/assets/spectrum/spectrum.js?154713736779093*/
+/* /bitrix/templates/bitcorp_s1/assets/jquery.cookie.js?15471373673121*/
+/* /bitrix/templates/bitcorp_s1/assets/jquery.smooth-scroll.js?15471373677201*/
+/* /bitrix/templates/bitcorp_s1/assets/jquery.inputmask.bundle.js?1547137367220752*/
+/* /bitrix/templates/bitcorp_s1/assets/jquery.validate.js?154713736748676*/
+/* /bitrix/templates/bitcorp_s1/assets/jquery-ui-custom/jquery-ui.min.js?1547137367109576*/
+/* /bitrix/templates/bitcorp_s1/assets/Sticky/jquery.sticky.js?154713736710085*/
+/* /bitrix/templates/bitcorp_s1/assets/jquery.matchHeight-min.js?15471373673380*/
+/* /bitrix/templates/bitcorp_s1/js/main.js?154713736724424*/
+/* /bitrix/templates/bitcorp_s1/js/custom.js?154713736779*/

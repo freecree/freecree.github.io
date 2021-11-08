@@ -3,6 +3,22 @@
 <html lang="ru" class="bx-core bx-no-touch bx-no-retina bx-chrome">
 
 <head>
+    <!-- Yandex.Metrika counter --> 
+    <script type="text/javascript" > 
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; 
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) 
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); 
+ 
+       ym(85711146, "init", { 
+            clickmap:true, 
+            trackLinks:true, 
+            accurateTrackBounce:true, 
+            webvisor:true 
+       }); 
+    </script> 
+    <noscript><div><img src="https://mc.yandex.ru/watch/85711146" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+    <!-- /Yandex.Metrika counter -->
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Сестринское дело обучение. Поступи прямо сейчас!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -92,7 +108,7 @@
 
 
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-    <link href="general.css" rel="stylesheet">
+    <link href="general.css?ver=2.445" rel="stylesheet">
 
 
 
@@ -216,7 +232,7 @@
                                 <a href="tel:+74951511040" class="ya-link" data-goal="phone-top"> <span
                                         class="comagic_phone">+7 (495) 151-10-40</span></a>
                             </div>
-                            <div class="b-header_link"><a data-toggle="modal" data-target="#want_zamer-main"
+                            <div class="b-header_link"><a data-toggle="modal" data-target="#zvonok-verh"
                                     class="link-dark" onclick=""><span class="solid">Заказать звонок</span></a>
                             </div>
 
@@ -294,7 +310,7 @@
                             <div class="es__rassr"><img src="img/rassr.png" alt="Цветы с бесплатной доставкой"></div>
 
                             <div class="es1__btn">
-                                <a data-toggle="modal" data-target="#want_zamer" class="btn kalk">Расcчитать по
+                                <a data-toggle="modal" data-target="#rasschitat" class="btn kalk">Расcчитать по
                                     лучшей&nbsp;цене</a>
                             </div>
                         </div>
@@ -480,13 +496,21 @@
                             форму, и мы подберем вариант под Ваш бюджет
                         </div>
                         <form action="https://masterwash.com.ua/mail.php" method="POST"
-                            class="cta__form callback-form wow fadeInUp"
+                            class="callback-form wow fadeInUp"
                             style="visibility: visible; animation-name: fadeInUp;">
-                            <div class="cta__form-input input-2 input-2_phone"><input type="text" name="phone"
-                                    placeholder="Ваш номер телефона" pattern="\+\d{3}\(\d{2}\)\s{1}\d{3}-\d{2}-\d{2}"
+                            <div class="cta__form">
+                                <div class="cta__form-input input-2 input-2_phone"><input type="text" name="phone"
+                                    placeholder="Ваш номер телефона" data-inputmask="'mask': '+7 999 999-99-99'" pattern="\+7\s[0-9]{3}\s[0-9]{3}-[0-9]{2}-[0-9]{2}" 
                                     required=""></div>
-                            <button class="cta__form-button button-3">Отправить</button>
+
+                            <button type="submit"class="cta__form-button button-3" onclick="ym(85711146, 'reachGoal','zakaz'); return true;">Отправить</button> 
+                            </div>  
+                            
                         </form>
+                        <p class="policy-line untext">
+                            <a class="untext__link" target="_blank" href="pk.html">Политика
+                                конфиденциальности</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -745,20 +769,19 @@
                                 value="web_form_3"><input type="hidden" data-comagic-field="message"
                                 value="Бесплатная консультация">
                             <div class="es17__form">
-                                <div class="form-group _phone"><label><input data-comagic-field="phone" type="tel"
-                                            class="form-control" placeholder="Телефон" name="form_text_43"
-                                            aria-describedby="form_text_43-error" required=""><span
-                                            id="form_text_43-error"></span></label></div><button name="web_form_apply"
-                                    value="Y" type="submit" class="btn btn-orange">Заказать звонок</button>
+                                <div class="form-group _phone"><label><input data-inputmask="'mask': '+7 999 999-99-99'"
+                                pattern="\+7\s[0-9]{3}\s[0-9]{3}-[0-9]{2}-[0-9]{2}" data-comagic-field="phone" type="tel"
+                                    class="form-control" placeholder="Телефон" name="phone"
+                                    aria-describedby="form_text_43-error" required=""><span
+                                    id="form_text_43-error"></span></label></div><button name="web_form_apply"
+                                    value="Y" type="submit" class="btn btn-orange" onclick="ym(85711146, 'reachGoal','zvonok2'); return true;" >Заказать звонок</button>
                                 <div class="result"></div>
                             </div>
                         </form>
                         <div class="b-prav">
-                            Оставляя свои контактные данные, вы подтверждаете свое совершеннолетие, соглашаетесь на
-                            обработку
-                            персональных данных в соответствии с <a href=""
+                            <a target="_blank" href="pk.html"
                                 onclick="newMyWindow(this.href); return false;" rel="nofollow"
-                                class="link">Правовой&nbsp;информацией</a>.
+                                class="link">Политика конфиденциальности</a>
                         </div>
 
                     </div>
@@ -914,8 +937,8 @@
         </div>
 
     </div>
-
-    <div class="modal fade" id="want_zamer-main" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <!-- Заказать звонок верх -->
+    <div class="modal fade" id="zvonok-verh" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true" style="display: none;">
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
@@ -931,9 +954,41 @@
                             <input data-inputmask="'mask': '+7 999 999-99-99'"
                                 pattern="\+7\s[0-9]{3}\s[0-9]{3}-[0-9]{2}-[0-9]{2}" required="" name="phone" type="text"
                                 class="form-control" placeholder="Ваш телефон">
-                            <button>отправить</button>
+                                
+                            <button onclick="ym(85711146, 'reachGoal','zvonok'); return true;" type="submit">отправить</button>
                         </form>
-                        <p class="untext"><span></span>Обработка Ваших персональных данных <br>строго конфиденциальна.
+                        <p class="untext">
+                            <a class="untext__link" target="_blank" href="pk.html">Политика
+                                конфиденциальности</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Рассчитать цену первый екран -->
+    <div class="modal fade" id="rasschitat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <div class="wrapmain text-center">
+                        <h3>Заказать звонок</h3>
+                        <p>и мы свяжется с Вами через минуту</p>
+                        <form method="post" action="send.php">
+                            <input required="" name="name" type="text" class="form-control" placeholder="Ваше имя">
+                            <input data-inputmask="'mask': '+7 999 999-99-99'"
+                                pattern="\+7\s[0-9]{3}\s[0-9]{3}-[0-9]{2}-[0-9]{2}" required="" name="phone" type="text"
+                                class="form-control" placeholder="Ваш телефон">
+                                
+                            <button onclick="ym(85711146, 'reachGoal','zakaz'); return true;" type="submit">отправить</button>
+                        </form>
+                        <p class="untext">
+                            <a class="untext__link" target="_blank" href="pk.html">Политика
+                                конфиденциальности</a>
                         </p>
                     </div>
                 </div>
@@ -941,8 +996,18 @@
         </div>
     </div>
 
+    <div class="modal fade" id="success-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content success-modal">
 
-
+          <div id="success">
+            <img src="/img/check.svg">
+            <h3>Спасибо</h3>
+            <p>Заявка успешно отправлена</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <!-- Скрипты -->
@@ -956,7 +1021,30 @@
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/general.js"></script>
+    <script type="text/javascript">        
+        (function($){
+            $('form').submit(function(e){
+                e.preventDefault();
+                var formSerialize = $(this).serialize();
+                $.ajax({
+                    url: '/mail.php',
+                    type: 'post',
+                    data: formSerialize,
+                    success: function(){ 
+                      $(".modal").modal("hide");
+                        $('form input').each(function(){
+                            $(this).val('');
+                        });
+                        $("#success-form").modal('show');
+                        setTimeout(function(){
+                            $(".modal").modal("hide");
+                        }, 2000);
+                    }
+                });
+            });  
+        })(jQuery);
+    </script>
+    <script type="text/javascript" src="js/general.js?ver=2.5"></script>
 
 
 

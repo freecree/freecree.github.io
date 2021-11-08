@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="37.4849mm" height="37.813mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 765 771"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:cc="http://creativecommons.org/ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+ xmlns:svg="http://www.w3.org/2000/svg">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:gray}
+    .fil1 {fill:#FEFEFE}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" width="765" height="771" rx="64" ry="79"/>
+  <g id="_762297616">
+   <g id="_727963200">
+    <script id="script3301" xlink:href=""/>
+    <script id="script3299" xlink:href=""/>
+    <g id="g3174">
+     <path id="path3176" class="fil1" d="M356 734l0 -282 -51 0c-6,0 -11,-5 -11,-11l0 -85c0,-7 5,-11 11,-11l51 0 0 -46c0,-24 0,-67 23,-94 23,-28 54,-47 106,-47 80,0 114,11 115,11 6,2 9,7 8,13l-15 86c-1,7 -8,11 -14,9 0,0 -25,-6 -48,-6 -14,0 -35,3 -35,19l0 55 89 0c6,0 12,5 11,12l-7 85c-1,6 -5,10 -11,10l-82 0 0 282c0,7 -5,12 -11,12l-117 0c-7,0 -12,-5 -12,-12l0 0zm118 -11l0 -282c0,-7 5,-12 11,-12l82 0 5 -61 -87 0c-6,0 -11,-5 -11,-12l0 -66c0,-16 7,-27 19,-34 11,-6 25,-8 38,-8 13,0 26,2 36,4l5 1 12 -65 -4 0c-16,-3 -46,-7 -95,-7 -45,0 -70,15 -88,38 -17,20 -18,54 -18,80l0 57c0,7 -5,12 -11,12l-51 0 0 61 51 0c6,0 11,5 11,12l0 282 95 0 0 0z"/>
+     <path id="path3178" class="fil1" d="M17 683l0 -595c0,-37 30,-67 67,-67l595 0c36,0 66,30 66,67l0 595c0,36 -30,66 -66,66l-595 0c-37,0 -67,-30 -67,-66zm705 0l0 -595c0,-24 -20,-44 -43,-44l-595 0c-24,0 -44,20 -44,44l0 595c0,24 20,43 44,43l595 0c23,0 43,-19 43,-43z"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

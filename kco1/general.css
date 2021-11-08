@@ -33977,8 +33977,7 @@ a {
   .what__item-icon {
     margin: 5px 10px 0 0; }
   .what__item-title,
-  .cta__text,
-  .get__text,
+  .cta__text, /*.get__text,*/
   .get__item-title {
     font-size: 20px; }
   .partners__items {
@@ -34034,14 +34033,13 @@ a {
   .what__item-icon {
     margin: 0 10px 0 0; }
   .what__item-title,
-  .cta__text,
-  .get__text,
+  .cta__text, /*.get__text,*/
   .get__item-title {
     font-size: 18px; }
   .what__item-text,
-  .get__item-text,
-  .reviews__slide-text {
-    font-size: 14px; }
+  /*.get__item-text,
+   .reviews__slide-text {
+    font-size: 14px; } */
   .cta__text {
     margin: 45px 0 0; }
   .get__item {
@@ -34136,8 +34134,7 @@ a {
   .what__item-icon {
     margin: 0 0 15px; }
   .what__item-title,
-  .cta__text,
-  .get__text,
+  .cta__text, /*.get__text,*/
   .get__item-title {
     font-size: 16px; }
   .cta__text {
@@ -37604,9 +37601,9 @@ a {
  table.table-no-border th, table.table-no-border td {
    border: none;
  }
- .company-info {
+ /* .company-info {
    font-size: 20px;
- }
+ } */
  .content-wrapper {
    /* padding-bottom: 60px;
    padding-top: 30px; */
@@ -59599,10 +59596,21 @@ div.map-block div.main-button-wrap {
     .button-def {
         width: 100%;
     }
-}
-@media (max-width: 768px) {
     div.map-block div.map-descript-wrap div.map-descript {
         margin: 0;
+    }
+    body {
+        font-size: 18px;
+    }
+    .modal-sm {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media (max-width: 468px) {
+    .modal-sm {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -59770,18 +59778,43 @@ div.map-block div.main-button-wrap {
     margin-right: 5px;
 }
 
-
-  
-
-
-
-
+.modal-open {
+  overflow:hidden;
+  padding-right:0 !important;
+}
 
 
+.modal .modal-content.success-modal {
+      max-width: 320px;
+    background: #fff;
+    padding: 25px;
+        margin: 0 auto;
+  }
+div#success {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+}
 
+div#success img {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    display: block;
+}
 
-
-
-
-
-
+div#success h3 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+.cta .untext {
+    max-width: 637px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.untext__link {
+    text-decoration: underline;
+}
