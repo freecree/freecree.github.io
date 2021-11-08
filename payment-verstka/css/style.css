@@ -618,9 +618,12 @@ a {
         /* cursor: pointer; */
         position: relative;
     }
+    .payment-way-accordion__header {
+        cursor: pointer;
+    }
 
     .payment-way-accordion__header, .payment__accordion {
-        /* webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
+        webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         -webkit-tap-highlight-color:  transparent;
     }
 
