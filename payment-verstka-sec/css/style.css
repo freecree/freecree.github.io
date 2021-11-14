@@ -168,6 +168,13 @@ a {
     left: 14px;
     bottom: 7px;
 }
+
+.payment-block__google-img,
+.payment-block__apple-img {
+    width: 40px;
+    margin-right: 5px;
+}
+
 .payment-block__corner-capture {
     font: 400 14px / 18px Golos, Arial, sans-serif;
     color: #a5a5a5;
@@ -649,6 +656,11 @@ a {
         -webkit-align-items: center;
         align-items: center;
     }
+
+    .payment-way-accordion__img {
+        max-width: 30px;
+    }
+
     .payment-way-accordion__title {
         font-size: 16px;
         line-height: 20px;

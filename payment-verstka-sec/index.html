@@ -8,6 +8,7 @@
     <title>Оплата</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://forma.tinkoff.ru/static/onlineScript.js"></script>
 </head>
 
 <body>
@@ -57,45 +58,23 @@
                         </div>
                         <div class="payment-block payment__stage-block payment-block_orange">
                             <div class="payment-block__title">
-                                Оплата частями без переплат
+                                Apple pay <br>
+                                Google pay
                             </div>
                             <div class="payment-block__images">
-                                <img src="images/alfa.svg" alt="Альфа банк" class="payment-block__img">
-                                <img src="images/otp.svg" alt="Отп" class="payment-block__img">
-                            </div>
-                            <div class="payment-block__corner-capture">
-                                +5 банков
+                                <img src="images/apple-pay-box.svg" alt="Appl pay" class="payment-block__img payment-block__apple-img">
+                                <img src="images/google_pay.svg" alt="Google pay" class="payment-block__img payment-block__google-img">
                             </div>
                         </div>
                         <div class="payment-block payment__stage-block payment-block_blue1">
                             <div class="payment-block__title">
-                                По счету от юрлица
+                                Pay Pal
                             </div>
                             <div class="payment-block__images">
-                                <img src="images/company.svg" alt="Юр. лицо" class="payment-block__img">
+                                <img src="images/paypal.svg" alt="Юр. лицо" class="payment-block__img">
                             </div>
                         </div>
-                        <div class="payment__another-ways-add">
-                            <div class="payment__another-ways-link">
-                                Другие способы оплаты
-                            </div>
-                        </div>
-                        <div class="payment__another-way payment-block payment__stage-block payment-block_blue2">
-                            <div class="payment-block__title">
-                                ЮMoney
-                            </div>
-                            <div class="payment-block__images">
-                                <img src="images/yoomoney.png" alt="ЮMoney" class="payment-block__img">
-                            </div>
-                        </div>
-                        <div class="payment__another-way payment-block payment__stage-block payment-block_red">
-                            <div class="payment-block__title">
-                                Альфа-клик
-                            </div>
-                            <div class="payment-block__images">
-                                <img src="images/alfa.svg" alt="Альфа банк" class="payment-block__img">
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -121,7 +100,16 @@
                                 </div>
                             </div>
                             <div class="payment__content-wrap2">
-                                <button class="payment-btn payment__form-btn payment-btn_green1">Оформить
+                                <button type="button" class="payment-btn payment__form-btn payment-btn_green1" onclick="tinkoff.createDemo({
+                                        shopId: 'SHOP_ID',
+                                        showcaseId: 'SHOWCASE_ID',
+                                        demoFlow: 'sms',
+                                        items: [
+                                          {name: 'iPhone 11', price: 100000, quantity: 1},
+                                          {name: 'Чехол', price: 500, quantity: 1}
+                                        ],
+                                        sum: 100500
+                                      })">Оформить
                                     заявку</button>
                                 <div class="payment__form-policy">Нажимая кнопку, принимаю <a
                                         class="payment__policy-link" target="_blank" href="#">оферту</a>
@@ -135,10 +123,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
                     </div>
 
                     <div class="payment__content-block">
@@ -315,11 +299,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
                     </div>
 
                     <div class="payment__content-block">
@@ -581,20 +560,88 @@
                         </div>
                     </div>
                 </div>
-                <div class="payment__accordion payment-way-accordion">
+                <div class="payment__accordion payment-way-accordion for-android">
                     <div class="payment-way-accordion__header">
                         <div class="payment-way-accordion__img-container">
-                            <img class="payment-way-accordion__img" src="images/pos.svg" alt="Оплата частями">
+                            <img class="payment-way-accordion__img" src="images/google_pay.svg" alt="Google Pay">
                         </div>
                         <div class="payment-way-accordion__title">
-                            Оплата частями
-                            <div class="payment-way-accordion__added-block">
-                                <div class="payment-way-accordion__added-images">
-                                    <img class="payment-way-accordion__added-img" src="images/alfa.svg" alt="Альфа">
-                                    <img class="payment-way-accordion__added-img" src="images/otp.svg" alt="Альфа">
+                            Google Pay
+                            
+                        </div>
+                        <img class="payment-way-accordion__arrow" src="images/arrow_down.svg" alt="Стрелка">
+                    </div>
+                    <div class="payment-way-accordion__content">
+                        <div class="payment__content-block">
+                            <div class="payment__content-wrapper">
+                                <div class="payment__content-wrap1">
+                                    <div class="payment__price">
+                                        <span class="payment__period-price">6 996</span> ₽ <span
+                                            class="payment__price-add">/
+                                            месяц</span>
+                                    </div>
+                                    <div class="payment__price-capture">
+                                        <span class="payment__month-amount">10</span> мес • 69 960 ₽ без переплаты
+                                    </div>
+                                    <div class="payment__part-text">
+                                        Отправим заявку в 7 банков —
+                                        получим одобрение за 1 минуту
+                                    </div>
+                                    <div class="payment__details-link">
+                                        Подробные условия
+                                    </div>
+                                    <div class="payment-period payment__period">
+                                        <div class="payment-period__text">
+                                            Выберите период оплаты
+                                        </div>
+                                        <div class="payment-period__ranger-wrap">
+
+                                            <div class="thumb payment__range-thumb"></div>
+                                            <div class="payment-period__months-wrap">
+                                                <div class="payment-period__months">
+                                                    <div class="payment-period__month">
+                                                        <div class="payment-period__month-txt" data-price=6996>10</div>
+                                                    </div>
+                                                    <div class="payment-period__month">
+                                                        <div class="payment-period__month-txt" data-price=5830>12</div>
+                                                    </div>
+                                                    <div class="payment-period__month">
+                                                        <div class="payment-period__month-txt" data-price=3887>18</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <input type="range" min="0" max="100" value="0"
+                                                class="payment-period__range-inp">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="payment-input-line">
+                                        <div class="input-container">
+                                            <input class="payment-input payment__input" name="promo" type="text">
+                                            <label class="payment__label">Промокод</label>
+                                        </div>
+                                    </div>
                                 </div>
-                                +5 банков
+                                <div class="payment__content-wrap2">
+                                    <button class="payment-btn payment__form-btn payment-btn_orange">Оформить
+                                        заявку</button>
+                                    <div class="payment__form-policy">Нажимая кнопку, принимаю <a
+                                            class="payment__policy-link" target="_blank" href="#">оферту</a>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment__accordion payment-way-accordion for-apple">
+                    <div class="payment-way-accordion__header">
+                        <div class="payment-way-accordion__img-container">
+                            <img class="payment-way-accordion__img" src="images/apple-pay-box.svg" alt="Apple Pay">
+                        </div>
+                        <div class="payment-way-accordion__title">
+                            Apple Pay
+                            
                         </div>
                         <img class="payment-way-accordion__arrow" src="images/arrow_down.svg" alt="Стрелка">
                     </div>
@@ -665,10 +712,10 @@
                 <div class="payment__accordion payment-way-accordion">
                     <div class="payment-way-accordion__header">
                         <div class="payment-way-accordion__img-container">
-                            <img class="payment-way-accordion__img" src="images/company.svg" alt="Юр. лицо">
+                            <img class="payment-way-accordion__img" src="images/paypal.svg" alt="Pay Pal">
                         </div>
                         <div class="payment-way-accordion__title">
-                            По счету от юрлица
+                            Pay Pal
                         </div>
                         <img class="payment-way-accordion__arrow" src="images/arrow_down.svg" alt="Стрелка">
                     </div>
@@ -687,83 +734,6 @@
                                 </div>
                                 <div class="payment__content-wrap2">
                                     <button class="payment-btn payment__form-btn payment-btn_blue1">Оформить
-                                        заявку</button>
-                                    <div class="payment__form-policy">Нажимая кнопку, принимаю <a
-                                            class="payment__policy-link" target="_blank" href="#">оферту</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="payment__another-ways-add">
-                    <div class="payment__another-ways-link">
-                        Другие способы оплаты
-                    </div>
-                </div>
-                <div class="payment__another-way payment__accordion payment-way-accordion">
-                    <div class="payment-way-accordion__header">
-                        <div class="payment-way-accordion__img-container">
-                            <img class="payment-way-accordion__img" src="images/yoomoney.png" alt="Юмани">
-                        </div>
-                        <div class="payment-way-accordion__title">
-                            ЮMoney
-                        </div>
-                        <img class="payment-way-accordion__arrow" src="images/arrow_down.svg" alt="Стрелка">
-                    </div>
-                    <div class="payment__another-way payment-way-accordion__content">
-                        <div class="payment__content-block">
-                            <div class="payment__content-wrapper">
-                                <div class="payment__content-wrap1">
-                                    <div class="payment__price">
-                                        <span class="payment__period-price">6 9960</span>₽
-                                    </div>
-
-                                    <div class="payment-input-line">
-                                        <div class="input-container">
-                                            <input class="payment-input payment__input" name="promo" type="text">
-                                            <label class="payment__label">Промокод</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="payment__content-wrap2">
-                                    <button class="payment-btn payment__form-btn payment-btn_blue2">Оформить
-                                        заявку</button>
-                                    <div class="payment__form-policy">Нажимая кнопку, принимаю <a
-                                            class="payment__policy-link" target="_blank" href="#">оферту</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="payment__another-way payment__accordion payment-way-accordion">
-                    <div class="payment-way-accordion__header">
-                        <div class="payment-way-accordion__img-container">
-                            <img class="payment-way-accordion__img" src="images/alfa.svg" alt="Альфа-клик">
-                        </div>
-                        <div class="payment-way-accordion__title">
-                            Альфа-Клик
-                        </div>
-                        <img class="payment-way-accordion__arrow" src="images/arrow_down.svg" alt="Стрелка">
-                    </div>
-                    <div class="payment-way-accordion__content">
-                        <div class="payment__content-block">
-                            <div class="payment__content-wrapper">
-                                <div class="payment__content-wrap1">
-                                    <div class="payment__price">
-                                        <span class="payment__period-price">6 9960</span>₽
-                                    </div>
-
-                                    <div class="payment-input-line">
-                                        <div class="input-container">
-                                            <input class="payment-input payment__input" name="promo" type="text">
-                                            <label class="payment__label">Промокод</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="payment__content-wrap2">
-                                    <button class="payment-btn payment__form-btn payment-btn_red">Оформить
                                         заявку</button>
                                     <div class="payment__form-policy">Нажимая кнопку, принимаю <a
                                             class="payment__policy-link" target="_blank" href="#">оферту</a>
