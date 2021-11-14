@@ -12,11 +12,10 @@ function showAndHide(toShow, toHide) {
         element.style.display = "none";
     }
 }
-if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+if (/iPhone|iPad|iPod/i.match(navigator.userAgent)) {
     showAndHide(appleBlocks, androidBlocks);    
-} else if (/Android|webOSBlackBerry/i.test(navigator.userAgent)) {
-    //showAndHide(androidBlocks, appleBlocks);
-    showAndHide(appleBlocks, androidBlocks);    
+} else if (/Android|webOSBlackBerry/i.match(navigator.userAgent)) {
+    showAndHide(androidBlocks, appleBlocks);
 }
 alert(navigator.userAgent);
-alert(navigator.platform);
+
