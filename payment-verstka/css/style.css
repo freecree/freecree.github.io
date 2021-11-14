@@ -493,6 +493,9 @@ a {
     box-shadow: none;
     color: #fff;
 }
+.payment__btn {
+    margin-top: 30px;
+}
 
 .payment-btn::before {
     content: "";
@@ -588,6 +591,9 @@ a {
         width: 100%;
         margin-left: 80px;
         margin-top: 0;
+    }
+    .payment__btn {
+        margin-top: 0px;
     }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -702,6 +708,9 @@ a {
     }
     .payment-way-accordion__added-img {
         margin: 0 6px;
+    }
+    .payment__btn {
+        margin-top: 10px;
     }
 }
 @media (max-width: 374px) {
