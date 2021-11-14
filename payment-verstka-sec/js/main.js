@@ -12,9 +12,14 @@ function showAndHide(toShow, toHide) {
         element.style.display = "none";
     }
 }
-if (/iPhone|iPad|iPod/i.match(navigator.userAgent)) {
+// if (/iPhone|iPad|iPod/i.match(navigator.userAgent)) {
+//     showAndHide(appleBlocks, androidBlocks);    
+// } else if (/Android|webOSBlackBerry/i.match(navigator.userAgent)) {
+//     showAndHide(androidBlocks, appleBlocks);
+// }
+if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
     showAndHide(appleBlocks, androidBlocks);    
-} else if (/Android|webOSBlackBerry/i.match(navigator.userAgent)) {
+} else if (navigator.userAgent.match(/Android|webOSBlackBerry/i)) {
     showAndHide(androidBlocks, appleBlocks);
 }
 alert(navigator.userAgent);
