@@ -18,3 +18,4 @@ if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
     //showAndHide(androidBlocks, appleBlocks);
     showAndHide(appleBlocks, androidBlocks);    
 }
+alert(navigator.userAgent);
