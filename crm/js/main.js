@@ -10,7 +10,6 @@ for (var i = 0, len = progressRings.length; i < len; i++) {
 	progressRings[i].style.strokeDasharray = `${circumference}, ${circumference}`;
 	progressRings[i].style.strokeDashoffset = circumference;
 	setProgress(progressRings[i], circumference, k);
-    //console.log(circumference);
 }
 
 function getProgressKoef(min, max, val) {
@@ -24,7 +23,6 @@ function getProgressKoef(min, max, val) {
 
 function setProgress(circle, circumference, koef) {
 	const offset = circumference - koef * circumference;
-	console.log(offset);
 	circle.style.strokeDashoffset = offset;
 }
 
@@ -33,24 +31,18 @@ const blocks = document.getElementsByClassName("top__main");
 const mainPage = document.querySelector('.main-page');
 if (mainPage) {
 	Array.from(sideBarItems).forEach(function(element) {
-	console.log("lol");
-	// if(element.closest(".main-page")) {
-		console.log("hi");
 		element.addEventListener('click', (event) => {
-		for (let item of sideBarItems) {
-			item.classList.remove('sidebar__item_active');
-		}
-		element.classList.add('sidebar__item_active');
-		const i = [].indexOf.call(sideBarItems, element);
-		for (let block of blocks) {
-			block.classList.remove('top__main_active');
-		}
-		blocks[i].classList.add('top__main_active');
-		console.log(i);
+			for (let item of sideBarItems) {
+				item.classList.remove('sidebar__item_active');
+			}
+			element.classList.add('sidebar__item_active');
+			const i = [].indexOf.call(sideBarItems, element);
+			for (let block of blocks) {
+				block.classList.remove('top__main_active');
+			}
+			blocks[i].classList.add('top__main_active');
+		});
 	});
-	//}
-	
-});
 }
 
 
