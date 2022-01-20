@@ -111,8 +111,13 @@ if (switcher) {
 		switchBtn.addEventListener('click', function () {
 			for (let btn of switcherBtns) {
 				btn.classList.remove('top__heading-btn_active');
+				btn.classList.remove('top__heading-btn_without-stick');
 			}	
 			switchBtn.classList.add('top__heading-btn_active');
+			let index = [...this.parentNode.children].indexOf(this);
+			if (index > 0 && index < switcherBtns.length) {
+				switcherBtns[index-1].classList.add('top__heading-btn_without-stick')
+			}
 		});		
 	}	
 }

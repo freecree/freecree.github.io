@@ -499,23 +499,27 @@ body {
 	cursor: pointer;
 }
 
-.top__heading-btn:first-child::after,
-.top__heading-btn:last-child::before {
+/* .top__heading-btn:last-child::before, */
+.top__heading-btn::after {
 	content: "";
 	position: absolute;
 	height: 31px;
 	width: 1px;
 	background: rgba(32, 43, 59, 0.1);
 	top: 5px;
-}
-
-.top__heading-btn:last-child::before {
-	left: 0;
-}
-
-.top__heading-btn:first-child::after {
 	right: 0;
 }
+
+.top__heading-btn_without-stick::after,
+.top__heading-btn:last-child::after {
+	height: 0;
+}
+
+.top__heading-btn_active::after,
+.top__heading-btn_active::before {
+	background: transparent;
+}
+
 
 .top__heading-btn_active {
 	background: #5DAAD6;
