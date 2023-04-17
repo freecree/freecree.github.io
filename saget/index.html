@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сагет - Главная страница</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+  <body>
+    <header class="header desktop-header">
+  <div class="header__top top-header">
+    <div class="container">
+      <div class="top-header__inner">
+        <div class="header-help-menu">
+          <p class="header-help-menu__trigger">Полезное</p>
+          <nav class="header-help-menu__body">
+            <ul class="header-help-menu__list">
+              <li class="header-help-menu__item">
+                <a href="#" class="header-help-menu__link"> Доставка </a>
+              </li>
+              <li class="header-help-menu__item">
+                <a href="#" class="header-help-menu__link"> Новости </a>
+              </li>
+              <li class="header-help-menu__item">
+                <a href="#" class="header-help-menu__link"> Документация </a>
+              </li>
+              <li class="header-help-menu__item">
+                <a href="#" class="header-help-menu__link"> Акции </a>
+              </li>
+              <li class="header-help-menu__item">
+                <a href="#" class="header-help-menu__link"> Услуги </a>
+              </li>
+              <li class="header-help-menu__item">
+                <a href="#" class="header-help-menu__link"> Сотрудники </a>
+              </li>
+              <li class="header-help-menu__item">
+                <a href="#" class="header-help-menu__link"> Бренды </a>
+              </li>
+              <li class="header-help-menu__item">
+                <a href="#" class="header-help-menu__link"> Контакты </a>
+              </li>
+              <li class="header-help-menu__item">
+                <a href="#" class="header-help-menu__link"> Вакансии </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__middle middle-header">
+    <div class="container">
+      <div class="header-flex">
+        <a href="#" class="header-logo">
+          <img class="header-logo__img" src="img/logo.svg" alt="Сагет" />
+        </a>
+        <div class="header-search middle-header__search">
+          <input class="search-input header-search__input" type="text" />
+        </div>
+        <div class="middle-header__right">
+          <div class="middle-header__callback">
+            <div class="middle-header__callback-txt">
+              <p class="middle-header__phone-number">38 (093) 600-49-56</p>
+              <p class="middle-header__callback-caption">Заказать обратный звонок</p>
+            </div>
+          </div>
+          <div class="header-icons middle-header__icons">
+            <a href="#callback-popup" class="popup-link middle-header__callback-link">
+              <img src="img/icon-phone.svg" alt="phone" class="header-icons__icon" />
+            </a>
+            <img src="img/icon-shopping-cart.svg" alt="shopping cart" class="header-icons__icon" />
+            <img src="img/icon-star.svg" alt="star" class="header-icons__icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom bottom-header">
+    <div class="container bottom-header__container">
+      <div class="bottom-header__inner header-flex">
+        <div class="header-main-menu">
+          <nav class="header-main-menu__body">
+            <ul class="header-main-menu__list">
+              <li class="header-main-menu__item">
+                <a href="#" class="header-main-menu__link catalog"> Каталог </a>
+              </li>
+              <li class="header-main-menu__item">
+                <a href="#" class="header-main-menu__link"> Акции </a>
+              </li>
+              <li class="header-main-menu__item">
+                <a href="#" class="header-main-menu__link"> Услуги </a>
+              </li>
+              <li class="header-main-menu__item">
+                <a href="#" class="header-main-menu__link"> Покупателям </a>
+              </li>
+              <li class="header-main-menu__item">
+                <a href="#" class="header-main-menu__link"> О компании </a>
+              </li>
+              <li class="header-main-menu__item">
+                <a href="#" class="header-main-menu__link"> Реквизиты </a>
+              </li>
+              <li class="header-main-menu__item">
+                <a href="#" class="header-main-menu__link"> Контакты </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+ <div class="header-mobile">
+  <div class="container">
+    <nav class="header-mobile__nav">
+      <div class="header-mobile__logo-group">
+        <a href="index.html" class="header-mobile__logo">
+          <img src="img/logo.svg" alt="Логотип" class="header-mobile__logo-img">
+        </a>
+      </div>
+      <div class="header-mobile__menu-group">
+        <div class="dropdown header-mobile__dropdown">
+          <button class="dropdown__btn header-mobile__nav-btn">Меню</button>
+          <div class="dropdown__item header-mobile__dropdown-item">
+            <ul class="header-mobile__menu-list">
+              <li class="header-mobile__menu-item">
+                <a href="#" class="header-mobile__menu-el">Акции</a>
+              </li>
+              <li class="spoller header-mobile__menu-item">
+                <a class="spoller__btn header-mobile__menu-el">
+                  <span>Услуги</span>
+                  <img src="img/arrow-b.svg" class="header-mobile__icon-arrow"/>
+                </a>
+                <div class="spoller__item">
+                  <ul class="header-mobile__spoller-list">
+                    <li class="header-mobile__spoller-item">
+                      <a href="#" class="header-mobile__spoller-el">Аренда</a>
+                    </li>
+                    <li class="header-mobile__spoller-item">
+                      <a href="#" class="header-mobile__spoller-el">Ремонт и проверка</a>
+                    </li>
+                    <li class="header-mobile__spoller-item">
+                      <a href="#" class="header-mobile__spoller-el">Трейд-ми</a>
+                    </li>
+                    <li class="header-mobile__spoller-item">
+                      <a href="#" class="header-mobile__spoller-el">Сети базовых станций</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="spoller header-mobile__menu-item">
+                <a class="spoller__btn header-mobile__menu-el">
+                  <span>Покупателям</span>
+                  <img src="img/arrow-b.svg" class="header-mobile__icon-arrow"/>
+                </a>
+                <div class="spoller__item">
+                  <ul class="header-mobile__spoller-list">
+                    <li class="header-mobile__spoller-item">
+                      <a href="#" class="header-mobile__spoller-el">Оплата</a>
+                    </li>
+                    <li class="header-mobile__spoller-item">
+                      <a href="#" class="header-mobile__spoller-el">Доставка</a>
+                    </li>
+                    <li class="header-mobile__spoller-item">
+                      <a href="#" class="header-mobile__spoller-el">Гарантия</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#" class="header-mobile__menu-el">О компании</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#" class="header-mobile__menu-el">Реквезиты</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#" class="header-mobile__menu-el">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown header-mobile__dropdown">
+          <button class="dropdown__btn header-mobile__nav-btn">
+            <svg class="header-mobile__search-icon" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z"
+                  fill-rule="evenodd"
+                />
+              </g>
+            </svg>
+            <span>Поиск</span>
+          </button>
+          <div class="dropdown__item header-mobile__dropdown-item">
+            <form action="#" class="header-mobile__search-form">
+              <button class="header-mobile__search-btn">
+                <img src="img/icon-search.svg" class="header-mobile__search-btn-icon" />
+              </button>
+              <input type="search" placeholder="Поиск..." class="header-mobile__search-input" />
+            </form>
+          </div>
+        </div>
+        <div class="dropdown header-mobile__dropdown">
+          <button class="dropdown__btn header-mobile__nav-btn">
+            <span>Полезное</span>
+          </button>
+          <div class="dropdown__item header-mobile__dropdown-item">
+            <ul class="header-mobile__menu-list">
+              <li class="header-mobile__menu-item">
+                <a href="#" class="header-mobile__menu-el">Доставка</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#" class="header-mobile__menu-el">Новости</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#" class="header-mobile__menu-el">Документация</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#" class="header-mobile__menu-el">Акциии</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#" class="header-mobile__menu-el">Сотрудники</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#" class="header-mobile__menu-el">Услуги</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#" class="header-mobile__menu-el">Бренды</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#" class="header-mobile__menu-el">Контакты</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#" class="header-mobile__menu-el">Вакансии</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-mobile__icons-group">
+        <ul class="header-mobile__right">
+          <li class="header-mobile__right-item">
+            <a href="#callback-popup" class="popup-link header-mobile__right-el">
+              <img src="img/icon-phone.svg" class="header-mobile__right-icon" />
+            </a>
+          </li>
+          <li class="header-mobile__right-item">
+            <a href="#" class="header-mobile__right-el">
+              <img src="img/icon-shopping-cart.svg" class="header-mobile__right-icon" />
+            </a>
+          </li>
+          <li class="header-mobile__right-item">
+            <a href="#" class="header-mobile__right-el">
+              <img src="img/icon-star.svg" class="header-mobile__right-icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+    <section class="main">
+      <div class="container">
+        <div class="main-banners main__banners">
+          <div class="main-banners__left">
+            <div class="main-banner main-banner-1">
+              <img src="img/banner1-image.png" alt="GNSS комплекты" class="main-banner__img" />
+              <div class="main-banner__txt">
+                <h1 class="main-banner__title"><span style="color: #fff">GNSS КОМПЛЕКТЫ</span> ПО ВЫГОДНЫМ ЦЕНАМ</h1>
+                <a href="#" class="button main-banner__button"> В каталог </a>
+              </div>
+            </div>
+          </div>
+          <div class="main-banners__right">
+            <div class="main-banner main-banner-2">
+              <div class="main-banner__img-block">
+                <img src="img/banner2-image.png" alt="GNSS комплекты" class="main-banner__img" />
+              </div>
+              <div class="main-banner__txt">
+                <h1 class="main-banner__title">СЕТИ БАЗОВЫХ СТАНЦИЙ</h1>
+                <div class="main-banner__description">
+                  ПОДКЛЮЧЕНИЕ <span class="main-banner-2_text-bold-blue">БЕСПЛАТНО НА 1 ГОД</span>
+                </div>
+                <a href="#" class="button main-banner__button"> В каталог </a>
+              </div>
+            </div>
+            <div class="main-banner main-banner-3">
+              <div class="main-banner__txt">
+                <h1 class="main-banner__title">ТЕСТ ДРАЙВ</h1>
+                <div class="main-banner__description">УБЕДИТЕСЬ В КАЧЕСТВЕ ОБОРУДОВАНИЯ ДО ПОКУПКИ</div>
+                <a href="#" class="button main-banner__button"> В подробнее </a>
+              </div>
+              <div class="main-banner__img-block right">
+                <img src="img/banner3-image.png" alt="GNSS комплекты" class="main-banner__img" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-bottom-list main__bottom">
+          <div class="main-bottom-item main-bottom-list__item">
+            <img src="img/main-bottom-list1.png" alt="ГНСС ПРИЕМНИКИ" class="main-bottom-item__img" />
+            <a href="#" class="main-bottom-item__title"> ГНСС ПРИЕМНИКИ </a>
+          </div>
+          <div class="main-bottom-item main-bottom-list__item">
+            <img src="img/main-bottom-list2.png" alt="ЭЛЕКТРОННЫЕ ТАХЕОМЕТРЫ" class="main-bottom-item__img" />
+            <a href="#" class="main-bottom-item__title"> ЭЛЕКТРОННЫЕ ТАХЕОМЕТРЫ </a>
+          </div>
+          <div class="main-bottom-item main-bottom-list__item">
+            <img src="img/main-bottom-list3.png" alt="ЛАЗЕРНОЕ СКАНИРОВАНИЕ" class="main-bottom-item__img" />
+            <a href="#" class="main-bottom-item__title"> ЛАЗЕРНОЕ СКАНИРОВАНИЕ </a>
+          </div>
+          <div class="main-bottom-item main-bottom-list__item">
+            <img src="img/main-bottom-list4.png" alt="АКСЕССУАРЫ" class="main-bottom-item__img" />
+            <a href="#" class="main-bottom-item__title"> АКСЕССУАРЫ </a>
+          </div>
+          <div class="main-bottom-item main-bottom-list__item">
+            <img src="img/main-bottom-list5.png" alt="КОНТРОЛЛЕРЫ" class="main-bottom-item__img" />
+            <a href="#" class="main-bottom-item__title"> КОНТРОЛЛЕРЫ </a>
+          </div>
+          <div class="main-bottom-item main-bottom-list__item">
+            <img src="img/main-bottom-list6.png" alt="МОДЕМЫ" class="main-bottom-item__img" />
+            <a href="#" class="main-bottom-item__title"> МОДЕМЫ </a>
+          </div>
+          <div class="main-bottom-item main-bottom-list__item">
+            <img src="img/main-bottom-list7.png" alt="НИВЕЛИРЫ" class="main-bottom-item__img" />
+            <a href="#" class="main-bottom-item__title"> НИВЕЛИРЫ </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="best-offers products-section">
+  <div class="container">
+    <h2 class="section-title">Лучшие предложения</h2>
+    <div class="swiper products-section__slider">
+      <div class="swiper-wrapper">
+            
+
+                <div class="swiper-slide product-card">
+  <div class="product-card__label product-card__label_new">Новинка
+  </div>
+  <div class="product-card__image-container image-container">
+    <img src="img/best-offer-product1.png" alt="PrinCe i30 IMU Tx" class="product-card__img" />
+  </div>
+  <h3 class="product-card__title">PrinCe i30 IMU Tx</h3>
+  <div class="product-card__description">
+    Геодезический спутниковый приёмник с инерциальной системой и приёмо-передающим радиомодемом
+  </div>
+  <div class="product-card__price">160 000 грн</div>
+  <div class="product-card__rating product-card-rating">
+    <div class="product-card-rating__txt">Рейтинг:</div>
+    <div class="raiting product-card-rating__stars" data-raiting-value="4.5">
+      <div class="raiting__body">
+        <div class="raiting__active"></div>
+        <div class="raiting__items">
+          <input type="radio" class="raiting__item" value="1" name="rating" />
+          <input type="radio" class="raiting__item" value="2" name="rating" />
+          <input type="radio" class="raiting__item" value="3" name="rating" />
+          <input type="radio" class="raiting__item" value="4" name="rating" />
+          <input type="radio" class="raiting__item" value="5" name="rating" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-card__buttons">
+    <div class="button product-card__to-card-button">В КОРЗИНУ</div>
+    <div class="product-card__favorites-button">
+      <img src="img/icon-star.svg" alt="star icon" />
+      <div>В ИЗБРАННОЕ</div>
+    </div>
+  </div>
+</div>
+            
+
+                <div class="swiper-slide product-card">
+  <div class="product-card__label product-card__label_hit">Хит
+  </div>
+  <div class="product-card__image-container image-container">
+    <img src="img/best-offer-product1.png" alt="PrinCe i30 IMU Tx" class="product-card__img" />
+  </div>
+  <h3 class="product-card__title">PrinCe i30 IMU Tx</h3>
+  <div class="product-card__description">
+    Геодезический спутниковый приёмник с инерциальной системой и приёмо-передающим радиомодемом
+  </div>
+  <div class="product-card__price">160 000 грн</div>
+  <div class="product-card__rating product-card-rating">
+    <div class="product-card-rating__txt">Рейтинг:</div>
+    <div class="raiting product-card-rating__stars" data-raiting-value="4.5">
+      <div class="raiting__body">
+        <div class="raiting__active"></div>
+        <div class="raiting__items">
+          <input type="radio" class="raiting__item" value="1" name="rating" />
+          <input type="radio" class="raiting__item" value="2" name="rating" />
+          <input type="radio" class="raiting__item" value="3" name="rating" />
+          <input type="radio" class="raiting__item" value="4" name="rating" />
+          <input type="radio" class="raiting__item" value="5" name="rating" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-card__buttons">
+    <div class="button product-card__to-card-button">В КОРЗИНУ</div>
+    <div class="product-card__favorites-button">
+      <img src="img/icon-star.svg" alt="star icon" />
+      <div>В ИЗБРАННОЕ</div>
+    </div>
+  </div>
+</div>
+            
+
+                <div class="swiper-slide product-card">
+  <div class="product-card__label product-card__label_promotion">Акция
+  </div>
+  <div class="product-card__image-container image-container">
+    <img src="img/best-offer-product1.png" alt="PrinCe i30 IMU Tx" class="product-card__img" />
+  </div>
+  <h3 class="product-card__title">PrinCe i30 IMU Tx</h3>
+  <div class="product-card__description">
+    Геодезический спутниковый приёмник с инерциальной системой и приёмо-передающим радиомодемом
+  </div>
+  <div class="product-card__price">160 000 грн</div>
+  <div class="product-card__rating product-card-rating">
+    <div class="product-card-rating__txt">Рейтинг:</div>
+    <div class="raiting product-card-rating__stars" data-raiting-value="4.5">
+      <div class="raiting__body">
+        <div class="raiting__active"></div>
+        <div class="raiting__items">
+          <input type="radio" class="raiting__item" value="1" name="rating" />
+          <input type="radio" class="raiting__item" value="2" name="rating" />
+          <input type="radio" class="raiting__item" value="3" name="rating" />
+          <input type="radio" class="raiting__item" value="4" name="rating" />
+          <input type="radio" class="raiting__item" value="5" name="rating" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-card__buttons">
+    <div class="button product-card__to-card-button">В КОРЗИНУ</div>
+    <div class="product-card__favorites-button">
+      <img src="img/icon-star.svg" alt="star icon" />
+      <div>В ИЗБРАННОЕ</div>
+    </div>
+  </div>
+</div>
+            
+
+                <div class="swiper-slide product-card">
+  <div class="product-card__label product-card__label_new">Новинка
+  </div>
+  <div class="product-card__image-container image-container">
+    <img src="img/best-offer-product1.png" alt="PrinCe i30 IMU Tx" class="product-card__img" />
+  </div>
+  <h3 class="product-card__title">PrinCe i30 IMU Tx</h3>
+  <div class="product-card__description">
+    Геодезический спутниковый приёмник с инерциальной системой и приёмо-передающим радиомодемом
+  </div>
+  <div class="product-card__price">160 000 грн</div>
+  <div class="product-card__rating product-card-rating">
+    <div class="product-card-rating__txt">Рейтинг:</div>
+    <div class="raiting product-card-rating__stars" data-raiting-value="4.5">
+      <div class="raiting__body">
+        <div class="raiting__active"></div>
+        <div class="raiting__items">
+          <input type="radio" class="raiting__item" value="1" name="rating" />
+          <input type="radio" class="raiting__item" value="2" name="rating" />
+          <input type="radio" class="raiting__item" value="3" name="rating" />
+          <input type="radio" class="raiting__item" value="4" name="rating" />
+          <input type="radio" class="raiting__item" value="5" name="rating" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-card__buttons">
+    <div class="button product-card__to-card-button">В КОРЗИНУ</div>
+    <div class="product-card__favorites-button">
+      <img src="img/icon-star.svg" alt="star icon" />
+      <div>В ИЗБРАННОЕ</div>
+    </div>
+  </div>
+</div>
+            
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="ready-made-kits products-section">
+  <div class="container">
+    <h2 class="section-title">Готовые комплекты</h2>
+    <div class="swiper products-section__slider">
+      <div class="swiper-wrapper">
+            
+
+                <div class="swiper-slide product-card">
+  <div class="product-card__label @@labelClass">@@labelName
+  </div>
+  <div class="product-card__image-container image-container">
+    <img src="img/ready-made-kit1.png" alt="PrinCe i50 + i30 + HCE320" class="product-card__img" />
+  </div>
+  <h3 class="product-card__title">PrinCe i50 + i30 + HCE320</h3>
+  <div class="product-card__description">
+    <p>GNSS приемник PrinCe i30</p> <p>GNSS приемник PrinCe i50</p> <p>Контроллер HCE 320</p> <p>Подписка Prinnet в подарок</p> <p>Аксессуары в подарок</p> 
+  </div>
+  <div class="product-card__price">160 000 грн</div>
+  <div class="product-card__rating product-card-rating">
+    <div class="product-card-rating__txt">Рейтинг:</div>
+    <div class="raiting product-card-rating__stars" data-raiting-value="4.5">
+      <div class="raiting__body">
+        <div class="raiting__active"></div>
+        <div class="raiting__items">
+          <input type="radio" class="raiting__item" value="1" name="rating" />
+          <input type="radio" class="raiting__item" value="2" name="rating" />
+          <input type="radio" class="raiting__item" value="3" name="rating" />
+          <input type="radio" class="raiting__item" value="4" name="rating" />
+          <input type="radio" class="raiting__item" value="5" name="rating" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-card__buttons">
+    <div class="button product-card__to-card-button">В КОРЗИНУ</div>
+    <div class="product-card__favorites-button">
+      <img src="img/icon-star.svg" alt="star icon" />
+      <div>В ИЗБРАННОЕ</div>
+    </div>
+  </div>
+</div>
+            
+
+                <div class="swiper-slide product-card">
+  <div class="product-card__label @@labelClass">@@labelName
+  </div>
+  <div class="product-card__image-container image-container">
+    <img src="img/ready-made-kit1.png" alt="PrinCe i50 + i30 + HCE320" class="product-card__img" />
+  </div>
+  <h3 class="product-card__title">PrinCe i50 + i30 + HCE320</h3>
+  <div class="product-card__description">
+    <p>GNSS приемник PrinCe i30</p> <p>GNSS приемник PrinCe i50</p> <p>Контроллер HCE 320</p> <p>Подписка Prinnet в подарок</p> <p>Аксессуары в подарок</p> 
+  </div>
+  <div class="product-card__price">160 000 грн</div>
+  <div class="product-card__rating product-card-rating">
+    <div class="product-card-rating__txt">Рейтинг:</div>
+    <div class="raiting product-card-rating__stars" data-raiting-value="4.5">
+      <div class="raiting__body">
+        <div class="raiting__active"></div>
+        <div class="raiting__items">
+          <input type="radio" class="raiting__item" value="1" name="rating" />
+          <input type="radio" class="raiting__item" value="2" name="rating" />
+          <input type="radio" class="raiting__item" value="3" name="rating" />
+          <input type="radio" class="raiting__item" value="4" name="rating" />
+          <input type="radio" class="raiting__item" value="5" name="rating" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-card__buttons">
+    <div class="button product-card__to-card-button">В КОРЗИНУ</div>
+    <div class="product-card__favorites-button">
+      <img src="img/icon-star.svg" alt="star icon" />
+      <div>В ИЗБРАННОЕ</div>
+    </div>
+  </div>
+</div>
+            
+
+                <div class="swiper-slide product-card">
+  <div class="product-card__label product-card__label_new">Новинка
+  </div>
+  <div class="product-card__image-container image-container">
+    <img src="img/ready-made-kit1.png" alt="PrinCe i50 + i30 + HCE320" class="product-card__img" />
+  </div>
+  <h3 class="product-card__title">PrinCe i50 + i30 + HCE320</h3>
+  <div class="product-card__description">
+    <p>GNSS приемник PrinCe i30</p> <p>GNSS приемник PrinCe i50</p> <p>Контроллер HCE 320</p> <p>Подписка Prinnet в подарок</p> <p>Аксессуары в подарок</p> 
+  </div>
+  <div class="product-card__price">160 000 грн</div>
+  <div class="product-card__rating product-card-rating">
+    <div class="product-card-rating__txt">Рейтинг:</div>
+    <div class="raiting product-card-rating__stars" data-raiting-value="4.5">
+      <div class="raiting__body">
+        <div class="raiting__active"></div>
+        <div class="raiting__items">
+          <input type="radio" class="raiting__item" value="1" name="rating" />
+          <input type="radio" class="raiting__item" value="2" name="rating" />
+          <input type="radio" class="raiting__item" value="3" name="rating" />
+          <input type="radio" class="raiting__item" value="4" name="rating" />
+          <input type="radio" class="raiting__item" value="5" name="rating" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-card__buttons">
+    <div class="button product-card__to-card-button">В КОРЗИНУ</div>
+    <div class="product-card__favorites-button">
+      <img src="img/icon-star.svg" alt="star icon" />
+      <div>В ИЗБРАННОЕ</div>
+    </div>
+  </div>
+</div>
+            
+
+                <div class="swiper-slide product-card">
+  <div class="product-card__label product-card__label_hit">Хит
+  </div>
+  <div class="product-card__image-container image-container">
+    <img src="img/ready-made-kit1.png" alt="PrinCe i50 + i30 + HCE320" class="product-card__img" />
+  </div>
+  <h3 class="product-card__title">PrinCe i50 + i30 + HCE320</h3>
+  <div class="product-card__description">
+    <p>GNSS приемник PrinCe i30</p> <p>GNSS приемник PrinCe i50</p> <p>Контроллер HCE 320</p> <p>Подписка Prinnet в подарок</p> <p>Аксессуары в подарок</p> 
+  </div>
+  <div class="product-card__price">160 000 грн</div>
+  <div class="product-card__rating product-card-rating">
+    <div class="product-card-rating__txt">Рейтинг:</div>
+    <div class="raiting product-card-rating__stars" data-raiting-value="4.5">
+      <div class="raiting__body">
+        <div class="raiting__active"></div>
+        <div class="raiting__items">
+          <input type="radio" class="raiting__item" value="1" name="rating" />
+          <input type="radio" class="raiting__item" value="2" name="rating" />
+          <input type="radio" class="raiting__item" value="3" name="rating" />
+          <input type="radio" class="raiting__item" value="4" name="rating" />
+          <input type="radio" class="raiting__item" value="5" name="rating" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-card__buttons">
+    <div class="button product-card__to-card-button">В КОРЗИНУ</div>
+    <div class="product-card__favorites-button">
+      <img src="img/icon-star.svg" alt="star icon" />
+      <div>В ИЗБРАННОЕ</div>
+    </div>
+  </div>
+</div>
+            
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+    <section class="services">
+      <div class="container">
+        <h2 class="section-title services__title">С ООО “ САГЕТ” Ваши измерения в надежных руках!</h2>
+        <div class="services-wrapper services__wrapper">
+          <div class="services-coloumn services-left-coloumn services-wrapper__left">
+            <div class="services-item services-left-coloumn__item">
+              <div class="services-text-wrapper services-left-coloumn__text-wrapper">
+                <h3 class="services-item__title">Бесплатное подключение к сети базовых станций</h3>
+                <div class="services-item__text">
+                  Администрирование существующих сетей референцных станций или одиночных базовых станций. Создание сети
+                  референцных станций «под ключ». Модернизация существующей сети.
+                </div>
+              </div>
+              <div class="services-item__image-wrapper">
+                <img src="img/services-free-connection.png" alt="Бесплатное подключение" class="services-item__img" />
+              </div>
+            </div>
+            <div class="services-item services-left-coloumn__item">
+              <div class="services-text-wrapper services-left-coloumn__text-wrapper">
+                <h3 class="services-item__title">Аренда</h3>
+                <div class="services-item__text">
+                  Достойная альтернатива покупки дорогостоящих геодезических приборов.Мы предоставляем в аренду
+                  геодезические приборы без всякого залога, после заключения договора. Стоимость зависит от арендуемого
+                  оборудования и сроков.
+                </div>
+              </div>
+              <div class="services-item__image-wrapper services-item__image-wrapper_back">
+                <img src="img/services-rent.png" alt="Аренда" class="services-item__img services-item__img--desktop" />
+                <img
+                  src="img/best-offer-product1.png"
+                  alt="Аренда"
+                  class="services-item__img services-item__img--mobile"
+                />
+              </div>
+            </div>
+            <div class="services-item services-left-coloumn__item">
+              <div class="services-text-wrapper services-left-coloumn__text-wrapper">
+                <h3 class="services-item__title">Выгодные прогаммы</h3>
+                <div class="services-item__text">
+                  Не уверены, что прибор Вам подходит, воспользуйтесь услугой ТЕСТ ДРАЙВ. Если Ваш прибор вышел из
+                  строя, предлагаем воспользоваться программами обновления оборудования: TRADE-IN или УТИЛИЗАЦИЯ
+                </div>
+              </div>
+              <div class="services-item__image-wrapper">
+                <img src="img/services-programs.png" alt="Выгодные программы" class="services-item__img" />
+              </div>
+            </div>
+          </div>
+          <div class="services-wrapper__center">
+            <img
+              src="img/services-center-bg.jpg"
+              alt="Ваши измерения в надежных руках"
+              class="services-wrapper__center-img"
+            />
+          </div>
+          <div class="services-coloumn services-right-coloumn services-wrapper__right">
+            <div class="services-item services-right-coloumn__item">
+              <div class="services-text-wrapper services-right-coloumn__text-wrapper">
+                <h3 class="services-item__title">Полный спектр услуг в одном месте</h3>
+                <div class="services-item__text">
+                  Мы предоставляем нашим клиентам ряд услуг по гарантийному и постгарантийному обслуживанию: юстировка,
+                  поверка, ремонт.
+                </div>
+              </div>
+              <div class="services-item__image-wrapper">
+                <img
+                  src="img/services-instruments.png"
+                  alt="Полный спектр услуг в одном месте"
+                  class="services-item__img"
+                />
+              </div>
+            </div>
+            <div class="services-item services-right-coloumn__item">
+              <div class="services-right-coloumn__text-wrapper">
+                <h3 class="services-item__title">Доставка</h3>
+                <div class="services-item__text">
+                  Мы осуществляем доставку по всей Украине следующими транспортными компаниями: "Нова пошта", "Укр пошта",
+                  Justin.
+                </div>
+              </div>
+              <div class="services-item__image-wrapper">
+                <img src="img/services-delivery.png" alt="Доставка" class="services-item__img" />
+              </div>
+            </div>
+            <div class="services-item services-right-coloumn__item">
+              <div class="services-right-coloumn__text-wrapper">
+                <h3 class="services-item__title">Рассрочка без переплат</h3>
+                <div class="services-item__text">
+                  Мы понимаем, как важно оставаться в рабочем процессе. Если у Вас нет возможности полностью оплатить
+                  приемник прямо сейчас, мы готовы предоставить беспроцентную рассрочку.
+                </div>
+              </div>
+              <div class="services-item__image-wrapper">
+                <img src="img/services-payment.png" alt="Рассрочка без переплат" class="services-item__img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-form-section">
+      <div class="container">
+        <div class="main-form-section__wrapper">
+          <div class="main-form-section__text">
+            <h3 class="main-form-section__title">НЕ ЗНАЕТЕ КАКОЕ РЕШЕНИЕ ВАМ НУЖНО?</h3>
+            <div class="main-form-section__description">
+              Наши специалисты имеют многолетний опыт в сфере геодезического оборудования и с легкостью подберут приборы
+              под любые задачи.
+              <br />
+              <br />
+              Просто оставьте заявку над подбор.
+            </div>
+          </div>
+          <form class="main-form main-form-section__form">
+            <input name="name" placeholder="Имя" type="text" class="main-form__input" />
+            <input name="phone" placeholder="Телефон" type="text" class="main-form__input" />
+            <button type="submit" class="button main-form__button">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews-heading">
+          <h2 class="section-title reviews__title">Отзывы</h2>
+          <a href="#" class="reviews-heading__all-reviews"> Все отзывы </a>
+        </div>
+        <div class="swiper reviews__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide reviews-list-item reviews-list__item">
+              <h3 class="reviews-list-item__title">Trimble</h3>
+              <div class="reviews-list-item__date">03.03.2021</div>
+              <p class="reviews-list-item__message">
+                Недавно мы приобрел оборудование на saget.org.ua и остались очень доволны. Процесс заказа прошел гладко и легко, а доставка была быстрой и без проблем. Само оборудование отличного качества и уже зарекомендовало себя как ценный актив для нашей работы здесь, в Trimble. В целом, очень рекомендуем saget.org.ua всем, кто нуждается в надежном и качественном оборудовании. Спасибо за отличный сервис!
+              </p>
+            </div>
+            <div class="swiper-slide reviews-list-item reviews-list__item">
+              <h3 class="reviews-list-item__title">GNSS</h3>
+              <div class="reviews-list-item__date">5.03.2021</div>
+              <p class="reviews-list-item__message">
+                В целом, мы очень довольны своим опытом работы с Saget.org.ua и без колебаний рекомендуєм вашу компанию всем, кто нуждается в качественных продуктах. Благодарим вас за предоставление таких выдающихся услуг, и я с нетерпением ждем возможности снова иметь с вами дело в будущем.
+              </p>
+            </div>
+            <div class="swiper-slide reviews-list-item reviews-list__item">
+              <h3 class="reviews-list-item__title">Seco</h3>
+              <div class="reviews-list-item__date">10.03.2021</div>
+                <p class="reviews-list-item__message">
+                  Продукт PrinCe i30 IMU Tx, который мы приобрели на Saget.org.ua, превзошел наши ожидания по качеству и функциональности. Мы используем его уже несколько недель и постоянно впечатлены его производительностью. 
+                  В дополнение к исключительному продукту, приятно удивляет уровнь обслуживания клиентов, которое мы получили от вашей команды.
+                </p>
+            </div>
+            <div class="swiper-slide reviews-list-item reviews-list__item">
+              <h3 class="reviews-list-item__title">Spectra</h3>
+              <div class="reviews-list-item__date">13.03.2021</div>
+              <p class="reviews-list-item__message">
+                Продукт PrinCe i50 + i30 + HCE320 во всех отношениях превзошел наши ожидания. Точность этого устройства сделали нашу работу намного проще и эффективнее. Внимание к деталям в дизайне и разработке этого продукта на высочайшем уровне!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="clients">
+      <div class="container">
+        <div class="clients-items">
+          <img src="img/client-trimble.png" alt="Trimble" class="clients-items__img" />
+          <img src="img/client-chcnav.png" alt="Chcnav" class="clients-items__img" />
+          <img src="img/client-prince.png" alt="Prince" class="clients-items__img" />
+          <img src="img/client-spectra.png" alt="Spectra" class="clients-items__img" />
+          <img src="img/client-seco.png" alt="Seco" class="clients-items__img" />
+        </div>
+      </div>
+    </section>
+    <div id="callback-popup" class="popup callback-popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup popup__close">
+                <img src="img/icon-close.svg" alt="Close">
+            </a>
+            <div class="popup__title">
+                Заказать обратный звонок
+            </div>
+            <form action="#" class="popup__callback-form">
+                <label class="callback-popup__label" for="name">Имя</label>
+                <input id="name" type="text" name="name" class="input callback-popup__input">
+                <label class="callback-popup__label" for="phone">Телефон</label>
+                <input id="phone" type="text" class="input callback-popup__input">
+                <label class="callback-popup__label" for="comment">Комментарий</label>
+                <input id="comment" type="text" class="input callback-popup__input">
+                <button class="btn callback-popup__button">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-wrapper">
+      <div class="footer-nav footer__left">
+        <div class="footer-nav__column">
+          <a class="footer-nav__column-title"> Каталог </a>
+          <ul class="footer-nav-list footer-nav__list">
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link"> ГНСС приемники </a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link"> Электронные тахеометры </a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link"> Лазерное сканирование </a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link"> Контроллеры </a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link"> Аксессуары </a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link"> Программное обеспечение </a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link"> Трассоискатели </a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link"> Модемы </a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link"> Нивелиры </a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link"> Гидрография </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav__column">
+          <a href="#" class="footer-nav__column-title"> Информация </a>
+          <ul class="footer-nav-list footer-nav__list">
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link"> О компании </a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link"> Новости </a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link"> Акции </a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link"> Услуги </a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link"> Доставка </a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link"> Реквизиты </a>
+            </li>
+            <li class="footer-nav-list__item">
+              <a href="#" class="footer-nav-list__link"> Политика конфиденциальности </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav__column">
+          <a href="#" class="footer-nav__column-title"> Контакты </a>
+          <div class="footer-nav__contacts-info">
+            <p class="footer-nav__contacts-info-item">Днепропетровск, Выборная, 115/2</p>
+            <p class="footer-nav__contacts-info-item">✆ +38 (093) 249-66-00</p>
+            <p class="footer-nav__contacts-info-item">Киев, Ербанова, 11</p>
+            <p class="footer-nav__contacts-info-item">✆ +38 (063) 239-27-37</p>
+            <p class="footer-nav__contacts-info-item">Харьков, ул. Большой Смоленский проспект, 12</p>
+            <p class="footer-nav__contacts-info-item">Единый номер:</p>
+            <p class="footer-nav__contacts-info-item">✆ 38 (067) 600-49-56</p>
+            <p class="footer-nav__contacts-info-item">Email: info@saget.ru</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer-subscription-block">
+          <form action="" class="subscription-form footer__subscription">
+            <h4 class="footer-subscription-block__title">Подпишитесь на рассылку и получайте спецпредложения!</h4>
+            <div class="subscription-form__body">
+              <input type="email" name="email" placeholder="Ваш e-mail" class="input subscription-form__input" />
+              <button class="subscription-form__button">Подписаться</button>
+            </div>
+          </form>
+        </div>
+        <div class="footer__contacts-icons">
+          <a href="#" class="footer__contacts-icon-link">
+            <img src="img/icon-mail.svg" alt="email" class="footer__contacts-icon-img" />
+          </a>
+          <a href="#" class="footer__contacts-icon-link">
+            <img src="img/icon-telegram.svg" alt="telegram" class="footer__contacts-icon-img" />
+          </a>
+          <a href="#" class="footer__contacts-icon-link">
+            <img src="img/icon-viber.svg" alt="viber" class="footer__contacts-icon-img" />
+          </a>
+          <a href="#callback-popup" class="popup-link footer__contacts-icon-link">
+            <img src="img/icon-phone-footer.svg" alt="phone" class="footer__contacts-icon-img" />
+          </a>
+        </div>
+        <div class="footer__company-caption">ООО "Сагет" © 2019</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
